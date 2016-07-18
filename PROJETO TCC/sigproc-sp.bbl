@@ -1,0 +1,71 @@
+\begin{thebibliography}{10}
+
+\bibitem{bitrix24:ferramenta}
+Bitrix24.
+\newblock \url{https://www.bitrix24.com.br/\#tour}.
+\newblock Acessado em: 11 de julho de 2016.
+
+\bibitem{openUP:agil}
+Introdução ao openup (open unified process).
+\newblock \url{http://epf.eclipse.org/uploads/16.pdf}.
+\newblock Acessado em: 10 de julho de 2016.
+
+\bibitem{scrum:agil}
+Scrum.
+\newblock \url{http://www.desenvolvimentoagil.com.br/scrum/}.
+\newblock Acessado em: 10 de julho de 2016.
+
+\bibitem{xp:agil}
+Xp.
+\newblock \url{http://www.desenvolvimentoagil.com.br/xp/}.
+\newblock Acessado em: 10 de julho de 2016.
+
+\bibitem{jira:ferramenta}
+Jira.
+\newblock
+  \url{http://www.oatsolutions.com.br/ferramentas/ferramentas\_JIRA.htm?gclid=CKOwyovm680CFRIFkQodhCcGZQ},
+  2016.
+\newblock Acessado em: 15 de julho de 2016.
+
+\bibitem{aadsp:hibirdo}
+{\sc e~Outros, A. C.~S.}
+\newblock {\em Adaptive Approach for Deployment of Software Process - AADSP}.
+\newblock LABRASOFT, 2016.
+
+\bibitem{pmbok:nAgil}
+{\sc Institute, P.~M.}
+\newblock {\em Um Guia do conhecimento em gerencimento de Projetos - Guia PMBOK
+  5º ed.}
+\newblock Project Management Institute, Inc, Newtown Square, Pennsylvania
+  19073-3299 USA, 2013.
+
+\bibitem{Arimoto:melhoria}
+{\sc Maurício Massaru~Arimoto, Edson~Murakami, V. V. d. C. e. M. I.~C.}
+\newblock Adherence analysis of agile methods according to the mr-mps reference
+  model.
+\newblock {\em VIII Simpósio Brasileiro de Qualidade de Software\/}, 249--263.
+
+\bibitem{ieee}
+{\sc of~electrical, I., and electronics engineers}.
+\newblock {\em IEEE-STD-610}.
+\newblock Standard Computer Dictionary: A Compilation of IEEE Standard Computer
+  Glossaries, 1990.
+
+\bibitem{manifesto:agil}
+{\sc outros, K. B.~.}
+\newblock Manifesto para o desenvolvimento ágil de software.
+\newblock \url{http://www.manifestoagil.com.br/}, 2001.
+\newblock Acessado em: 06 de julho de 2016.
+
+\bibitem{mpsbr:nAgil}
+{\sc SOFTEX}.
+\newblock {\em MPS.BR - Melhoria de Processo do Software Brasileiro: Guia Geral
+  MPS de Software}.
+\newblock Sociedade SOFTEX, 2012.
+
+\bibitem{weber}
+{\sc Weber, S., Hauck, J. C.~R., and von Wangenheim, C.~F.}
+\newblock Estabelecendo processos de software em micro e pequenas empresas.
+\newblock {\em Simpósio Brasileiro de Qualidade de Software\/} (1993), 16.
+
+\end{thebibliography}

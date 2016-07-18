@@ -1,0 +1,622 @@
+\documentclass{acm_proc_article-sp}
+\usepackage[utf8]{inputenc}
+\usepackage{ucs}
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{multirow}
+\usepackage{amssymb}
+\author{Felipe Pereira Coelho}
+\usepackage{cite}
+\usepackage{graphicx}
+\graphicspath{{img/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.gif}
+\usepackage{amsmath}
+
+\begin{document}
+
+\title{ T-AADSP - Uma ferramenta de apoio a implantação adaptativa de processo de software.}
+
+\numberofauthors{2} 
+\author{
+% You can go ahead and credit any number of authors here,
+% e.g. one 'row of three' or two rows (consisting of one row of three
+% and a second row of one, two or three).
+%
+% The command \alignauthor (no curly braces needed) should
+% precede each author name, affiliation/snail-mail address and
+% e-mail address. Additionally, tag each line of
+% affiliation/address with \affaddr, and tag the
+% e-mail address with \email.
+%
+% 1st. author
+\alignauthor
+Felipe Pereira Coelho\ \\
+       \affaddr{Instituto Federal de Educação, Ciência e Tecnologia da Bahia}\\
+       \affaddr{Rua Emídio dos Santos, S/N, Barbalho}\\
+       \affaddr{Salvador, Bahia}\\
+       \email{felipecoelho@ifba.edu.br}
+% 2nd. author
+\alignauthor
+Antonio Carlos Santos Souza\ \\
+       \affaddr{Instituto Federal de Educação, Ciência e Tecnologia da Bahia}\\
+       \affaddr{Rua Emídio dos Santos, S/N, Barbalho}\\
+       \affaddr{Salvador, Bahia}\\
+       \email{antoniocarlos@ifba.edu.br}
+}
+
+
+\maketitle
+\begin{abstract}
+As abordagens existentes para o gerenciamento de projetos de software não são fáceis de serem implementadas nas empresas. Neste projeto, será proposta uma ferramenta baseada na metodologia para gerenciamento de projetos de software AADSP, metodologia esta que utiliza conceitos das abordagens ágil, preservando às práticas consideradas como relevantes ao cenário de desenvolvimento de software e as abordagens não ágil que definem diversos processos e resultados esperados pelas mais diversas fases e atividade de um projeto. 
+\end{abstract}
+
+\keywords{Engenharia de Software,Artefatos de Software, Gerenciamento de Projetos de Software} % NOT required for Proceedings
+
+
+
+\section{Introdução}
+As empresas em seus diversos portes oferecem a seus clientes produtos e/ou serviços, a qualidade dos produtos e/ou serviços oferecidos esta diretamente ligada ao processo utilizado para conceber os mesmos. Um processo é uma sequencia de passos realizados para um determinado propósito \cite{ieee}. Um processo de Software é definido como um conjunto de atividades, métodos, práticas e transformações que pessoas empregam para desenvolver e manter software e produtos associados \cite{weber}. O Guia Brasileiro de Melhoria de Processo de Software - MPSBR define que qualidade é um fator crítico para o sucesso
+da indústria de software. Para que se tenha um setor de software competitivo, nacional e internacionalmente, é essencial que os empreendedores do setor coloquem a eficiência e a eficácia dos seus processos em foco nas empresas,
+visando à oferta de produtos de software e serviços correlatos conforme padrões internacionais de qualidade \cite{mpsbr:nAgil}. Nesse contexto surge diversas metodologias que visam promover a implantação e a melhoria contínua do processo de software nas empresas, neste trabalho...
+
+\section{Fundamentação teórica}
+Durante o processo de concepção do presente trabalho, foi necessária a realização de uma revisão da literatura a fim de levantar a fundamentação teórica ao tema proposto. Nesta secção, serão apresentados os principais temas encontrados e utilizados no desenvolvimento desta obra. Tomaremos como base o manifesto ágil de desenvolvimento de software \cite{manifesto:agil} e alguns guias de melhoria de processo de software, desse modo, será realizada a separação dos temas analisados em três categorias:
+
+\begin{itemize}
+\item Abordagens ágil,
+\item Abordagens não ágil, e
+\item Abordagens híbridas.
+\end{itemize}
+
+Para classificarmos as abordagens adotaremos o seguinte: 
+
+\begin{enumerate}
+\item  O autor e/ou autores dessa abordagem afirmarem que esta é uma abordagem ágil, não tomaremos essa afirmativa como uma verdade absoluta, e  desse modo, consideraremos também outra afirmtiva que promova contradição pelo autor e/ou autores, fazendo com que consideremos esta abordagem como híbrida ou não ágil;
+\item Para abordagens não ágil adotaremos esta classificação, a medida que, o autor focar seus processos em documentos e descartar ou minimizar os valores e princípios definidos no manifesto ágil de software;
+\item Consideraremos uma abordagem como híbrida, quando o próprio autor fizer esta afirmativa ou quando esta abordagem estiver relacionando seus processos e documentos aos princípios e valores do manifesto ágil de maneira valorativa aos documentos e processos.
+\end{enumerate}
+
+\subsection{Abordagens não Ágil}
+\subsubsection{Implantação e gerenciamento de processos com PMBOK}
+Nesta secção, iremos dar enfoque ao processo de gerenciamento de projetos definidos pela Guia PMBOK. O Guia do Conhecimento em Gerenciamento de Projeto (Guia PMBOK) foi desenvolvido pelo Project Management Institute, sendo mantido pela mesma instituição desenvolvedora do Guia. O Guia PMBOK fornece diretrizes para o gerencimento de projetos individuais e define os conceitos relacionados com o gerenciamento de projetos. Ele também descreve o ciclo de vida de gerencimento e seus respectivos processos, assim como o ciclo de vida do projeto \cite{pmbok:nAgil}. A partir deste momento, quando nos referirmos ao Guia do Conhecimento em Gerenciamento de Projeto adotaremos a conotação ao mesmo de Guia PMBOK.
+
+Segundo o Guia PMBOK o gerencimento de projetos é a aplicação do conhecimento, habilidades, ferramentas e técnicas às atividades do projeto para atender aos seus requisitos. O gerencimento de projetos é realizado através da aplicação e integração apropriadas dos quarenta e sete processos de gerenciamento de projetos, logicamente agrupados em cinco grupos de processos \cite{pmbok:nAgil}, conforme descritos a seguir:
+
+%Lista de itens
+\begin{itemize}
+\item Iniciação,
+\item Planejamento,
+\item Execução,
+\item Monitoramento e controle, e
+\item Encerramento.
+\end{itemize}
+
+Para o Guia PMBOK, no processo de gerenciamento de um projeto normalmente inclui, mas não se limita a identificação dos requisitos, abordagem das diferentes necessidades, preocupações e expectativas das partes interessadas no planejamento e execução do projeto, o estabelecimento e manutenção e execução de comunicações ativas, eficazes e colaborativas entre as partes interessadas, a realização do gerenciamento das partes interessadas  visando o atendimento aos requisitos do projetos e a criação de suas entregas \cite{pmbok:nAgil}. Devendo ser realizado também um equilíbrio das restrições conflitantes de um projeto que incluem:
+
+%Lista de itens
+\begin{itemize}
+\item Escopo,
+\item Qualidade,
+\item Cronograma,
+\item Orçamento,
+\item Recursos, e 
+\item Riscos.
+\end{itemize}
+
+
+O Guia PMBOK descreve que os fatores mencionados estão relacionados de tal forma que se algum deles mudar, pelo menos um outro fator será afetado \cite{pmbok:nAgil}. 
+
+\subsubsection*{Escopo}
+Para planejar o gerencimento do escopo deve ser confecionado um plano onde deve ser documentado como tal escopo será definido, validando e controlando. O principal objetivo deste processo é o fornecimento de orientações e instruções sob como escopo será gerenciado ao longo de todo o projeto.
+
+A figura abaixo ilustra o que deverá ser realizado:
+
+\begin{figure}[!htb]
+\centering
+\scalebox{0.3}{
+\includegraphics[bb=0 0 702 200]{entradaescopo.jpg}
+}
+\caption{Fluxo do processo: Entradas, ferramentas, técnicas e saídas}
+\end{figure}
+
+Neste etapa são definidos alguns artefatos do projeto como plano de gerenciamento do projeto, o termo de abertura do projeto, discriminação dos fatores ambientais da empresa que consiste em:
+
+\begin{itemize}
+\item Cultura Organizacional,
+\item Infraestrutura,
+\item Administração do Pessoal, e
+\item Condições de Mercado.
+\end{itemize} 
+
+Além disso, o  Guia PMBOK inclui nesta fase a definição de processos organizacionais onde deve ser incluso as:
+
+\begin{itemize}
+\item Políticas e procedimentos, e
+\item Informações históricas e base de conhecimento de lições aprendidas
+\end{itemize}
+
+No âmbito das ferramentas e técnicas, deverá ser consultada uma opinião especializada que consiste em entradas recebidas das partes entendidas e experientes \cite{pmbok:nAgil}. O Guia PMBOK define que para as reuniões, a equipe do projeto poderá participar das das mesmas e promover a definição do plano de gerenciamento do escopo do projeto.
+
+No que se refere as saídas deverá ser desenvolvido o plano de gerenciamento do escopo do projeto, este que é um componente do plano de gerenciamento do projeto ou do programa que descreve como escopo será definido, desenvolvido, monitorado, controlado e verificado \cite{pmbok:nAgil}.
+
+Para o plano de gerenciamento dos requisitos é definido pelo Guia PMBOK, este primeiro que é um componente do plano de gerenciamento do projeto que descreve como os requisitos serão analisados, documentados e gerenciados. 
+\subsubsection*{Qualidade}
+O gerenciamento da qualidade do projeto inclui os processos e as atividades da organização executora que determina as políticas de qualidade, os objetivos e as responsabilidades , de modo que o projeto satisfaça às necessidades para as quais foi empreendido  \cite{pmbok:nAgil}. Os processos que incluem o gerenciamento da qualidade são:
+
+\begin{itemize}
+\item Planejar o gerenciamento da qualidade,
+\item Realizar a garantia da qualidade, e
+\item Controlar a qualidade.
+\end{itemize}
+
+O processo de planejamento do plano de gerenciamento da qualidade é o processo de identificar os requisitos e os padrões de qualidade do projeto, além de suas entregas através da documentação de como o projeto demonstrará a conformidade com os requisitos e/ou padrões de qualidade. Já a garantia da qualidade é o processo que auditoria os requisitos em sua qualidade e dos resultados das medições do controle de qualidade para garantir o uso dos padrões de qualidade e das definições operacionais apropriadas. O controle da qualidade é o processo de monitoramento e registro dos resultados da execução das atividades de qualidade para avaliar o desempenho e recomendar as mudanças necessárias \cite{pmbok:nAgil}
+
+\subsubsection*{Cronograma}
+O gerenciamento do cronograma do projeto é o processo de estabelecer as políticas, os procedimentos e a documentação para o planejamento, desenvolvimento, gerenciamento, execução e controle do cronograma do projeto.
+
+Nesta etapa deverá ser desenvolvido o plano de gerenciamento do cronograma do projeto. Para este plano deverá ser realizada a sequenciação das aividade do projeto, que é o processo de identificação e documentação dos relacionamentos entre as atividades do projeto. O principal objetivo é de definir a sequencia lógica do trabalho a fim de obter o mais alto nível de eficiência em face de todas as restrições do projeto \cite{pmbok:nAgil}.
+
+\subsubsection*{Orçamento}
+O Guia PMBOK  define que para determinar o orçamento do projeto deverá ser realizada um cálculo estimado do custo de trabalho ou dos pacotes de trabalho a fim de estabelecer uma linha de base do custos autorizada. Para a definição da linha de base do escopo o Guia PMBOK discrimina que deverá ser realizado:
+
+\begin{itemize}
+\item Especificação do escopo do projeto,
+\item Estrutura analítica do projeto EAP, e
+\item Dicionário da EAP.
+\end{itemize}
+
+Para confeção da EAP deve ser descritas todas as relações entre todas as entregas do projeto e seus vários componentes.
+
+\subsubsection*{Recursos}
+Nesta etapa o Guia PMBOK considera como recursos todos os itens descriminados na fase de orçamento, além desses são considerados também os recursos humanos do projeto, este último que inclui os processos que organiza gerenciam e guiam a equipe do projeto. A equipe do projeto consiste das pessoas com papéis e responsabilidades designadas para completar o projeto \cite{pmbok:nAgil}.
+
+\subsubsection*{Riscos}
+O gerenciamento dos riscos é o processo de definição de como conduzir as atividades de gerenciamento dos riscos de um projeto. O principal beneficio deste processo é que ele garante que o grau, tipo e visibilidade do gerenciamento dos riscos sejam proporcionais tanto aos riscos quanto à importância do projeto para organização \cite{pmbok:nAgil}.
+
+
+Estes serão os fundamentos bases, mas não únicos, considerados para esta obra na implantação e melhoria do processo de desenvolvimento de software definidos pelo Guia PMBOK. 
+
+\subsubsection{Implantação e gerenciamento de processos com MPSBR}
+A SOFTEX desenvolveu um programa mobilizado e de longo prazo denominado MPS.BR  A sigla
+MPS.BR está associada ao Programa MPS.BR, que é coordenado pela SOFTEX. A sigla MPS é uma
+marca genérica associada ao Modelo MPS, compreendendo tanto a sigla MPS-SW associada à
+Melhoria de Processo de Software quanto a sigla MPS-SV associada à Melhoria de Processo de
+Serviços \cite{mpsbr:nAgil}, segundo a SOFTEX o programa foi criado em dezembro de 2003. Este programa é atualmente coordenado pela Associação para Promoção da Excelência do Software Brasileiro (SOFTEX), que conta com apoio do Ministério da Ciência, Tecnologia e Inovação (MCTI), Financiadora de Estudos e Projetos (FINEP), Serviço Brasileiro de Apoio às Micro e Pequenas Empresas (SEBRAE) e Banco Interamericano de Desenvolvimento (BID/FUMIN) \cite{mpsbr:nAgil}.
+
+O objetivo do programa MPS.BR é a melhoria de Processos de Software e Serviços por meio da implantação ou aprimoramento destes através da aplicação dos seus Guias, que contém a descrição geral do Modelo MPS e detalha o Modelo
+de Referência MPS para Software (MR-MPS-SW) e as definições comuns necessárias para seu entendimento e aplicação. 
+
+O Guia geral do MPSBR segmenta os processos em sete níveis que são discriminados a seguir:
+
+%Lista de itens
+\begin{itemize}
+\item NÍVEL G – Parcialmente gerenciado;
+\item NÍVEL F – Gerenciado;
+\item NIVEL E – Parcialmente definido;
+\item NÍVEL D – Largamente definido;
+\item NÍVEL C – Definido;
+\item NÍVEL B – Gerenciado quantitativamente;
+\item NÍVEL A – Em Otimização;
+\end{itemize}
+
+Cada nível é detalhadamente descrito em um guia específico para sua implementação, deste modo, o SOFTEX oferece sete guias para implementação e melhoria contínua do processo de software. Neste trabalho, daremos enfoque ao guia de MPS de Software Nível G, este que contém orientações para a implementação do nível G do Modelo de Referência MR-MPSSW:2012  \cite{mpsbr:nAgil}
+
+\subsubsection*{Guia de implementação – Parte 1: Fundamentação para implementação do nível G do MR-MPS-SW:2012}
+Segundo o Guia MPSBR, o nível G é o primeiro nível de maturidade do do MR-MPS-SW \cite{mpsbr:nAgil}. O Guia MPSBR descreve sua implementação deve ser executada com cautela por estabelecer o início dos trabalhos em implantação de melhoria dos processos de software na organização. Ao final da implantação deste nível a organização deve ser capaz de gerenciar parcialmente seus projetos de desenvolvimento de software \cite{mpsbr:nAgil}.
+
+O MPSBR define que no nível G os projetos usem os seus próprios padrões e procedimentos, não
+sendo necessário que se tenha padrões organizacionais. Se, porventura, a organização possuir processos já definidos e os projetos necessitarem adaptar os processos existentes, deve-se registrar essa adaptação durante o planejamento do projeto. Adaptações podem incluir alteração em processos, atividades, ferramentas, técnicas, procedimentos, padrões, medidas, dentre outras \cite{mpsbr:nAgil}.
+
+É necessário que as organizações que trabalham com a evolução de produtos adequar as suas formas de trabalhar para se tornarem organizações orientadas a projetos. Ser orientada a projetos significa redefinir algumas operações (atividades
+de rotina) já em andamento, como projeto, estabelecendo objetivos, prazos e escopo
+para sua execução \cite{mpsbr:nAgil}.
+
+Para a Gerência de Projetos (GPR) são esperados os seguintes resultados:
+
+\begin{itemize}
+\item GPR1 - O escopo do trabalho para o projeto é definido;
+\item GPR2 - As tarefas e os produtos de trabalho do projeto são dimensionados utilizando métodos apropriados;
+\item GPR3 - O modelo e as fases do ciclo de vida do projeto são definidos;
+\item GPR4 - (Até o nível F) O esforço e o custo para a execução das tarefas e dos produtos de trabalho são estimados com base em dados históricos ou referências técnicas;
+\item GPR5 - O orçamento e o cronograma do projeto, incluindo a definição de marcos e pontos de controle, são estabelecidos e mantidos; 
+\item GPR6 - Os riscos do projeto são identificados e o seu impacto, probabilidade de ocorrência e prioridade de tratamento são determinados e documentados;
+\item GPR7 - Os recursos humanos para o projeto são planejados considerando o perfil e o conhecimento necessários para executá-lo;
+\item GPR8 - (Até o nível F) Os recursos e o ambiente de trabalho necessários para executar o projeto são planejados;
+\item GPR9 - Os dados relevantes do projeto são identificados e planejados quanto à forma de coleta, armazenamento e distribuição. Um mecanismo é estabelecido para acessá-los, incluindo, se pertinente, questões de privacidade e segurança;
+\item GPR10 - Um plano geral para a execução do projeto é estabelecido com a integração de planos específicos;
+\item GPR11 - A viabilidade de atingir as metas do projeto é explicitamente avaliada considerando restrições e recursos disponíveis. Se necessário, ajustes são realizados;
+\item GPR13 - O escopo, as tarefas, as estimativas, o orçamento e o cronograma do projeto são monitorados em relação ao planejado;
+\item GPR14 - Os recursos materiais e humanos bem como os dados relevantes do projeto são monitorados em relação ao planejado;
+\item GPR15 - Os riscos são monitorados em relação ao planejado;
+\item GPR16 - O envolvimento das partes interessadas no projeto é planejado, monitorado e mantido;
+\item GPR17 - Revisões são realizadas em marcos do projeto e conforme estabelecido no planejamento;
+\item GPR18 - Registros de problemas identificados e o resultado da análise de questões pertinentes, incluindo dependências críticas, são estabelecidos e tratados com as partes interessadas;
+\item GPR19 - Ações para corrigir desvios em relação ao planejado e para prevenir a repetição dos problemas identificados são estabelecidas, implementadas e acompanhadas até a sua conclusão.
+\end{itemize}
+
+Para a Gerência de Requisitos (GRE) são esperados os seguintes resultados:
+\begin{itemize}
+\item GRE1 - O entendimento dos requisitos é obtido junto aos fornecedores de requisitos;
+\item GRE3 - A rastreabilidade bidirecional entre os requisitos e os produtos de trabalho é estabelecida e mantida;
+\item GRE4 - Revisões em planos e produtos de trabalho do projeto são realizadas visando a identificar e corrigir inconsistências em relação aos requisitos;
+\item GRE5 - Mudanças nos requisitos são gerenciadas ao longo do projeto.
+\end{itemize}
+
+Por último é esperado aos atributos do de processo no nível G:
+\begin{itemize}
+\item AP 1 - O processo é executado;
+\item AP 2 - O processo é gerenciado.
+\end{itemize}
+
+Para todos os itens acima mencionados o MPSBR \cite{mpsbr:nAgil} descreve o mesmo detalhadamente em seu Guia de implementação do nível G, bem como, os resultados que são esperados a cada item. Os guias estão disponibilizados no site da SOFTEX em Português do Brasil para download.
+
+\subsection{Abordagens Híbridas}
+
+\subsubsection{Implantação e gerenciamento de processos com OpenUP}
+O OpenUP é caracterizado como um processo de desenvolvimento de software minimamente suficiente – isso
+significa que somente o conteúdo fundamental é incluído \cite{openUP:agil}. Dessa forma, o OpenUP não provê orientação em
+alguns tópicos que o projeto possa tratar, como equipes grandes, situações contratuais, aplicações de segurança ou missão crítica, orientação de tecnologia específica, etc. Contudo, OpenUP é completo no sentido que ele pode ser apresentado como um processo completo para construir um sistema. Para atender as necessidades que não são cobertas no seu conteúdo, OpenUP é extensível para ser usado como base no qual o conteúdo do processo pode ser adicionado ou adaptado como necessário \cite{openUP:agil}. O openUP foi criado pela Eclipse.org, e atualmente é mantido pela pela mesma organização criadora.
+
+O OpenUP é definido como um processo ágil e unificado que contêm um conjunto mínimo de práticas para ajudar times a serem mais eficientes no desenvolvimento de software \cite{openUP:agil}, porém o modelo também preserva características esseciais do RUP/Unified Process \cite{openUP:hibrido}. O OpenUP engloba uma filosofia pragmática e ágil que foca na natureza colaborativa do desenvolvimento do software. Ele é um processo independente de ferramenta e de pouca cerimônia que pode ser usado como está ou ser estendido para atender uma ampla variedade de tipos de projetos \cite{openUP:agil}.
+
+A abordagem trabalha com quatro princípios. Estes princípios capturam a interação geral por trás dos processos e cria a fundação para interpretar papéis e produtos de trabalho, e realizar tarefas:
+
+\begin{itemize}
+\item Colaboração para alinhar interesses e compartilhar entendimento,
+\item Balanceamento de prioridades concorrente para maximizar o valor do cliente,
+\item Foco antecipado na arquitetura para minimizar os riscos e organizar o desenvolvimento,
+\item Envolver para continuamente obter feedback e melhorar.
+\end{itemize}
+
+Cada princípio do openUP suporta uma das afirmações descritas no manifesto ágil de software:
+
+\begin{figure}[!htb]
+\centering
+\scalebox{0.5}{
+\includegraphics[bb=0 0 702 150]{tabela_prinOpen_manifesto.png}
+}
+\caption{Mapeamento entre os princípio do OpenUP e o Manifesto Ágil}
+\end{figure}
+
+Organização do OpenUP é feita em  duas dimensões diferentes e correlacionadas: conteúdo de métodos e conteúdo de processos. O conteúdo de método é onde os elementos de método (papéis, tarefas, artefatos e orientação) são definidos, independentemente de como eles são usados no ciclo de vida do projeto \cite{openUP:agil}.
+
+OpenUP estrutura o ciclo de vida do projeto em quatro fases: Início, Elaboração, Construção e Transição. O ciclo de vida do projeto proveem os stakeholders fiscalização, transparência e mecanismos de direção para controle dos fundos do projeto, escopo, exposição ao risco, valor fornecido e outros aspectos do processo \cite{openUP:agil}.
+
+\begin{figure}[!htb]
+\centering
+\scalebox{0.5}{
+\includegraphics[bb=0 0 702 350]{organizacaoTrabOpenUP.JPG}
+}
+\caption{Organização do trabalho e foco do conteúdo no OpenUP}
+\end{figure}
+
+Papéis definidos pelo OpenUP
+
+\begin{itemize}
+\item \textbf{Stakeholder} representa o interesse do grupo cujas necessidades devem ser satisfeitas
+pelo projeto. Esse é um papel que pode ser executado por qualquer um que é (ou
+potencialmente será) afetado materialmente pelo resultado do projeto,
+\item \textbf{Analista}  representa o cliente e o usuário final no que diz respeito a obter a entrada
+dos stakeholders para entender o problema a ser resolvido e pela captura e
+configuração das prioridades para os requisitos.
+\item \textbf{Arquiteto} o é responsável por projetar a arquitetura do software, que inclui tomar as
+decisões técnicas chave que definem todo o design e implementação do projeto.
+\item \textbf{Desenvolvedor} é responsável por desenvolver uma parte do sistema, inclusive projetá-
+lo de acordo com a arquitetura, e então implementá-lo, executar testes unitários e
+integrar os componentes que fazem parte da solução.
+\item \textbf{Testador} é responsável pelas principais atividades de testes, como identificar, definir,
+implementar e conduzir os testes necessários, bem como registrar as saídas dos testes
+e analizar os resultados.
+\item \textbf{Gerente de projetos} lidera o planejamento do projeto em colaboração com os
+stakeholders e o time, coordenando interações com os stakeholders, e mantendo o
+time do projeto focado em atingir os objetivos do projeto.
+\item \textbf{Qualquer papel} representa alguém no time que pode realizar tarefas gerais.
+\end{itemize}
+
+\subsubsection{Implantação e gerenciamento de processos com AADSP}
+O LABRASOFT, Grupo de Pesquisa Laboratório de Desenvolvimento de Software, propõe uma abordagem adaptativa para implantação do processo de software em empresas soteropolitanas desse porte, a Adaptive Approach for Deployment of Software Process (AADSP). Essa abordagem tem como alicerce práticas inovadoras em conformidade com o modelo MPS-BR, desenvolvido no Brasil pela Softex (SOFTEX, 2012), práticas de métodos ágeis e o guia de conhecimento PMBOK da PMI (Project Management Institute) para gerenciamento de projetos, sendo adaptativa aos diversos perfis de MPEs \cite{aadsp:hibirdo}. 
+
+\subsubsection*{Valoração dos arteaftos}
+O AADSP qualifica os artefatos de acordo com seu grau de importância, desse modo esta abordagem busca implementar de forma adaptativa nas MPEs. Os três graus de importância são:
+
+\begin{itemize}
+\item \textbf{ESSENCIAL} Artefatos base para implementação do modelo AADSP, deste modo sua continuidade deverá ser garantida objetivando os resultados proposto pela abordagem\cite{aadsp:hibirdo}.
+\item \textbf{IMPORTANTE} Artefatos que são consideráveis, todavia não são obrigatórios deste modo sua implementação resultará em resultados adicionais ao modelo\cite{aadsp:hibirdo}.
+\item \textbf{DESEJÁVEL} Artefatos pouco consideráveis, estes não implicam necessariamente na melhoria do processo ou em resultados satisfatórios\cite{aadsp:hibirdo}.
+\end{itemize}
+
+\subsubsection*{Definição da valoração dos artefatos}
+A abordagem AADSP  exige que todos os artefatos que afetam o trabalho estejam integrados. Esta abordagem explicita a dependência entre eles e a define no chamado fluxo de trabalho\cite{aadsp:hibirdo}.
+
+\subsubsection*{Confidencialidade e acesso aos artefatos do projeto de software}
+A confidencialidade de acesso aos artefatos, mesmo quando não declarada pelo cliente, são contempladas pela abordagem. É recomendável, portanto, explicitar a existência ou não de dados confidenciais e acessos a estes\cite{aadsp:hibirdo}.
+
+\subsubsection*{Analise da viabilidade do projeto e comprometimento da equipe executora}
+A abordagem AADSP exige que o gerente de projeto reavalie a viabilidade do projeto periodicamente ou caso mudança ou acréscimo no escopo, de requisito ou de qualquer dos recursos existentes do projeto\cite{aadsp:hibirdo}.
+
+\subsubsection*{monitoramento contínuo dos artefatos e definição de marcos de trabalho do projeto de software}
+marcos de trabalho independente das cerimonias de revisão realizada dentro do projeto de software.  A abordagem AADSP exige o acompanhamento continuo do projeto comparando o planejado com o realizado. Além disso deve ser realizado a definição dos
+
+\subsubsection*{gerências}
+
+\begin{itemize}
+\item Gerência de Projetos;
+\item Gerência DE requisitos e modelagem
+\item Gerência configuração e mudanças;
+\item Gerência de colaboradores;
+\item Gerência de Testes.
+\end{itemize}
+
+Este trabalho será focado na gerência de Projetos. Deste modo devemos contemplar os seguintes artefatos definidos para esta gerência:
+
+\begin{itemize}
+\item Termo de abertura do  projeto de software – TAP (essencial)
+\item Estrutura analítica do projeto de software – EAP (essencial)
+\item Documento de estimativa de escopo (essencial)
+\item Definição das funções da equipe executora do projeto (essencial)
+\item Cronograma de execução do projeto de software (essencial)
+\item Orçamento do Projeto (essencial)
+\item Recursos especiais (importante)
+\item Plano organizacional de dados ou Plano de gerenciamento de dados  (importante)
+\item Plano de riscos do projeto (desejável)
+\end{itemize}
+
+
+\subsubsection{SCRUM}
+O \textit{Scrum} é definido como uma metodologia ágil para gestão e planejamento de projetos de software \cite{scrum:agil}.
+
+No \textit{Scrum}, os projetos são dividos em ciclos (tipicamente mensais) chamados de \textit{Sprints}. O \textit{Sprint} representa um \textit{Time Box} dentro do qual um conjunto de atividades deve ser executado. Metodologias ágeis de desenvolvimento de software são iterativas, ou seja, o trabalho é dividido em iterações, que são chamadas de \textit{Sprints} no caso do \textit{Scrum} \cite{scrum:agil}.
+
+As funcionalidades a serem implementadas em um projeto são mantidas em uma lista que é conhecida como \textit{Product Backlog}. No início de cada \textit{Sprint}, faz-se um \textit{Sprint Planning Meeting}, ou seja, uma reunião de planejamento na qual o \textit{Product Owner} prioriza os itens do \textit{Product Backlog} e a equipe seleciona as atividades que ela será capaz de implementar durante o \textit{Sprint} que se inicia. As tarefas alocadas em um \textit{Sprint} são transferidas do \textit{Product Backlog} para o \textit{Sprint Backlog} \cite{scrum:agil}.
+
+A cada dia de uma \textit{Sprint}, a equipe faz uma breve reunião (normalmente de manhã), chamada \textit{Daily Scrum}. O objetivo é disseminar conhecimento sobre o que foi feito no dia anterior, identificar impedimentos e priorizar o trabalho do dia que se inicia \cite{scrum:agil}. Ao final de um \textit{Sprint}, a equipe apresenta as funcionalidades implementadas em uma \textit{Sprint Review Meeting}. Finalmente, faz-se uma \textit{Sprint Retrospective} e a equipe parte para o planejamento do próximo \textit{Sprint} \cite{scrum:agil}.
+
+Papéis definidos no \textit{Scrum}
+
+\begin{itemize}
+\item \textbf{Product Owner}  O \textit{Product Backlog }é uma lista contendo todas as funcionalidades desejadas para um produto. O conteúdo desta lista é definido pelo \textit{Product Owner} \cite{scrum:agil}.
+\item \textbf{Scrum Master} O \textit{Scrum Master} procura assegurar que a equipe respeite e siga os valores e as práticas do \textit{Scrum}. Ele também protege a equipe assegurando que ela não se comprometa excessivamente com relação àquilo que é capaz de realizar durante um \textit{Sprint} \cite{scrum:agil}.
+\item \textbf{Scrum Team} O \textit{Scrum Team} é a equipe de desenvolvimento. Nela, não existe necessariamente uma divisão funcional através de papéis tradicionais, tais como programador, designer, analista de testes ou arquiteto. Todos no projeto trabalham juntos para completar o conjunto de trabalho com o qual se comprometeram conjuntamente para um \textit{Sprint} \cite{scrum:agil}.
+\end{itemize}
+
+
+\begin{figure}[!htb]
+\centering
+\scalebox{0.5}{
+\includegraphics[bb=0 0 702 350]{scrumCiclo.JPG}
+}
+\caption{Ciclos do \textit{Scrum}}
+\end{figure}
+
+\subsubsection{XP}
+Extreme Programming (XP) é uma metodologia de desenvolvimento de software, nascida nos Estados Unidos ao final da década de 90. Vem fazendo sucesso em diversos países, por ajudar a criar sistemas de melhor qualidade, que são produzidos em menos tempo e de forma mais econômica que o habitual. Tais objetivos são alcançados através de um pequeno conjunto de valores, princípios e práticas, que diferem substancialmente da forma tradicional de se desenvolver software \cite{xp:agil}.
+
+O XP divide os valores em:
+
+\begin{itemize}
+\item \textbf{Comunicação} Embora existam inúmeras formas de se comunicar ideias, algumas são mais eficazes que outras. Por exemplo, quando duas pessoas estabelecem um diálogo presencial, inúmeros elementos da comunicação colaboram para a compreensão do assunto, tais como gestos, expressões faciais, postura, palavras verbalizadas, tom de voz, emoções, entre outros. Quanto maior a capacidade de compreensão, maiores as chances de evitar problemas como ambiguidades, entendimento equivocados, entre outros\cite{xp:agil}.
+\item \textbf{Coragem} Equipes XP confiam na eficácia destas práticas e destes mecanismos de proteção e isso é o que as tornam receptivas a mudanças. Assim, ao invés de frear a criatividade do cliente e evitar mudanças, equipes XP as consideram inevitáveis e procuram se adaptar a elas com segurança e com coragem, isto é, com confiança em seus mecanismos de proteção, tais como desenvolvimento orientado a testes, programação em par e integração contínua \cite{xp:agil}.
+\item \textbf{Feedback} Projetos XP estabelecem formas de encurtar ao máximo a defasagem de tempo entre o momento em que uma ação é executada e o seu resultado é observado. Assim, por exemplo, desenvolvedores procuram entregar novas funcionalidades no menor prazo possível, para que o cliente compreenda rapidamente as conseqüências daquilo que pediu \cite{xp:agil}.
+\item \textbf{Respeito} Respeito é um valor que dá sustentação a todos os demais. Membros de uma equipe só irão se preocupar em comunicar-se melhor, por exemplo, se se importarem uns com os outros. Respeito é o mais básico de todos os valores. Se ele não existir em um projeto, não há nada que possa salvá-lo. Saber ouvir, saber compreender e respeitar o ponto de vista do outro é essencial para que um projeto de software seja bem sucedido \cite{xp:agil}.
+\item \textbf{Simplicidade} o conceito de simplicidade em inúmeros aspectos do projeto para assegurar que a equipe se concentre em fazer, primeiro, apenas aquilo que é claramente necessário e evite fazer o que poderia vir a ser necessário, mas ainda não se provou essencial \cite{xp:agil}.
+\end{itemize}
+
+
+\subsection{Melhoria do processo de software x métodos ágeis}
+Nesta secção será discutido as abordagens para melhoria do processo de desenvolvimento de software em comparativo ao desenvolvimento ágil de software. Será considerado para isso a abordagem do MPS.BR desenvolvido pela Associação para Promoção da Excelência do Software Brasileiro (SOFTEX) e os modelos de desenvolvimento de software baseado no Manifesto Ágil para Desenvolvimento de Software. Um aspecto que que diferencia os métodos ágeis de um modelo de referência , tais como MR- MPS e
+outras abordagens convencionais é a granularidade que algumas atividades são realizadas. Portanto , algumas atividades podem executar a mesma função nos dois modelos, mas com um nível diferente de profundidade. Assim , um elemento de fundamental
+característica técnica para avaliar a percentagem de adesão para os métodos ágeis modelos de maturidade é a realização de uma análise detalhada , considerando as características particulares de cada um deles \cite{Arimoto:melhoria}.  
+
+Esta análise é um comparativo do modelo de adesão ao MR-MPS-SW:2012 Nível G, Arimoto \cite{Arimoto:melhoria} realizou o comparativo entre os modelos e tabulou os seguintes resultados conforme apresentados na tabela 1.
+
+Arimoto \cite{Arimoto:melhoria} incluiu em seu quadro comparativo o OpenUP, que para este trabalho será qualificado enquanto abordagem híbrida para melhoria de processo de software, mediante ser fundamentada no RUP (abordagem documental de desenvolvimento de projetos).
+
+\begin{table*}[htbp]
+\scriptsize
+\caption{Análise do produto de trabalho MR-MPS e a abordagem híbrida OpenUP} 
+\centering
+\begin{tabular}{|p{10mm}|p{10mm}|p{70mm}|p{70mm}|}
+\hline
+ &  & MR-MPS & Abordagem Híbrida \\
+\hline
+\multirow{5}{*}{RM} & 1 & Critérios de Avaliação e aceitação de Requisitos / exigências de documentos & 
+Discussões face-a-face / Sistema de Pesos para os requisitos / Modelo de Caso de Uso / Check List de tarefas\\
+& 2 & Aprovação de Requisitos / Avaliação de Impacto & Discussões Face-a-face / Check List de Tarefas \\
+& 3 & Sistema de Rastreamento de requisitos e de Trabalho Produtos / Matriz de rastreabilidade de requisitos e produtos de trabalho
+& -- \\
+& 4 & Resultados de revisões / Documentação das Inconsistências / Ações Corretivas & Registros no plano de interação / lista dos itens de trabalho \\
+& 5 & Status dos requisitos / Repositório dos requisitos / Histórico de solicitações e decisões & Lista de itens de trabalho \\
+\hline
+\multirow{14}{*}{PM} & 1 & Estrutura Analítica do Projeto (EAP) ou documento de visão & Documento de Visão \\
+& 2 & Estimativa de Tamanho &  Estimativa ágil de Tamanho ( medido tipicamente usando uma unidade neutra tal como pontos ) \\
+& 3 & Fases e Ciclos do Projeto & Fases do Ciclo de Vida do Projeto (especificada no Plano de projeto) \\
+& 4 & Estimativas esforço do projeto / As estimativas de custos do projeto & Normalmente usando as unidades de dias efetivos ou horas reais / Cálculo do custo aproximado por pessoa pelo tamanho de uma iteração \\
+& 5 & Cronograma e Orçamento do projeto & Cronograma do Projeto e Orçamento (especificada no Plano de iteração e do Plano do Projeto) \\
+& 6 & Plano de Gestão de Risco & Os riscos são identificados / Avaliação do impacto e da probabilidade de Ocorrência (especificado no Plano de Projeto ou Plano de Iteração) / Lista de Riscos \\
+& 7,8 & Plano de Gestão de Recursos & Plano do Projeto / Plano de iterações / lista dos itens de trabalho \\
+& 9 & Plano de Gestão de Dados & Plano de iteração \\
+& 10 & Plano geral do projeto & Plano do Projeto \\
+& 11,12 & Estudo de Viabilidade / Revisão e Compromisso com o Plano de Projeto & Plano do Projeto / Discussões Face-a-face \\
+& 13 & Avaliação do Progresso do Projeto / Status do Projeto & Plano de iteração / Relatórios (iteration burndown
+e project burndown)\\
+& 14 & Plano de Gestão de Comunicação & Plano de iterações / Plano do Projeto \\
+& 15 & Revisão do resultados documentados no projeto & Plano de documentação das iterações \\
+& 16,17 & Registro de Problemas e Monitoramento da Ações Corretivas / Ações Corretivas Plano & Revisão dos itens de trabalho / plano de iteração \\
+
+\hline
+\end{tabular}
+\end{table*}
+
+\section{Trabalhos relacionados}
+Nesta secção foram selecionadas três ferramentas e sendo analisando o funcionamento das funcionalidades disponibilizadas aos usuários.São descritas as seguir as principais características das ferramentas analisadas:
+
+\begin{itemize}
+\item \textbf{Bitrix24} É uma plataforma completa de colaboração social, comunicação e ferramentas de gestão. Esta ferramenta trabalha integrada as redes social corporativa disseminando postagens e Comunicados, esta ferramenta trabalha com gerenciamento de Projetos / Grupos de Trabalho, Tarefas e Subtarefas, Modelos de tarefa, Tarefas recorrentes, Gerenciamento de registros (Listas), Diagrama de Gantt, Gerenciamento de tempo \cite{bitrix24:ferramenta}.
+\item \textbf{Jira}  permite a gestão e a criação e delegação de projetos e tarefas, com fluxos de processos personalizados para o acompanhamento dos projetos, controle de acesso e segurança customizado, acesso via web com suporte aos principais browsers do mercado, notificações / alertas por email,  centenas de plug-ins gratuitos. É uma ferramenta robusta para gestão de projetos e tarefas, bem como para acompanhamento e reporte de defeitos (bugs) em projetos de qualquer natureza \cite{jira:ferramenta}.
+\item \textbf{Wrike} É uma ferramenta interativa para colaboração, planejamento de projetos, otimização de carga de trabalho e acompanhamento do andamento, ajudam a equipe a produzir mais e com maior velocidade, independente de onde se encontrem. Além disso, as notificações em tempo real apresentam todas as atualizações diárias das atividades do projeto, eliminando a necessidade de reuniões extras e e-mails. Os painéis personalizáveis ajudam a monitorar projetos específicos, etapas importantes, trabalhos que você delegou, entre outros.  
+\end{itemize}
+
+\subsection{Comparativo entre ferramentas}
+ A Tabela 2 exibe uma análise comparativa entre as ferramentas estudadas.
+
+Conforme explanado na tabela 2, existem diversas soluções para gerenciamento de projetos. Este trabalho baseado no abordagem AADSP propõe um modelo alternativo para o gerenciamento de projetos de software. Destacam-se na ferramenta os recursos como mensuração do tamanho de software através da métrica de analise por ponto de função, controle do escopo do projeto através de diagrama da estrutura analítica do projeto e gerenciamento do Termo de Abertura de Projetos. 
+
+\begin{table*}[htbp]
+\scriptsize
+\caption{Análise do produto de trabalho MR-MPS e a abordagem híbrida OpenUP} 
+\centering
+\begin{tabular}{|p{70mm}|p{20mm}|p{20mm}|p{20mm}|p{20mm}|}
+\hline
+ Característica & Bitrix24 & Jira & Wrike & T-AADSP \\
+\hline
+Versão Web & x & x  & x  & x \\
+Sistema de Autenticação & x & x  & x  & x \\
+Definição de Cronograma do Projeto & x & x  & x  & x \\
+Definição de Termo de Abetura de Projeto (TAP) &  &   &  & x \\
+Definição de Equipe executora do Projeto & x & x  & x  & x \\
+Controle de Reuniões do Projeto  & x & x  & x  & x \\
+Definição da Estrutura Analítica do Projeto (EAP) &  &   &  & x \\
+Controle dos Recursos Especiais do Projeto &  &   &  & x \\
+Controle de Acesso aos conteúdos da plataforma& x & x  & x  & x \\
+Mensuração de Projeto de software por Análise de Ponto de Função  &  &   &  & x \\
+\hline
+\end{tabular}
+\end{table*}
+
+\section{A ferramenta T-AADSP}
+O T-AADSP é uma ferramenta para gerencimento de projetos de software. Para construção deste sistema foi necessário seguir as etapas inerentes ao projeto de desenvolvimento de sistemas (Levantamento de Requisitos, Análise, Projeto, implementação e Testes)
+Serão apresentados a seguir as etapas realizadas para o desenvolvimento da ferramenta T-AADSP.
+
+\subsection{Requisitos do Sistema}
+Os requisitos funcionais do sistema serão apresentados a seguir, estes foram separados em: Requisitos Funcionais e Não Funcionais.
+
+\subsection{Requisitos do Funcionais}
+As principais funcionalidades da ferramenta serão descritas
+nas subsecções seguintes:
+
+\subsubsection{Cadastro de usuário}
+Para o usuário ter acesso ao sistema deverá ser realizado um cadastro por um usuário administrativo do mesmo. Deve ser fornecido os seguintes dados como: Nome completo, data de nascimento, RG, CPF, E-mail, login, Senha, Função que irá desempenhar no sistema e ao final clicar no botão cadastrar conforme exibido na figura 5.
+
+\subsubsection{Consulta de Pessoal}
+O usuário autenticado e que possua permissões de acesso a este requisito, poderá consultar o pessoal cadastro no sistema. Nesta tela é possível filtrar informações referentes aos usuários cadastrados como; nome, email, login de acesso.   
+
+\subsubsection{Definir permissão de acesso por função do usuário}
+O usuário poderá definir acesso as funcionalidades do sistema de acordo com a função do usuário. Desse modo deve ser selecionada a função do usuário e selecionada a tela a qual este terá permissão, as ações nas telas estão segmentadas de acordo com sua característica ex: Consulta e Impressão, Cadastro, Edição e Exclusão. 
+
+\subsubsection{Cadastro de Paginas}
+O usuário poderá definir quais páginas será passível de acesso no sistema, estas páginas permitira controlar o acesso por função do usuário no sistema.
+
+\subsubsection{Alterar senha}
+O usuário poderá modificar sua senha por meio deste requisito. O Sistema solicitará que o usuário forneça um nova senha e em seguida confirme esta senha, será informado o grau de dificuldade da senha informada.
+
+\subsubsection{Consulta dos termos de abertura de projeto}
+O usuário poderá consultar todos os termos de abertura de projeto de software. Os termos de abertura de projeto de software é o primeiro documento a ser gerenciado na ferramenta. No termo de abertura irá conter as definições iniciais de um projeto de desenvolvimento de software, além disso, será primeiro artefato documental a ser homologado junto aos stakeholders.
+
+\subsubsection{Consulta dos projetos}
+O usuário poderá consultar todos os projetos de desenvolvimento de software criados no sistema. Um projeto é oriundo de um termo de abertura de projeto de software desse modo todo projeto é fundamentado em um TAP. Cada TAP poderá ter um, e somente um, projeto associado ao mesmo.
+
+\subsubsection{Consulta das atas das reuniões do projeto}
+O usuário poderá consultar todas as atas de reuniões cadastradas no sistema. Uma ata de reunião é a formalização de uma cerimônia onde foram definidas ações consagradas e tomadas de decisões no projeto.
+
+\subsubsection{Consulta das estruturas analítica do projeto}
+O usuário poderá cadastrar três (Pacote, fases, entregas) tipos distintos de EAP a um projeto de software. É visualizar uma EAP na estrutura de um diagrama ou consulta-la por meio de uma lista. 
+
+\subsubsection{Consulta dos documentos de estimativa de escopo do projeto}
+O usuário poderá consultar os projetos a qual será realizada a estimativa de escopo. A estimativa de escopo deverá ser realizada por meio do cálculo do ponto de função do projeto.
+
+\subsubsection{Consulta dos cronogramas de execução do projeto}
+O usuário poderá consultar a relação de projetos no sistema a fim de realizar o cadastro das atividades a compor o mesmo através de um cronograma de execução do projeto.
+
+\subsubsection{Consulta dos recursos especiais do projeto}
+O usuário poderá consultar os projetos para definição dos recursos especiais do mesmo por meio do botão detalhar.
+
+\subsubsection{Cadastro do termo de abertura de projeto}
+O usuário poderá cadastrar um novo termo de abertura de projeto informando o nome do projeto, justificativa, alinhamento estratégico, orçamento previsto, cronograma inicial, premissas do projeto, restrições do projeto e mensurar os riscos do projeto. 
+
+\subsubsection{Cadastro do projeto}
+Um projeto é só poderá ser cadastrado mediante existir um termo de abertura a ser associado ao mesmo. Deve ser informado o valor do projeto e seu cronograma.
+
+\subsubsection{Cadastro das atas das reuniões do projeto}
+São realizadas diversas cerimônias em um projeto, poderá ser realizado o cadastro da ata de reunião oriunda desta cerimônia, que desse modo, poderá ser consultada posteriormente e homologada junto aos stakeholders.
+
+\subsubsection{Cadastro das estrutura analítica do projeto}
+Todo projeto poderá possuir três modelos de EAP (Pacote, Entrega e Fase), deve ser cadastrado o pacote a qual uma atividade será inserida, e desse modo, deve ser cadastrada uma ou mais atividades a compor o pacote cadastrado. É possível visualizar a estrutura do projeto em forma de diagrama. 
+
+\subsubsection{Cadastro dos documentos de estimativa de escopo do projeto}
+Para estimar o tamanho do projeto deverá ser realizado o calculo dos pontos de função do projeto. Para este cálculo poderá ser consultado o valor base definido para o cálculo, como também, as quatorze características gerais dos projetos de software objetivando realizar o ajuste do pontos de função. Após a inserção dos dados das funções dos tipos de dados e transação. Deverá ser informado as características gerais do sistema encontradas. Por fim o sistema automaticamente informara o valor total dos pontos de funções calculados e o valor ajustado.
+
+\subsubsection{Cadastro do cronograma de execução do projeto}
+O usuário poderá definir data para realização de atividades do projeto. Estas datas serão catalogadas em um cronograma de execução de atividades.
+
+\subsubsection{Cadastro dos recursos especiais do projeto}
+O usuário poderá cadastrar os recursos especiais do projeto. Para cadastrar um novo recurso deverá ser informado o nome do recursos e o valor do mesmo.
+
+\subsubsection{Detalhamento de informações do projeto}
+Neste requisito será possível informar demais informações ao projeto, como equipe executora do mesmo, visualizar as funções definidas ao projeto por meio do TAP, também será possível visualizar estas informações por meio do visualizações de dados. Através deste requisito o usuário poderá alterar informações do projeto. 
+
+\subsubsection{Detalhamento de atas das reuniões do projeto}
+Neste requisito será possível detalhar as informações de um determinada ata de reunião, podendo também ser alterado os dados existentes como título, data realização, organizador, além da pauta e assuntos tratados.
+
+\subsubsection{Detalhamento da estrutura analítica do projeto}
+Através deste requisito será possível detalhar informações ao mesmo tempo que editar/excluir informações já inseridas.
+
+\section{Desenvolvimento da ferramenta T-AADSP}
+\subsection{Tecnologias utilizadas}
+Este projeto foi todo desenvolvido utilizando as seguintes tecnologias:
+
+\begin{itemize}
+\item \textbf{Servidor para o web:} GlassFish 4.1.1. 
+\item \textbf{Apache Maven Project:} Apache Maven é uma ferramenta de gerenciamento de projetos de software e compreensão. Baseado no conceito de um modelo de objeto de projeto (POM), Maven pode gerenciar construção de um projeto, elaboração de relatórios e documentação de uma peça central de informações.
+\item \textbf{JSF 2.2:}JavaServer Faces (JSF) é uma especificação Java para a construção de interfaces de usuário baseadas em componentes para aplicações web.
+\item \textbf{Primefaces 5.3} PrimeFaces é um open source User Interface biblioteca (UI) componentes para JavaServer Faces (JSF) aplicações baseadas, criados por PrimeTek.  
+\item \textbf{Bootstrap 2.3.2:} Bootstrap é uma estrutura de front-end elegante, intuitiva e poderosa para o desenvolvimento web mais rápida e fácil, criado por Mark Otto e Jacob Thornton , e mantida pela equipe principal com o apoio maciço e envolvimento da comunidade. 
+\item \textbf{Hibernate 4.3.6:} O Hibernate é um framework para o mapeamento objeto-relacional escrito na linguagem Java. 
+\item \textbf{SGBD (Sistema de Gerenciamento de Banco de Dados):}SQLServer 2008. 
+\end{itemize}
+
+
+\section{Projeto em estudo}
+
+\section{Analise de dados reais}
+
+\section{Avaliação da ferramenta}
+
+\section{Conclusão}
+
+
+%\end{document}  % This is where a 'short' article might terminate
+
+%ACKNOWLEDGMENTS are optional
+\bibliographystyle{acm}
+\bibliography{sigproc}
+
+
+
+\begin{figure*}[!htb]
+\centering
+\scalebox{0.4}{
+\includegraphics[bb=0 0 1050 500]{RF_cadastro_de_pessoal.JPG}
+}
+\caption{Cadastro de Pessoal no Sistema}
+\end{figure*}
+
+\begin{figure*}[!htb]
+\centering
+\scalebox{0.4}{
+\includegraphics[bb=0 0 1050 350]{RF_consulta_de_Pessoal.JPG}
+}
+\caption{Consulta de Pessoal no Sistema}
+\end{figure*}
+
+\begin{figure*}[!htb]
+\centering
+\scalebox{0.5}{
+\includegraphics[bb=0 0 1050 500]{RF_definicao_de_acesso_por_funcao.JPG}
+}
+\caption{Definição de acesso por função do usuário}
+\end{figure*}
+
+\end{document}
