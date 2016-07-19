@@ -17,7 +17,7 @@
 
 \begin{document}
 
-\title{ T-AADSP - Uma ferramenta de apoio a implantação adaptativa de processo de software.}
+\title{ T-AADSP - Uma ferramenta de apoio a implantação adaptativa de processo de software}
 
 \numberofauthors{2} 
 \author{
@@ -50,40 +50,80 @@ Antonio Carlos Santos Souza\ \\
 
 \maketitle
 \begin{abstract}
-As abordagens existentes para o gerenciamento de projetos de software não são fáceis de serem implementadas nas empresas. Neste projeto, será proposta uma ferramenta baseada na metodologia para gerenciamento de projetos de software AADSP, metodologia esta que utiliza conceitos das abordagens ágil, preservando às práticas consideradas como relevantes ao cenário de desenvolvimento de software e as abordagens não ágil que definem diversos processos e resultados esperados pelas mais diversas fases e atividade de um projeto. 
+As abordagens existentes para o gerenciamento de projetos de \textit{software} não são fáceis de serem implementadas nas empresas. Neste projeto, será proposta uma ferramenta baseada na metodologia para gerenciamento de projetos de \textit{software} AADSP, metodologia esta que utiliza conceitos das abordagens ágil, preservando às práticas consideradas como relevantes ao cenário de desenvolvimento de \textit{software} e as abordagens não ágeis que definem diversos processos e resultados esperados pelas mais diversas fases e atividade de um projeto. 
 \end{abstract}
 
-\keywords{Engenharia de Software,Artefatos de Software, Gerenciamento de Projetos de Software} % NOT required for Proceedings
+\keywords{Engenharia de \textit{Software}, Artefatos de \textit{Software}, Gerenciamento de Projetos de \textit{Software}} % NOT required for Proceedings
 
 
 
 \section{Introdução}
-As empresas em seus diversos portes oferecem a seus clientes produtos e/ou serviços, a qualidade dos produtos e/ou serviços oferecidos esta diretamente ligada ao processo utilizado para conceber os mesmos. Um processo é uma sequencia de passos realizados para um determinado propósito \cite{ieee}. Um processo de Software é definido como um conjunto de atividades, métodos, práticas e transformações que pessoas empregam para desenvolver e manter software e produtos associados \cite{weber}. O Guia Brasileiro de Melhoria de Processo de Software - MPSBR define que qualidade é um fator crítico para o sucesso
-da indústria de software. Para que se tenha um setor de software competitivo, nacional e internacionalmente, é essencial que os empreendedores do setor coloquem a eficiência e a eficácia dos seus processos em foco nas empresas,
-visando à oferta de produtos de software e serviços correlatos conforme padrões internacionais de qualidade \cite{mpsbr:nAgil}. Nesse contexto surge diversas metodologias que visam promover a implantação e a melhoria contínua do processo de software nas empresas, neste trabalho...
+As empresas em seus diversos portes oferecem a seus clientes produtos e/ou serviços, a qualidade dos produtos e/ou serviços oferecidos está diretamente ligada ao processo utilizado para conceber os mesmos. Um processo é uma sequencia de passos realizados para um determinado propósito \cite{ieee}. Um processo de \textit{software} é definido como um conjunto de atividades, métodos, práticas e transformações que pessoas empregam para desenvolver e manter \textit{software} e produtos associados \cite{weber}. O Guia Brasileiro de Melhoria de Processo de \textit{Software} - MPSBR define que qualidade é um fator crítico para o sucesso
+da indústria de software. Para que se tenha um setor de \textit{software} competitivo, nacional e internacionalmente, é essencial que os empreendedores do setor coloquem a eficiência e a eficácia dos seus processos em foco nas empresas,
+visando à oferta de produtos de \textit{software} e serviços correlatos conforme padrões internacionais de qualidade \cite{mpsbr:nAgil}. Nesse contexto surgem diversas metodologias que visam promover a implantação e a melhoria contínua do processo de \textit{software} nas empresas, neste trabalho...
 
 \section{Fundamentação teórica}
-Durante o processo de concepção do presente trabalho, foi necessária a realização de uma revisão da literatura a fim de levantar a fundamentação teórica ao tema proposto. Nesta secção, serão apresentados os principais temas encontrados e utilizados no desenvolvimento desta obra. Tomaremos como base o manifesto ágil de desenvolvimento de software \cite{manifesto:agil} e alguns guias de melhoria de processo de software, desse modo, será realizada a separação dos temas analisados em três categorias:
+Durante o processo de concepção do presente trabalho, foi necessária a realização de uma revisão da literatura a fim de levantar a fundamentação teórica ao tema proposto. Nesta seção, serão apresentados os principais temas encontrados e utilizados no desenvolvimento desta obra. Tomaremos como base o manifesto ágil de desenvolvimento de software \cite{manifesto:agil} e alguns guias de melhoria de processo de software. Desse modo, será realizada a separação dos temas analisados em três categorias:
 
 \begin{itemize}
-\item Abordagens ágil,
-\item Abordagens não ágil, e
+\item Abordagens ágeis,
+\item Abordagens não ágeis, e
 \item Abordagens híbridas.
 \end{itemize}
 
 Para classificarmos as abordagens adotaremos o seguinte: 
 
 \begin{enumerate}
-\item  O autor e/ou autores dessa abordagem afirmarem que esta é uma abordagem ágil, não tomaremos essa afirmativa como uma verdade absoluta, e  desse modo, consideraremos também outra afirmtiva que promova contradição pelo autor e/ou autores, fazendo com que consideremos esta abordagem como híbrida ou não ágil;
+\item  Neste trabalho, serão consideradas abordagens ágeis aquelas que estiverem de acordo com o manifesto ágil de software. Essa classificação será dada independentemente da classificação originalmente atribuida pelos autores de cada abordagem;
 \item Para abordagens não ágil adotaremos esta classificação, a medida que, o autor focar seus processos em documentos e descartar ou minimizar os valores e princípios definidos no manifesto ágil de software;
 \item Consideraremos uma abordagem como híbrida, quando o próprio autor fizer esta afirmativa ou quando esta abordagem estiver relacionando seus processos e documentos aos princípios e valores do manifesto ágil de maneira valorativa aos documentos e processos.
 \end{enumerate}
 
-\subsection{Abordagens não Ágil}
-\subsubsection{Implantação e gerenciamento de processos com PMBOK}
-Nesta secção, iremos dar enfoque ao processo de gerenciamento de projetos definidos pela Guia PMBOK. O Guia do Conhecimento em Gerenciamento de Projeto (Guia PMBOK) foi desenvolvido pelo Project Management Institute, sendo mantido pela mesma instituição desenvolvedora do Guia. O Guia PMBOK fornece diretrizes para o gerencimento de projetos individuais e define os conceitos relacionados com o gerenciamento de projetos. Ele também descreve o ciclo de vida de gerencimento e seus respectivos processos, assim como o ciclo de vida do projeto \cite{pmbok:nAgil}. A partir deste momento, quando nos referirmos ao Guia do Conhecimento em Gerenciamento de Projeto adotaremos a conotação ao mesmo de Guia PMBOK.
+\subsection{Abordagens Ágeis}
 
-Segundo o Guia PMBOK o gerencimento de projetos é a aplicação do conhecimento, habilidades, ferramentas e técnicas às atividades do projeto para atender aos seus requisitos. O gerencimento de projetos é realizado através da aplicação e integração apropriadas dos quarenta e sete processos de gerenciamento de projetos, logicamente agrupados em cinco grupos de processos \cite{pmbok:nAgil}, conforme descritos a seguir:
+\subsubsection{SCRUM}
+O \textit{Scrum} é definido como uma metodologia ágil para gestão e planejamento de projetos de software \cite{scrum:agil}.
+
+No \textit{Scrum}, os projetos são dividos em ciclos (tipicamente mensais) chamados de \textit{Sprints}. O \textit{Sprint} representa um \textit{Time Box} dentro do qual um conjunto de atividades deve ser executado. Metodologias ágeis de desenvolvimento de software são iterativas, ou seja, o trabalho é dividido em iterações, que são chamadas de \textit{Sprints} no caso do \textit{Scrum} \cite{scrum:agil}.
+
+As funcionalidades a serem implementadas em um projeto são mantidas em uma lista que é conhecida como \textit{Product Backlog}. No início de cada \textit{Sprint}, faz-se um \textit{Sprint Planning Meeting}, ou seja, uma reunião de planejamento na qual o \textit{Product Owner} prioriza os itens do \textit{Product Backlog} e a equipe seleciona as atividades que ela será capaz de implementar durante o \textit{Sprint} que se inicia. As tarefas alocadas em um \textit{Sprint} são transferidas do \textit{Product Backlog} para o \textit{Sprint Backlog} \cite{scrum:agil}.
+
+A cada dia de uma \textit{Sprint}, a equipe faz uma breve reunião (normalmente de manhã), chamada \textit{Daily Scrum}. O objetivo é disseminar conhecimento sobre o que foi feito no dia anterior, identificar impedimentos e priorizar o trabalho do dia que se inicia \cite{scrum:agil}. Ao final de um \textit{Sprint}, a equipe apresenta as funcionalidades implementadas em uma \textit{Sprint Review Meeting}. Finalmente, faz-se uma \textit{Sprint Retrospective} e a equipe parte para o planejamento do próximo \textit{Sprint} \cite{scrum:agil}.
+
+Papéis definidos no \textit{Scrum}
+
+\begin{itemize}
+\item \textbf{Product Owner}  O \textit{Product Backlog }é uma lista contendo todas as funcionalidades desejadas para um produto. O conteúdo desta lista é definido pelo \textit{Product Owner} \cite{scrum:agil}.
+\item \textbf{Scrum Master} O \textit{Scrum Master} procura assegurar que a equipe respeite e siga os valores e as práticas do \textit{Scrum}. Ele também protege a equipe assegurando que ela não se comprometa excessivamente com relação àquilo que é capaz de realizar durante um \textit{Sprint} \cite{scrum:agil}.
+\item \textbf{Scrum Team} O \textit{Scrum Team} é a equipe de desenvolvimento. Nela, não existe necessariamente uma divisão funcional através de papéis tradicionais, tais como programador, designer, analista de testes ou arquiteto. Todos no projeto trabalham juntos para completar o conjunto de trabalho com o qual se comprometeram conjuntamente para um \textit{Sprint} \cite{scrum:agil}.
+\end{itemize}
+
+
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{scrumCiclo.JPG} % leia abaixo
+\caption{Ciclos do \textit{Scrum}}
+\end{figure}
+
+
+\subsubsection{XP}
+Extreme Programming (XP) é uma metodologia de desenvolvimento de software, nascida nos Estados Unidos ao final da década de 90. Vem fazendo sucesso em diversos países, por ajudar a criar sistemas de melhor qualidade, que são produzidos em menos tempo e de forma mais econômica que o habitual. Tais objetivos são alcançados através de um pequeno conjunto de valores, princípios e práticas, que diferem substancialmente da forma tradicional de se desenvolver software \cite{xp:agil}.
+
+O XP divide os valores em:
+
+\begin{itemize}
+\item \textbf{Comunicação} Embora existam inúmeras formas de se comunicar ideias, algumas são mais eficazes que outras. Por exemplo, quando duas pessoas estabelecem um diálogo presencial, inúmeros elementos da comunicação colaboram para a compreensão do assunto, tais como gestos, expressões faciais, postura, palavras verbalizadas, tom de voz, emoções, entre outros. Quanto maior a capacidade de compreensão, maiores as chances de evitar problemas como ambiguidades, entendimento equivocados, entre outros\cite{xp:agil}.
+\item \textbf{Coragem} Equipes XP confiam na eficácia destas práticas e destes mecanismos de proteção e isso é o que as tornam receptivas a mudanças. Assim, ao invés de frear a criatividade do cliente e evitar mudanças, equipes XP as consideram inevitáveis e procuram se adaptar a elas com segurança e com coragem, isto é, com confiança em seus mecanismos de proteção, tais como desenvolvimento orientado a testes, programação em par e integração contínua \cite{xp:agil}.
+\item \textbf{Feedback} Projetos XP estabelecem formas de encurtar ao máximo a defasagem de tempo entre o momento em que uma ação é executada e o seu resultado é observado. Assim, por exemplo, desenvolvedores procuram entregar novas funcionalidades no menor prazo possível, para que o cliente compreenda rapidamente as conseqüências daquilo que pediu \cite{xp:agil}.
+\item \textbf{Respeito} Respeito é um valor que dá sustentação a todos os demais. Membros de uma equipe só irão se preocupar em comunicar-se melhor, por exemplo, se se importarem uns com os outros. Respeito é o mais básico de todos os valores. Se ele não existir em um projeto, não há nada que possa salvá-lo. Saber ouvir, saber compreender e respeitar o ponto de vista do outro é essencial para que um projeto de software seja bem sucedido \cite{xp:agil}.
+\item \textbf{Simplicidade} o conceito de simplicidade em inúmeros aspectos do projeto para assegurar que a equipe se concentre em fazer, primeiro, apenas aquilo que é claramente necessário e evite fazer o que poderia vir a ser necessário, mas ainda não se provou essencial \cite{xp:agil}.
+\end{itemize}
+
+\subsection{Abordagens não Ágeis}
+\subsubsection{Implantação e gerenciamento de processos com PMBOK}
+Nesta secção, iremos dar enfoque ao processo de gerenciamento de projetos definidos pelo Guia PMBOK. O Guia do Conhecimento em Gerenciamento de Projeto (Guia PMBOK) foi desenvolvido pelo \textit{Project Management Institute}, sendo mantido pela mesma instituição desenvolvedora do Guia. O Guia PMBOK fornece diretrizes para o gerenciamento de projetos individuais e define os conceitos relacionados com o gerenciamento de projetos. Ele também descreve o ciclo de vida de gerencimento e seus respectivos processos, assim como o ciclo de vida do projeto \cite{pmbok:nAgil}. A partir deste momento, quando nos referirmos ao Guia do Conhecimento em Gerenciamento de Projeto adotaremos a conotação ao mesmo de Guia PMBOK.
+
+Segundo o Guia PMBOK o gerenciamento de projetos é a aplicação do conhecimento, habilidades, ferramentas e técnicas às atividades do projeto para atender aos seus requisitos. O gerencimento de projetos é realizado através da aplicação e integração apropriadas dos quarenta e sete processos de gerenciamento de projetos, logicamente agrupados em cinco grupos de processos \cite{pmbok:nAgil}, conforme descritos a seguir:
 
 %Lista de itens
 \begin{itemize}
@@ -114,11 +154,9 @@ Para planejar o gerencimento do escopo deve ser confecionado um plano onde deve 
 
 A figura abaixo ilustra o que deverá ser realizado:
 
-\begin{figure}[!htb]
-\centering
-\scalebox{0.3}{
-\includegraphics[bb=0 0 702 200]{entradaescopo.jpg}
-}
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{entradaescopo.jpg} % leia abaixo
 \caption{Fluxo do processo: Entradas, ferramentas, técnicas e saídas}
 \end{figure}
 
@@ -253,6 +291,7 @@ Por último é esperado aos atributos do de processo no nível G:
 
 Para todos os itens acima mencionados o MPSBR \cite{mpsbr:nAgil} descreve o mesmo detalhadamente em seu Guia de implementação do nível G, bem como, os resultados que são esperados a cada item. Os guias estão disponibilizados no site da SOFTEX em Português do Brasil para download.
 
+
 \subsection{Abordagens Híbridas}
 
 \subsubsection{Implantação e gerenciamento de processos com OpenUP}
@@ -273,11 +312,9 @@ A abordagem trabalha com quatro princípios. Estes princípios capturam a intera
 
 Cada princípio do openUP suporta uma das afirmações descritas no manifesto ágil de software:
 
-\begin{figure}[!htb]
-\centering
-\scalebox{0.5}{
-\includegraphics[bb=0 0 702 150]{tabela_prinOpen_manifesto.png}
-}
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{tabela_prinOpen_manifesto.png} % leia abaixo
 \caption{Mapeamento entre os princípio do OpenUP e o Manifesto Ágil}
 \end{figure}
 
@@ -285,11 +322,9 @@ Organização do OpenUP é feita em  duas dimensões diferentes e correlacionada
 
 OpenUP estrutura o ciclo de vida do projeto em quatro fases: Início, Elaboração, Construção e Transição. O ciclo de vida do projeto proveem os stakeholders fiscalização, transparência e mecanismos de direção para controle dos fundos do projeto, escopo, exposição ao risco, valor fornecido e outros aspectos do processo \cite{openUP:agil}.
 
-\begin{figure}[!htb]
-\centering
-\scalebox{0.5}{
-\includegraphics[bb=0 0 702 350]{organizacaoTrabOpenUP.JPG}
-}
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{organizacaoTrabOpenUP.JPG} % leia abaixo
 \caption{Organização do trabalho e foco do conteúdo no OpenUP}
 \end{figure}
 
@@ -365,46 +400,6 @@ Este trabalho será focado na gerência de Projetos. Deste modo devemos contempl
 \end{itemize}
 
 
-\subsubsection{SCRUM}
-O \textit{Scrum} é definido como uma metodologia ágil para gestão e planejamento de projetos de software \cite{scrum:agil}.
-
-No \textit{Scrum}, os projetos são dividos em ciclos (tipicamente mensais) chamados de \textit{Sprints}. O \textit{Sprint} representa um \textit{Time Box} dentro do qual um conjunto de atividades deve ser executado. Metodologias ágeis de desenvolvimento de software são iterativas, ou seja, o trabalho é dividido em iterações, que são chamadas de \textit{Sprints} no caso do \textit{Scrum} \cite{scrum:agil}.
-
-As funcionalidades a serem implementadas em um projeto são mantidas em uma lista que é conhecida como \textit{Product Backlog}. No início de cada \textit{Sprint}, faz-se um \textit{Sprint Planning Meeting}, ou seja, uma reunião de planejamento na qual o \textit{Product Owner} prioriza os itens do \textit{Product Backlog} e a equipe seleciona as atividades que ela será capaz de implementar durante o \textit{Sprint} que se inicia. As tarefas alocadas em um \textit{Sprint} são transferidas do \textit{Product Backlog} para o \textit{Sprint Backlog} \cite{scrum:agil}.
-
-A cada dia de uma \textit{Sprint}, a equipe faz uma breve reunião (normalmente de manhã), chamada \textit{Daily Scrum}. O objetivo é disseminar conhecimento sobre o que foi feito no dia anterior, identificar impedimentos e priorizar o trabalho do dia que se inicia \cite{scrum:agil}. Ao final de um \textit{Sprint}, a equipe apresenta as funcionalidades implementadas em uma \textit{Sprint Review Meeting}. Finalmente, faz-se uma \textit{Sprint Retrospective} e a equipe parte para o planejamento do próximo \textit{Sprint} \cite{scrum:agil}.
-
-Papéis definidos no \textit{Scrum}
-
-\begin{itemize}
-\item \textbf{Product Owner}  O \textit{Product Backlog }é uma lista contendo todas as funcionalidades desejadas para um produto. O conteúdo desta lista é definido pelo \textit{Product Owner} \cite{scrum:agil}.
-\item \textbf{Scrum Master} O \textit{Scrum Master} procura assegurar que a equipe respeite e siga os valores e as práticas do \textit{Scrum}. Ele também protege a equipe assegurando que ela não se comprometa excessivamente com relação àquilo que é capaz de realizar durante um \textit{Sprint} \cite{scrum:agil}.
-\item \textbf{Scrum Team} O \textit{Scrum Team} é a equipe de desenvolvimento. Nela, não existe necessariamente uma divisão funcional através de papéis tradicionais, tais como programador, designer, analista de testes ou arquiteto. Todos no projeto trabalham juntos para completar o conjunto de trabalho com o qual se comprometeram conjuntamente para um \textit{Sprint} \cite{scrum:agil}.
-\end{itemize}
-
-
-\begin{figure}[!htb]
-\centering
-\scalebox{0.5}{
-\includegraphics[bb=0 0 702 350]{scrumCiclo.JPG}
-}
-\caption{Ciclos do \textit{Scrum}}
-\end{figure}
-
-\subsubsection{XP}
-Extreme Programming (XP) é uma metodologia de desenvolvimento de software, nascida nos Estados Unidos ao final da década de 90. Vem fazendo sucesso em diversos países, por ajudar a criar sistemas de melhor qualidade, que são produzidos em menos tempo e de forma mais econômica que o habitual. Tais objetivos são alcançados através de um pequeno conjunto de valores, princípios e práticas, que diferem substancialmente da forma tradicional de se desenvolver software \cite{xp:agil}.
-
-O XP divide os valores em:
-
-\begin{itemize}
-\item \textbf{Comunicação} Embora existam inúmeras formas de se comunicar ideias, algumas são mais eficazes que outras. Por exemplo, quando duas pessoas estabelecem um diálogo presencial, inúmeros elementos da comunicação colaboram para a compreensão do assunto, tais como gestos, expressões faciais, postura, palavras verbalizadas, tom de voz, emoções, entre outros. Quanto maior a capacidade de compreensão, maiores as chances de evitar problemas como ambiguidades, entendimento equivocados, entre outros\cite{xp:agil}.
-\item \textbf{Coragem} Equipes XP confiam na eficácia destas práticas e destes mecanismos de proteção e isso é o que as tornam receptivas a mudanças. Assim, ao invés de frear a criatividade do cliente e evitar mudanças, equipes XP as consideram inevitáveis e procuram se adaptar a elas com segurança e com coragem, isto é, com confiança em seus mecanismos de proteção, tais como desenvolvimento orientado a testes, programação em par e integração contínua \cite{xp:agil}.
-\item \textbf{Feedback} Projetos XP estabelecem formas de encurtar ao máximo a defasagem de tempo entre o momento em que uma ação é executada e o seu resultado é observado. Assim, por exemplo, desenvolvedores procuram entregar novas funcionalidades no menor prazo possível, para que o cliente compreenda rapidamente as conseqüências daquilo que pediu \cite{xp:agil}.
-\item \textbf{Respeito} Respeito é um valor que dá sustentação a todos os demais. Membros de uma equipe só irão se preocupar em comunicar-se melhor, por exemplo, se se importarem uns com os outros. Respeito é o mais básico de todos os valores. Se ele não existir em um projeto, não há nada que possa salvá-lo. Saber ouvir, saber compreender e respeitar o ponto de vista do outro é essencial para que um projeto de software seja bem sucedido \cite{xp:agil}.
-\item \textbf{Simplicidade} o conceito de simplicidade em inúmeros aspectos do projeto para assegurar que a equipe se concentre em fazer, primeiro, apenas aquilo que é claramente necessário e evite fazer o que poderia vir a ser necessário, mas ainda não se provou essencial \cite{xp:agil}.
-\end{itemize}
-
-
 \subsection{Melhoria do processo de software x métodos ágeis}
 Nesta secção será discutido as abordagens para melhoria do processo de desenvolvimento de software em comparativo ao desenvolvimento ágil de software. Será considerado para isso a abordagem do MPS.BR desenvolvido pela Associação para Promoção da Excelência do Software Brasileiro (SOFTEX) e os modelos de desenvolvimento de software baseado no Manifesto Ágil para Desenvolvimento de Software. Um aspecto que que diferencia os métodos ágeis de um modelo de referência , tais como MR- MPS e
 outras abordagens convencionais é a granularidade que algumas atividades são realizadas. Portanto , algumas atividades podem executar a mesma função nos dois modelos, mas com um nível diferente de profundidade. Assim , um elemento de fundamental
@@ -414,7 +409,7 @@ Esta análise é um comparativo do modelo de adesão ao MR-MPS-SW:2012 Nível G,
 
 Arimoto \cite{Arimoto:melhoria} incluiu em seu quadro comparativo o OpenUP, que para este trabalho será qualificado enquanto abordagem híbrida para melhoria de processo de software, mediante ser fundamentada no RUP (abordagem documental de desenvolvimento de projetos).
 
-\begin{table*}[htbp]
+\begin{table*}[h]
 \scriptsize
 \caption{Análise do produto de trabalho MR-MPS e a abordagem híbrida OpenUP} 
 \centering
@@ -464,7 +459,7 @@ Nesta secção foram selecionadas três ferramentas e sendo analisando o funcion
 
 Conforme explanado na tabela 2, existem diversas soluções para gerenciamento de projetos. Este trabalho baseado no abordagem AADSP propõe um modelo alternativo para o gerenciamento de projetos de software. Destacam-se na ferramenta os recursos como mensuração do tamanho de software através da métrica de analise por ponto de função, controle do escopo do projeto através de diagrama da estrutura analítica do projeto e gerenciamento do Termo de Abertura de Projetos. 
 
-\begin{table*}[htbp]
+\begin{table*}[h]
 \scriptsize
 \caption{Análise do produto de trabalho MR-MPS e a abordagem híbrida OpenUP} 
 \centering
@@ -497,8 +492,14 @@ Os requisitos funcionais do sistema serão apresentados a seguir, estes foram se
 As principais funcionalidades da ferramenta serão descritas
 nas subsecções seguintes:
 
+\subsubsection{Autenticação}
+Para o usuário ter acesso de login este deve ter sido cadastrado previamente no sistema. Em caso de uma nova instalação do sistema por definição padrão o banco de dados virá configurado com um usuário administrativo com  acesso a todas as páginas do sistema. Para acessar com este usuário deverá ser informado os seguintes dados de acesso login: adm e senha:aadsp (figura 5). Caso seja informado dados incorretos a ferramenta informará a mensagem de alerta "Não foi possível realizar a autenticação do usuário!" (figura 6), caso somente a senha esteja incorreta o sistema irá informar "Senha incorreta!" (figura 7)
+
+\subsubsection{Solicitar nova senha}
+Este requisito possibilitará ao usuário solicitar uma nova senha via email, para isso o usuário devera fornecer o email dele e o sistema verificará a existência do email informado pelo usuário e enviará uma nova senha definida automaticamente pelo sistema (figura 8). Caso o sistema envie a nova senha ao email este exibirá a mensagem "senha enviada com sucesso" (figura 9), porem se este não conseguir enviar a nova senha via email o sistema exibirá a seguinte mensagem "Não foi possível realizar o envio de uma nova senha para este email, por favor tente novamente mais tarde!" (figura 10)
+
 \subsubsection{Cadastro de usuário}
-Para o usuário ter acesso ao sistema deverá ser realizado um cadastro por um usuário administrativo do mesmo. Deve ser fornecido os seguintes dados como: Nome completo, data de nascimento, RG, CPF, E-mail, login, Senha, Função que irá desempenhar no sistema e ao final clicar no botão cadastrar conforme exibido na figura 5.
+Para o usuário ter acesso ao sistema deverá ser realizado um cadastro por um usuário administrativo do mesmo. Deve ser fornecido os seguintes dados como: Nome completo, data de nascimento, RG, CPF, E-mail, login, Senha, Função que irá desempenhar no sistema e ao final clicar no botão cadastrar conforme exibido na figura 11.
 
 \subsubsection{Consulta de Pessoal}
 O usuário autenticado e que possua permissões de acesso a este requisito, poderá consultar o pessoal cadastro no sistema. Nesta tela é possível filtrar informações referentes aos usuários cadastrados como; nome, email, login de acesso.   
@@ -593,30 +594,57 @@ Este projeto foi todo desenvolvido utilizando as seguintes tecnologias:
 \bibliographystyle{acm}
 \bibliography{sigproc}
 
+\section{Projeto de Tela do T-AADSP}
+\subsection{Autenticação}
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_autenticacao.jpg} % leia abaixo
+\caption{Autenticação do sistema T-AADSP}
+\end{figure}
 
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_autenticacao_dados_incorretos.jpg} % leia abaixo
+\caption{Mensagem não foi possível realizar a autenticação do usuário! }
+\end{figure}
 
-\begin{figure*}[!htb]
-\centering
-\scalebox{0.4}{
-\includegraphics[bb=0 0 1050 500]{RF_cadastro_de_pessoal.JPG}
-}
-\caption{Cadastro de Pessoal no Sistema}
-\end{figure*}
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_autenticacao_senha_incorreta.jpg} % leia abaixo
+\caption{A senha informada está incorreta! }
+\end{figure}
 
-\begin{figure*}[!htb]
-\centering
-\scalebox{0.4}{
-\includegraphics[bb=0 0 1050 350]{RF_consulta_de_Pessoal.JPG}
-}
-\caption{Consulta de Pessoal no Sistema}
-\end{figure*}
+\subsection{Solicitar nova senha}
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_autenticacao_solicitar_nova_senha.jpg} % leia abaixo
+\caption{Solicitação de nova senha via e-mail }
+\end{figure}
 
-\begin{figure*}[!htb]
-\centering
-\scalebox{0.5}{
-\includegraphics[bb=0 0 1050 500]{RF_definicao_de_acesso_por_funcao.JPG}
-}
-\caption{Definição de acesso por função do usuário}
-\end{figure*}
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_autenticacao_solicitar_nova_senha.jpg} % leia abaixo
+\caption{Foi enviada uma nova senha ao email do usuário }
+\end{figure}
+
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_autenticacao_falha_ao_enviar_senha.jpg} % leia abaixo
+\caption{Não foi possível realizar o envio de uma nova senha ao usuário}
+\end{figure}
+
+\subsubsection{Cadastro de usuário}
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_cadastro_de_usuario.jpg} % leia abaixo
+\caption{Cadastrando novos usuários no sistema}
+\end{figure}
+
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_cadastro_de_usuario_realizado.jpg} % leia abaixo
+\caption{Confirmação de novo usuário cadastrado no sistema}
+\end{figure}
+
 
 \end{document}
