@@ -1,16 +1,16 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.29)  25 JUL 2016 10:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.29)  25 JUL 2016 11:38
 entering extended mode
-**sigproc.tex
+**acm_proc_article-sp.tex
 
 ! Emergency stop.
-<*> sigproc.tex
-               
+<*> acm_proc_article-sp.tex
+                           
 *** (job aborted, file error in nonstop mode)
 
  
 Here is how much of TeX's memory you used:
  2 strings out of 493335
- 17 string characters out of 3139257
+ 29 string characters out of 3139257
  53225 words of memory out of 3000000
  3635 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000

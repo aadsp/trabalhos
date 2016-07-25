@@ -80,7 +80,7 @@ Para classificarmos as abordagens adotaremos o seguinte:
 
 \subsection{Abordagens ágeis}
 
-\subsubsection{\textit{SCRUM}}
+\subsubsection{SCRUM}
 O \textit{Scrum} é definido como uma metodologia ágil para gestão e planejamento de projetos de software \cite{scrum:agil}.
 
 No \textit{Scrum}, os projetos são dividos em ciclos (tipicamente mensais) chamados de \textit{Sprints}. O \textit{Sprint} representa um \textit{Time Box} dentro do qual um conjunto de atividades deve ser executado. Metodologias ágeis de desenvolvimento de \textit{software} são iterativas, ou seja, o trabalho é dividido em iterações, que são chamadas de \textit{Sprints} no caso do \textit{Scrum} \cite{scrum:agil}.
@@ -105,7 +105,7 @@ Papéis definidos no \textit{Scrum}
 \end{figure}
 
 
-\subsubsection{\textit{XP}}
+\subsubsection{XP}
 \textit{Extreme Programming (XP)} é uma metodologia de desenvolvimento de \textit{software}, nascida nos Estados Unidos ao final da década de 90. Vem fazendo sucesso em diversos países, por ajudar a criar sistemas de melhor qualidade, que são produzidos em menos tempo e de forma mais econômica que o habitual. Tais objetivos são alcançados através de um pequeno conjunto de valores, princípios e práticas, que diferem substancialmente da forma tradicional de se desenvolver \textit{software} \cite{xp:agil}.
 
 O XP divide os valores em:
@@ -156,7 +156,7 @@ A figura abaixo ilustra o que deverá ser realizado:
 \begin{figure}[h]
 \centering % para centralizarmos a figura
 \includegraphics[width=0.5\textwidth]{entradaescopo.jpg} % leia abaixo
-\caption{Fluxo do processo: Entradas, ferramentas, técnicas e saídas \cite{fluxosProcessos:pmbok}}
+\caption{Fluxo do processo: Entradas, ferramentas, técnicas e saídas \cite{pmbok:nAgil}}
 \end{figure}
 
 Nesta etapa são definidos alguns artefatos do projeto como plano de gerenciamento do projeto, o termo de abertura do projeto, discriminação dos fatores ambientais da empresa que consiste em:
@@ -293,7 +293,7 @@ Para todos os itens acima mencionados o MPSBR \cite{mpsbr:nAgil} descreve o mesm
 
 \subsection{Abordagens Híbridas}
 
-\subsubsection{Implantação e gerenciamento de processos com \textit{OpenUP}}
+\subsubsection{Implantação e gerenciamento de processos com OpenUP}
 O \textit{OpenUP} é caracterizado como um processo de desenvolvimento de \textit{software} minimamente suficiente – isso
 significa que somente o conteúdo fundamental é incluído \cite{openUP:agil}. Dessa forma, o \textit{OpenUP} não provê orientação em
 alguns tópicos que o projeto possa tratar, como equipes grandes, situações contratuais, aplicações de segurança ou missão crítica, orientação de tecnologia específica, etc. Contudo, \textit{OpenUP} é completo no sentido que ele pode ser apresentado como um processo completo para construir um sistema. Para atender as necessidades que não são cobertas no seu conteúdo, \textit{OpenUP} é extensível para ser usado como base no qual o conteúdo do processo pode ser adicionado ou adaptado como necessário \cite{openUP:agil}. O \textit{OpenUP} foi criado pela Eclipse.org, e atualmente é mantido pela mesma organização criadora.
@@ -362,16 +362,22 @@ A AADSP qualifica os artefatos de acordo com seu grau de importância, desse mod
 \item \textbf{DESEJÁVEL} Artefatos pouco consideráveis, estes não implicam necessariamente na melhoria do processo ou em resultados satisfatórios\cite{aadsp:hibirdo}.
 \end{itemize}
 
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.3\textwidth]{AADSP_Piramidade_de_importancia_dos_artefatos.jpg} % leia abaixo
+\caption{Pirâmide da importância dos artefatos do projeto de \textit{software} na abordagem AADSP  \cite{aadsp:hibirdo}}
+\end{figure}
+
 \subsubsection*{Definição da valoração dos artefatos}
 A abordagem AADSP  exige que todos os artefatos que afetam o trabalho estejam integrados. Esta abordagem explicita a dependência entre eles e a define no chamado fluxo de trabalho\cite{aadsp:hibirdo}.
 
-\subsubsection*{Confidencialidade e acesso aos artefatos do projeto de \textit{software}}
+\subsubsection*{Confidencialidade e acesso aos artefatos do projeto de software}
 A confidencialidade de acesso aos artefatos, mesmo quando não declarada pelo cliente, são contempladas pela abordagem. É recomendável, portanto, explicitar a existência ou não de dados confidenciais e acessos a estes\cite{aadsp:hibirdo}.
 
 \subsubsection*{Analise da viabilidade do projeto e comprometimento da equipe executora}
 A abordagem AADSP exige que o gerente de projeto reavalie a viabilidade do projeto periodicamente ou caso mudança ou acréscimo no escopo, de requisito ou de qualquer dos recursos existentes do projeto\cite{aadsp:hibirdo}.
 
-\subsubsection*{Monitoramento contínuo dos artefatos e definição de marcos de trabalho do projeto de \textit{software}}
+\subsubsection*{Monitoramento contínuo dos artefatos e definição de marcos de trabalho do projeto de software}
 Os marcos de trabalho não dependem das cerimonias de revisão realizada dentro do projeto de \textit{software}.  A abordagem AADSP exige o acompanhamento contínuo do projeto comparando o planejado com o realizado. Além disso, deve ser definido no projeto os pontos dentro da escala de importância dos artefatos do projeto. 
 
 \subsubsection*{Gerências}
@@ -398,8 +404,18 @@ Este trabalho será focado na gerência de Projetos. Deste modo devemos contempl
 \item Plano de riscos do projeto (desejável)
 \end{itemize}
 
+\subsubsection*{Fluxo de trabalho}
+Para o AADSP o fluxo de trabalho é uma trilha que conecta os artefatos. Esta trilha pode ser caracterizada por uma sequência contínua de fatos ou operações que apresentam certa unidade. Dessa forma, um artefato é o resultado de um fluxo de trabalho executado \cite{aadsp:hibirdo}.
 
-\subsection{Melhoria do processo de \textit{software} x métodos ágeis}
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.3\textwidth]{AADSP_fluxo_de_trabalho.jpg} % leia abaixo
+\caption{Fluxo de trabalho em um projeto de \textit{software} na abordagem AADSP  \cite{aadsp:hibirdo}}
+\end{figure}
+
+A abordagem AADSP é voltada a artefatos, e deste modo, os processos são comprovados a partir da existência dos mesmos em um projeto de software que implemente esta metodologia. A segmentação das gerências determinam quais artefatos estão sob a responsabilidade da mesma e o fato desta valorar seus artefatos promovem adaptabilidade ao projeto, que deste modo, não dependerá do tamanho de uma equipe para implantação ou tecnologias adotadas, permitindo maior fluidez no gerenciamento do projeto de software.
+
+\subsection{Melhoria do processo de software x métodos ágeis}
 Nesta seção será discutido as abordagens para melhoria do processo de desenvolvimento de \textit{software} em comparativo ao desenvolvimento ágil de \textit{software}. Será considerado para isso a abordagem do MPS.BR desenvolvido pela Associação para Promoção da Excelência do \textit{Software} Brasileiro (SOFTEX) e os modelos de desenvolvimento de \textit{software} baseado no Manifesto Ágil para Desenvolvimento de \textit{Software}. Um aspecto que diferencia os métodos ágeis de um modelo de referência, tais como MR-MPS e
 outras abordagens convencionais é a granularidade que algumas atividades são realizadas. Portanto, algumas atividades podem executar a mesma função nos dois modelos, mas com um nível diferente de profundidade. Assim, um elemento de fundamental
 característica técnica para avaliar a percentagem de adesão para os métodos ágeis modelos de maturidade é a realização de uma análise detalhada, considerando as características particulares de cada um deles \cite{Arimoto:melhoria}.  
@@ -444,13 +460,39 @@ e project burndown})\\
 \end{tabular}
 \end{table*}
 
+Neste trabalho foi realizado um comparativo entre abordagem MR-MPS.SW e a abordagem híbrida AADSP, além de demonstrar em quais requisitos da ferramenta T-AADSP foi contemplado este artefato, conforme demonstrado na tabela 2.
+
+\begin{table*}[h]
+\scriptsize
+\caption{Análise dos resultados esperados do MR-MPS.SW no nível G e a abordagem híbrida \textit{AADSP} \cite{aadsp:hibirdo}} 
+\centering
+\begin{tabular}{|p{10mm}|p{60mm}|p{60mm}|p{25mm}|}
+\hline
+GPR & Resultado esperado pelo MR-MPS.SW & Artefato do AADSP que contempla o resultado esperado & Requisito \\
+\hline
+1 & O escopo do trabalho para o projeto é definido & Estrutura Analítica do Projeto
+(Gerência de Projetos) & \\
+2 & As tarefas e os produtos de trabalho do projeto são dimensionados utilizando métodos apropriados & Análise de Pontos por Função (Gerência de Projetos) & \\
+3 & O modelo e as fases do ciclo de vida do projeto são definidos & Requisitos do Projeto são realizados sob ciclos de \textit{Sprint} (Gerência de requisitos) &\\
+4 &  O esforço e o custo para a execução das tarefas e dos produtos de trabalho são estimados com base em dados históricos ou referências técnicas & Requisitos do Projeto são realizados sob ciclos de \textit{Sprint} (Gerência de requisitos), Análise de Pontos por Função (Gerência de Projetos) & \\
+5 & O orçamento e o cronograma do projeto, incluindo a definição de marcos e pontos de controle, são estabelecidos e mantidos
+& Definição e Controle do Projeto (Gerência de Projetos) & \\
+6 & Os riscos do projeto são identificados e o seu impacto, probabilidade de ocorrência e prioridade de tratamento são
+determinados e documentados & Termo de Abertura do Projeto (Gerência de Projetos) & \\
+\hline
+
+
+\hline
+\end{tabular}
+\end{table*}
+
 \section{Trabalhos relacionados}
 Nesta secção foram selecionadas três ferramentas e sendo analisando o funcionamento das funcionalidades disponibilizadas aos usuários.São descritas as seguir as principais características das ferramentas analisadas:
 
 \begin{itemize}
 \item \textbf{Bitrix24} É uma plataforma completa de colaboração social, comunicação e ferramentas de gestão. Esta ferramenta trabalha integrada as redes social corporativa disseminando postagens e Comunicados, esta ferramenta trabalha com gerenciamento de Projetos / Grupos de Trabalho, Tarefas e Subtarefas, Modelos de tarefa, Tarefas recorrentes, Gerenciamento de registros (Listas), Diagrama de Gantt, Gerenciamento de tempo \cite{bitrix24:ferramenta}.
-\item \textbf{Jira}  permite a gestão e a criação e delegação de projetos e tarefas, com fluxos de processos personalizados para o acompanhamento dos projetos, controle de acesso e segurança customizado, acesso via web com suporte aos principais browsers do mercado, notificações / alertas por email,  centenas de \textit{plug-ins} gratuitos. É uma ferramenta robusta para gestão de projetos e tarefas, bem como para acompanhamento e reporte de defeitos (\textit{bugs}) em projetos de qualquer natureza \cite{jira:ferramenta}.
-\item \textbf{Wrike} É uma ferramenta interativa para colaboração, planejamento de projetos, otimização de carga de trabalho e acompanhamento do andamento, ajudam a equipe a produzir mais e com maior velocidade, independente de onde se encontrem. Além disso, as notificações em tempo real apresentam todas as atualizações diárias das atividades do projeto, eliminando a necessidade de reuniões extras e \textit{e-mails}. Os painéis personalizáveis ajudam a monitorar projetos específicos, etapas importantes, trabalhos que você delegou, entre outros.  
+\item \textbf{Jira}  permite a gestão e a criação e delegação de projetos e tarefas, com fluxos de processos personalizados para o acompanhamento dos projetos, controle de acesso e segurança customizado, acesso via web com suporte aos principais browsers do mercado, notificações / alertas por \textit{email},  centenas de \textit{plug-ins} gratuitos. É uma ferramenta robusta para gestão de projetos e tarefas, bem como para acompanhamento e reporte de defeitos (\textit{bugs}) em projetos de qualquer natureza \cite{jira:ferramenta}.
+\item \textbf{Wrike} É uma ferramenta interativa para colaboração, planejamento de projetos, otimização de carga de trabalho e acompanhamento do andamento, ajudam a equipe a produzir mais e com maior velocidade, independente de onde se encontrem. Além disso, as notificações em tempo real apresentam todas as atualizações diárias das atividades do projeto, eliminando a necessidade de reuniões extras e \textit{emails}. Os painéis personalizáveis ajudam a monitorar projetos específicos, etapas importantes, trabalhos que você delegou, entre outros.  
 \end{itemize}
 
 \subsection{Comparativo entre ferramentas}
@@ -498,7 +540,7 @@ Para o usuário ter acesso de login este deve ter sido cadastrado previamente no
 Este requisito possibilitará ao usuário solicitar uma nova senha via email, para isso o usuário devera fornecer o email dele e o sistema verificará a existência do email informado pelo usuário e enviará uma nova senha definida automaticamente pelo sistema (figura 8). Caso o sistema envie a nova senha ao email este exibirá a mensagem "senha enviada com sucesso" (figura 9), porem se este não conseguir enviar a nova senha via email o sistema exibirá a seguinte mensagem "Não foi possível realizar o envio de uma nova senha para este email, por favor tente novamente mais tarde!" (figura 10)
 
 \subsubsection{Cadastro de usuário}
-Para o usuário ter acesso ao sistema deverá ser realizado um cadastro por um usuário administrativo do mesmo. Deve ser fornecido os seguintes dados como: Nome completo, data de nascimento, RG, CPF, E-mail, login, Senha, Função que irá desempenhar no sistema e ao final clicar no botão cadastrar conforme exibido na figura 11.
+Para o usuário ter acesso ao sistema deverá ser realizado um cadastro por um usuário administrativo do mesmo. Deve ser fornecido os seguintes dados como: Nome completo, data de nascimento, RG, CPF, email, login, senha, função que irá desempenhar no sistema e ao final clicar no botão cadastrar conforme exibido na figura 11.
 
 \subsubsection{Consulta de Pessoal}
 O usuário autenticado e que possua permissões de acesso a este requisito, poderá consultar o pessoal cadastro no sistema. Nesta tela é possível filtrar informações referentes aos usuários cadastrados como; nome, email, login de acesso.   
@@ -513,16 +555,16 @@ O usuário poderá definir quais páginas será passível de acesso no sistema, 
 O usuário poderá modificar sua senha por meio deste requisito. O Sistema solicitará que o usuário forneça um nova senha e em seguida confirme esta senha, será informado o grau de dificuldade da senha informada.
 
 \subsubsection{Consulta dos termos de abertura de projeto}
-O usuário poderá consultar todos os termos de abertura de projeto de software. Os termos de abertura de projeto de software é o primeiro documento a ser gerenciado na ferramenta. No termo de abertura irá conter as definições iniciais de um projeto de desenvolvimento de software, além disso, será primeiro artefato documental a ser homologado junto aos stakeholders.
+O usuário poderá consultar todos os termos de abertura de projeto de software. Os termos de abertura de projeto de \textit{software} é o primeiro documento a ser gerenciado na ferramenta. No termo de abertura irá conter as definições iniciais de um projeto de desenvolvimento de software, além disso, será primeiro artefato documental a ser homologado junto aos \textit{stakeholders}.
 
 \subsubsection{Consulta dos projetos}
-O usuário poderá consultar todos os projetos de desenvolvimento de software criados no sistema. Um projeto é oriundo de um termo de abertura de projeto de software desse modo todo projeto é fundamentado em um TAP. Cada TAP poderá ter um, e somente um, projeto associado ao mesmo.
+O usuário poderá consultar todos os projetos de desenvolvimento de \textit{software} criados no sistema. Um projeto é oriundo de um termo de abertura de projeto de \textit{software} desse modo todo projeto é fundamentado em um TAP. Cada TAP poderá ter um, e somente um, projeto associado ao mesmo.
 
 \subsubsection{Consulta das atas das reuniões do projeto}
 O usuário poderá consultar todas as atas de reuniões cadastradas no sistema. Uma ata de reunião é a formalização de uma cerimônia onde foram definidas ações consagradas e tomadas de decisões no projeto.
 
 \subsubsection{Consulta das estruturas analítica do projeto}
-O usuário poderá cadastrar três (Pacote, fases, entregas) tipos distintos de EAP a um projeto de software. É visualizar uma EAP na estrutura de um diagrama ou consulta-la por meio de uma lista. 
+O usuário poderá cadastrar três (Pacote, fases, entregas) tipos distintos de EAP a um projeto de \textit{software}. É visualizar uma EAP na estrutura de um diagrama ou consulta-la por meio de uma lista. 
 
 \subsubsection{Consulta dos documentos de estimativa de escopo do projeto}
 O usuário poderá consultar os projetos a qual será realizada a estimativa de escopo. A estimativa de escopo deverá ser realizada por meio do cálculo do ponto de função do projeto.
@@ -540,7 +582,7 @@ O usuário poderá cadastrar um novo termo de abertura de projeto informando o n
 Um projeto é só poderá ser cadastrado mediante existir um termo de abertura a ser associado ao mesmo. Deve ser informado o valor do projeto e seu cronograma.
 
 \subsubsection{Cadastro das atas das reuniões do projeto}
-São realizadas diversas cerimônias em um projeto, poderá ser realizado o cadastro da ata de reunião oriunda desta cerimônia, que desse modo, poderá ser consultada posteriormente e homologada junto aos stakeholders.
+São realizadas diversas cerimônias em um projeto, poderá ser realizado o cadastro da ata de reunião oriunda desta cerimônia, que desse modo, poderá ser consultada posteriormente e homologada junto aos \textit{stakeholders}.
 
 \subsubsection{Cadastro das estrutura analítica do projeto}
 Todo projeto poderá possuir três modelos de EAP (Pacote, Entrega e Fase), deve ser cadastrado o pacote a qual uma atividade será inserida, e desse modo, deve ser cadastrada uma ou mais atividades a compor o pacote cadastrado. É possível visualizar a estrutura do projeto em forma de diagrama. 
@@ -568,21 +610,25 @@ Através deste requisito será possível detalhar informações ao mesmo tempo q
 Este projeto foi todo desenvolvido utilizando as seguintes tecnologias:
 
 \begin{itemize}
-\item \textbf{Servidor para o web:} GlassFish 4.1.1. 
-\item \textbf{Apache Maven Project:} Apache Maven é uma ferramenta de gerenciamento de projetos de software e compreensão. Baseado no conceito de um modelo de objeto de projeto (POM), Maven pode gerenciar construção de um projeto, elaboração de relatórios e documentação de uma peça central de informações.
-\item \textbf{JSF 2.2:}JavaServer Faces (JSF) é uma especificação Java para a construção de interfaces de usuário baseadas em componentes para aplicações web.
-\item \textbf{Primefaces 5.3} PrimeFaces é um open source User Interface biblioteca (UI) componentes para JavaServer Faces (JSF) aplicações baseadas, criados por PrimeTek.  
-\item \textbf{Bootstrap 2.3.2:} Bootstrap é uma estrutura de front-end elegante, intuitiva e poderosa para o desenvolvimento web mais rápida e fácil, criado por Mark Otto e Jacob Thornton , e mantida pela equipe principal com o apoio maciço e envolvimento da comunidade. 
-\item \textbf{Hibernate 4.3.6:} O Hibernate é um framework para o mapeamento objeto-relacional escrito na linguagem Java. 
-\item \textbf{SGBD (Sistema de Gerenciamento de Banco de Dados):}SQLServer 2008. 
+\item \textbf{Servidor para o web:} \textit{GlassFish} 4.1.1. 
+\item \textbf{\textit{Apache Maven Project}:} \textit{Apache Maven} é uma ferramenta de gerenciamento de projetos de software e compreensão. Baseado no conceito de um modelo de objeto de projeto (POM), \textit{Maven} pode gerenciar construção de um projeto, elaboração de relatórios e documentação de uma peça central de informações.
+\item \textbf{JSF 2.2:}\textit{JavaServer Faces} (JSF) é uma especificação Java para a construção de interfaces de usuário baseadas em componentes para aplicações \textit{web}.
+\item \textbf{\textit{Primefaces} 5.3} \textit{PrimeFaces} é um \textit{open source User Interface} biblioteca (UI) componentes para \textit{JavaServer Faces} (JSF) aplicações baseadas, criados por \textit{PrimeTek}.  
+\item \textbf{\textit{Bootstrap} 2.3.2:} \textit{Bootstrap} é uma estrutura de \textit{front-end} elegante, intuitiva e poderosa para o desenvolvimento web mais rápida e fácil, criado por Mark Otto e Jacob Thornton , e mantida pela equipe principal com o apoio maciço e envolvimento da comunidade. 
+\item \textbf{\textit{Hibernate} 4.3.6:} O \textit{Hibernate} é um \textit{framework} para o mapeamento objeto-relacional escrito na linguagem Java. 
+\item \textbf{SGBD (Sistema de Gerenciamento de Banco de Dados):}\textit{SQLServer} 2008. 
 \end{itemize}
 
 
 \section{Projeto em estudo}
+A ferramenta T-AADSP foi implantada na empresa Computação Brasil, empresa que atua no segmento do desenvolvimento de \textit{softwares} corporativos desde 2008. Participaram desta etapa do projeto três pessoas, todos da área da computação. O período de utilização da ferramenta foi de 01/06/2016 à 20/07/2016. 
+
+Os participantes testaram as funcionalidades contidas na ferramenta T-AADSP utilizando para isto projetos reais, vale ressaltar que esta empresa já utiliza a abordagem AADSP para melhoria do processo de software sem a ferramenta. Participaram também dois bolsistas que utilizaram a ferramenta para mensuração de software em trabalhos desenvolvidos pelos mesmos na empresa em questão. Os resultados foram coletados e apresentados no apêndice A.
 
 \section{Analise de dados reais}
 
 \section{Avaliação da ferramenta}
+
 
 \section{Conclusão}
 

@@ -5,21 +5,15 @@ Bitrix24.
 \newblock \url{https://www.bitrix24.com.br/#tour}.
 \newblock Acessado em: 11 de julho de 2016.
 
-\bibitem{fluxosProcessos:pmbok}
-Fluxos de processos pmbok.
-\newblock
-  \url{https://www.linkedin.com/pulse/planejar-o-gerenciamento-dos-custos-diego-mendes-rodrigues}.
-\newblock Acessado em: 24 de julho de 2016.
-
 \bibitem{openUP:agil}
 Introdução ao openup (open unified process).
 \newblock \url{http://epf.eclipse.org/uploads/16.pdf}.
 \newblock Acessado em: 10 de julho de 2016.
 
-\bibitem{xp:agil}
-Xp.
-\newblock \url{http://www.desenvolvimentoagil.com.br/xp/}.
-\newblock Acessado em: 10 de julho de 2016.
+\bibitem{ieee}
+{\em INSTITUTE OF ELECTRICAL AND ELECTRONICS ENGINEERS - IEEE-STD-610: Standard
+  Computer Dictionary: A Compilation of IEEE Standard Computer Glossaries}.
+\newblock IEEE, 1990.
 
 \bibitem{jira:ferramenta}
 Jira.
@@ -47,12 +41,6 @@ Jira.
   model.
 \newblock {\em VIII Simpósio Brasileiro de Qualidade de Software\/}, 249--263.
 
-\bibitem{ieee}
-{\sc of~electrical, I., and electronics engineers}.
-\newblock {\em IEEE-STD-610}.
-\newblock Standard Computer Dictionary: A Compilation of IEEE Standard Computer
-  Glossaries, 1990.
-
 \bibitem{scrum:agil}
 {\sc Sabbagh, R.}
 \newblock {\em SCRUM: Gestão Ágil para Projetos de Suscesso}.
@@ -73,5 +61,10 @@ Jira.
 {\sc Weber, S., Hauck, J. C.~R., and von Wangenheim, C.~F.}
 \newblock Estabelecendo processos de software em micro e pequenas empresas.
 \newblock {\em Simpósio Brasileiro de Qualidade de Software\/} (1993), 16.
+
+\bibitem{xp:agil}
+{\sc Wildt, D.}
+\newblock {\em eXtreme Programming}.
+\newblock Casa do Código, 2015.
 
 \end{thebibliography}
