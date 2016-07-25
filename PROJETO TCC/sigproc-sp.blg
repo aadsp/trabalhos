@@ -1,12 +1,15 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: sigproc-sp.aux
 The style file: acm.bst
 Database file #1: sigproc.bib
+Repeated entry---line 67 of file sigproc.bib
+ : @misc{scrum:agil
+ :                 ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "openUP:hibrido"
-Warning--to sort, need author or key in scrum:agil
 Warning--to sort, need author or key in xp:agil
 Warning--to sort, need author or key in fluxosProcessos:pmbok
 Warning--to sort, need author or key in openUP:agil
 Warning--to sort, need author or key in bitrix24:ferramenta
 Warning--to sort, need author or key in jira:ferramenta
 Warning--empty year in Arimoto:melhoria
-(There were 8 warnings)
+(There was 1 error message)

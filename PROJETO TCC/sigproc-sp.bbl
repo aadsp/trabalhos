@@ -16,11 +16,6 @@ Introdução ao openup (open unified process).
 \newblock \url{http://epf.eclipse.org/uploads/16.pdf}.
 \newblock Acessado em: 10 de julho de 2016.
 
-\bibitem{scrum:agil}
-Scrum.
-\newblock \url{http://www.desenvolvimentoagil.com.br/scrum/}.
-\newblock Acessado em: 10 de julho de 2016.
-
 \bibitem{xp:agil}
 Xp.
 \newblock \url{http://www.desenvolvimentoagil.com.br/xp/}.
@@ -33,10 +28,11 @@ Jira.
   2016.
 \newblock Acessado em: 15 de julho de 2016.
 
-\bibitem{aadsp:hibirdo}
-{\sc e~Outros, A. C.~S.}
-\newblock {\em Adaptive Approach for Deployment of Software Process - AADSP}.
-\newblock LABRASOFT, 2016.
+\bibitem{manifesto:agil}
+{\sc Beck, K.}
+\newblock Manifesto para o desenvolvimento ágil de software.
+\newblock \url{http://www.manifestoagil.com.br/}, 2001.
+\newblock Acessado em: 06 de julho de 2016.
 
 \bibitem{pmbok:nAgil}
 {\sc Institute, P.~M.}
@@ -57,17 +53,21 @@ Jira.
 \newblock Standard Computer Dictionary: A Compilation of IEEE Standard Computer
   Glossaries, 1990.
 
-\bibitem{manifesto:agil}
-{\sc outros, K. B.~.}
-\newblock Manifesto para o desenvolvimento ágil de software.
-\newblock \url{http://www.manifestoagil.com.br/}, 2001.
-\newblock Acessado em: 06 de julho de 2016.
+\bibitem{scrum:agil}
+{\sc Sabbagh, R.}
+\newblock {\em SCRUM: Gestão Ágil para Projetos de Suscesso}.
+\newblock Casa do Código, 2013.
 
 \bibitem{mpsbr:nAgil}
 {\sc SOFTEX}.
 \newblock {\em MPS.BR - Melhoria de Processo do Software Brasileiro: Guia Geral
   MPS de Software}.
 \newblock Sociedade SOFTEX, 2012.
+
+\bibitem{aadsp:hibirdo}
+{\sc Souza, A.~C.}
+\newblock {\em Adaptive Approach for Deployment of Software Process - AADSP}.
+\newblock LABRASOFT, 2016.
 
 \bibitem{weber}
 {\sc Weber, S., Hauck, J. C.~R., and von Wangenheim, C.~F.}
