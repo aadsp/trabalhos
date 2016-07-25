@@ -2,10 +2,11 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: sigproc-sp.aux
 The style file: acm.bst
 Database file #1: sigproc.bib
 Warning--I didn't find a database entry for "openUP:hibrido"
-Warning--to sort, need author or key in openUP:agil
 Warning--to sort, need author or key in scrum:agil
 Warning--to sort, need author or key in xp:agil
+Warning--to sort, need author or key in fluxosProcessos:pmbok
+Warning--to sort, need author or key in openUP:agil
 Warning--to sort, need author or key in bitrix24:ferramenta
 Warning--to sort, need author or key in jira:ferramenta
 Warning--empty year in Arimoto:melhoria
-(There were 7 warnings)
+(There were 8 warnings)
