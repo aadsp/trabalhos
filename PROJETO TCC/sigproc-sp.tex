@@ -13,6 +13,9 @@
 \graphicspath{{img/}}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg,.gif}
 \usepackage{amsmath}
+\usepackage[titletoc,toc,page]{appendix}
+\renewcommand{\appendixtocname}{Ap\'endices}
+\renewcommand{\appendixpagename}{Ap\'endices}
 
 \begin{document}
 
@@ -288,7 +291,7 @@ Por último é esperado aos atributos do de processo no nível G:
 \item AP 2 - O processo é gerenciado.
 \end{itemize}
 
-Para todos os itens acima mencionados o MPSBR \cite{mpsbr:nAgil} descreve o mesmo detalhadamente em seu Guia de implementação do nível G, bem como, os resultados que são esperados a cada item. Os guias estão disponibilizados no site da SOFTEX em Português do Brasil para \textit{download}.
+Para todos os itens acima mencionados o MPSBR \cite{mpsbr:nAgil} descreve os mesmos detalhadamente em seu Guia de implementação do nível G, bem como, os resultados que são esperados a cada item. Os guias estão disponibilizados no site da SOFTEX em Português do Brasil para \textit{download}.
 
 
 \subsection{Abordagens Híbridas}
@@ -424,81 +427,12 @@ Esta análise é um comparativo do modelo de adesão ao MR-MPS-SW:2012 Nível G,
 
 Arimoto \cite{Arimoto:melhoria} incluiu em seu quadro comparativo o \textit{OpenUP}, que para este trabalho será qualificado enquanto abordagem híbrida para melhoria de processo de \textit{software}, mediante ser fundamentada no \textit{Rational Unified Process} - RUP (ou Processo Unificado da Rational).
 
-\begin{table*}[h]
-\scriptsize
-\caption{Análise do produto de trabalho MR-MPS e a abordagem híbrida \textit{OpenUP} \cite{Arimoto:melhoria}} 
-\centering
-\begin{tabular}{|p{20mm}|p{10mm}|p{60mm}|p{60mm}|}
-\hline
-Gerenciamento & Seção & MR-MPS & Abordagem Híbrida \\
-\hline
-\multirow{5}{*}{Requerimentos} & 1 & Critérios de Avaliação e aceitação de Requisitos / exigências de documentos & 
-Discussões face-a-face / Sistema de Pesos para os requisitos / Modelo de Caso de Uso / \textit{Check List} de tarefas\\
-& 2 & Aprovação de Requisitos / Avaliação de Impacto & Discussões Face-a-face / \textit{Check List} de Tarefas \\
-& 3 & Sistema de Rastreamento de requisitos e de Trabalho Produtos / Matriz de rastreabilidade de requisitos e produtos de trabalho
-& -- \\
-& 4 & Resultados de revisões / Documentação das Inconsistências / Ações Corretivas & Registros no plano de interação / lista dos itens de trabalho \\
-& 5 & Status dos requisitos / Repositório dos requisitos / Histórico de solicitações e decisões & Lista de itens de trabalho \\
-\hline
-\multirow{14}{*}{Projetos} & 1 & Estrutura Analítica do Projeto (EAP) ou documento de visão & Documento de Visão \\
-& 2 & Estimativa de Tamanho &  Estimativa ágil de Tamanho ( medido tipicamente usando uma unidade neutra tal como pontos ) \\
-& 3 & Fases e Ciclos do Projeto & Fases do Ciclo de Vida do Projeto (especificada no Plano de projeto) \\
-& 4 & Estimativas esforço do projeto / As estimativas de custos do projeto & Normalmente usando as unidades de dias efetivos ou horas reais / Cálculo do custo aproximado por pessoa pelo tamanho de uma iteração \\
-& 5 & Cronograma e Orçamento do projeto & Cronograma do Projeto e Orçamento (especificada no Plano de iteração e do Plano do Projeto) \\
-& 6 & Plano de Gestão de Risco & Os riscos são identificados / Avaliação do impacto e da probabilidade de Ocorrência (especificado no Plano de Projeto ou Plano de Iteração) / Lista de Riscos \\
-& 7,8 & Plano de Gestão de Recursos & Plano do Projeto / Plano de iterações / lista dos itens de trabalho \\
-& 9 & Plano de Gestão de Dados & Plano de iteração \\
-& 10 & Plano geral do projeto & Plano do Projeto \\
-& 11,12 & Estudo de Viabilidade / Revisão e Compromisso com o Plano de Projeto & Plano do Projeto / Discussões Face-a-face \\
-& 13 & Avaliação do Progresso do Projeto / Status do Projeto & Plano de iteração / Relatórios (\textit{iteration burndown
-e project burndown})\\
-& 14 & Plano de Gestão de Comunicação & Plano de iterações / Plano do Projeto \\
-& 15 & Revisão do resultados documentados no projeto & Plano de documentação das iterações \\
-& 16,17 & Registro de Problemas e Monitoramento da Ações Corretivas / Ações Corretivas Plano & Revisão dos itens de trabalho / plano de iteração \\
-
-\hline
-\end{tabular}
-\end{table*}
-
 Neste trabalho foi realizado um comparativo entre abordagem MR-MPS.SW e a abordagem híbrida AADSP, além de demonstrar em quais requisitos da ferramenta T-AADSP foi contemplado este artefato, conforme demonstrado na tabela 2.
 
-\begin{table*}[h]
-\scriptsize
-\caption{Análise dos resultados esperados do MR-MPS.SW no nível G e a abordagem híbrida \textit{AADSP} \cite{aadsp:hibirdo}} 
-\centering
-\begin{tabular}{|p{10mm}|p{60mm}|p{60mm}|p{25mm}|}
-\hline
-GPR & Resultado esperado pelo MR-MPS.SW & Artefato do AADSP que contempla o resultado esperado & Requisitos \\
-\hline
-1 & O escopo do trabalho para o projeto é definido & Estrutura Analítica do Projeto
-(Gerência de Projetos) & \\
-2 & As tarefas e os produtos de trabalho do projeto são dimensionados utilizando métodos apropriados & Análise de Pontos por Função (Gerência de Projetos) & \\
-3 & O modelo e as fases do ciclo de vida do projeto são definidos & Requisitos do Projeto são realizados sob ciclos de \textit{Sprint} (Gerência de requisitos) &\\
-4 &  O esforço e o custo para a execução das tarefas e dos produtos de trabalho são estimados com base em dados históricos ou referências técnicas & Requisitos do Projeto são realizados sob ciclos de \textit{Sprint} (Gerência de requisitos), Análise de Pontos por Função (Gerência de Projetos) & \\
-5 & O orçamento e o cronograma do projeto, incluindo a definição de marcos e pontos de controle, são estabelecidos e mantidos
-& Definição e Controle do Projeto (Gerência de Projetos) & \\
-6 & Os riscos do projeto são identificados e o seu impacto, probabilidade de ocorrência e prioridade de tratamento são
-determinados e documentados & Termo de Abertura do Projeto (Gerência de Projetos) & \\
-7 & Os recursos humanos para o projeto são planejados considerando o perfil e o conhecimento necessários para executá-lo & Definição de função dos colaboradores (Gerência de Recursos Humanos) & \\
-8 & Os recursos e o ambiente de trabalho necessários para executar o projeto são planejados & Definição dos recursos necessários ao projeto (Gerência de Projetos) & \\
-9 & Os dados relevantes do projeto são identificados e planejados quanto à forma de coleta, armazenamento e distribuição. Um mecanismo é estabelecido para acessá-los, incluindo, se pertinente, questões de privacidade e segurança & Controle de acesso aos conteúdos (Gerência de Projetos) & \\
-10 & Um plano geral para a execução do projeto é estabelecido com a integração de planos específicos & Cronograma de execução das atividades (Gerência de Projetos) & \\
-11 & A viabilidade de atingir as metas do projeto é explicitamente avaliada considerando restrições e recursos disponíveis. Se necessário, ajustes são realizados & Cheack List do Projeto (Gerência de Projetos) & \\
-12 & O Plano do Projeto é revisado com todos os interessados e o compromisso com ele é obtido e mantido & &\\
-13 & O escopo, as tarefas, as estimativas, o orçamento e o cronograma do projeto são monitorados em relação ao planejado & &\\
-14 & Os recursos materiais e humanos bem como os dados relevantes do projeto são monitorados em relação ao planejado & & \\
-15 & Os riscos são monitorados em relação ao planejado & & \\
-16 & O envolvimento das partes interessadas no projeto é planejado, monitorado e mantido & & \\
-17 & Revisões são realizadas em marcos do projeto e conforme estabelecido no planejamento & & \\
-18 & Registros de problemas identificados e o resultado da análise de questões pertinentes, incluindo dependências críticas, são
-estabelecidos e tratados com as partes interessadas & & \\
-19 & Ações para corrigir desvios em relação ao planejado e para prevenir a repetição dos problemas identificados são estabelecidas, implementadas e acompanhadas até a sua conclusão & & \\
-\hline
+Castro afirma que não é fácil definir o conjunto de práticas que deveriam ser utilizadas numa organização, desde a sua implantação, passando pela sua manutenção e evolução \cite{Castro:melhoria}. A prática pode ser a mesma, mas a forma da implementação pode ser diferente de organização para organização. Desse modo, a abordagem deve promover certa “adaptabilidade” durante seu processo de implantação. 
 
+Realizando um comparativo do MR-MPS.SW e abordagem a AADSP, podemos observar que esta última por ser uma abordagem híbrida elenca práticas ágeis, ao mesmo tempo que considera fundamental a existência e manutenibilidade dos artefatos documentais do projeto já o MR-MPS.SW não aborda as práticas ágeis apenas denifindos artefatos documentais esperados ao projeto. Castro explicita que apesar da especificação de cada prática apresentar uma simplicidade na sua implementação, não se pode assumir que sejam simples de serem aplicadas em um projeto. Além do fato que é necessária a integração de práticas de outros métodos \cite{Castro:melhoria}. Na prática em ambientes ágeis essa integração a outras práticas pode surgir das retrospectivas e reuniões para análise e melhoria contínua do trabalho, porém uma única abordagem ágil também não seria capaz de contemplar todos resultados esperados pelo MR-MPS.SW \cite{Castro:melhoria}. A abordagem AADSP demonstrou contemplar os resultados esperados pela implantação MR-MPS.SW nível G como demonstrado na tabela 2.
 
-\hline
-\end{tabular}
-\end{table*}
 
 \section{Trabalhos relacionados}
 Nesta secção foram selecionadas três ferramentas e sendo analisando o funcionamento das funcionalidades disponibilizadas aos usuários.São descritas as seguir as principais características das ferramentas analisadas:
@@ -513,28 +447,6 @@ Nesta secção foram selecionadas três ferramentas e sendo analisando o funcion
  A Tabela 2 exibe uma análise comparativa entre as ferramentas estudadas.
 
 Conforme explanado na tabela 2, existem diversas soluções para gerenciamento de projetos. Este trabalho baseado no abordagem AADSP propõe um modelo alternativo para o gerenciamento de projetos de \textit{software}. Destacam-se na ferramenta os recursos como mensuração do tamanho de \textit{software} através da métrica de analise por ponto de função, controle do escopo do projeto através de diagrama da estrutura analítica do projeto e gerenciamento do Termo de Abertura de Projetos (TAP). 
-
-\begin{table*}[h]
-\scriptsize
-\caption{Análise do produto de trabalho MR-MPS e a abordagem híbrida \textit{OpenUP}} 
-\centering
-\begin{tabular}{|p{70mm}|p{20mm}|p{20mm}|p{20mm}|p{20mm}|}
-\hline
- Característica & Bitrix24 & Jira & Wrike & T-AADSP \\
-\hline
-Versão Web & x & x  & x  & x \\
-Sistema de Autenticação & x & x  & x  & x \\
-Definição de Cronograma do Projeto & x & x  & x  & x \\
-Definição de Termo de Abetura de Projeto (TAP) &  &   &  & x \\
-Definição de Equipe executora do Projeto & x & x  & x  & x \\
-Controle de Reuniões do Projeto  & x & x  & x  & x \\
-Definição da Estrutura Analítica do Projeto (EAP) &  &   &  & x \\
-Controle dos Recursos Especiais do Projeto &  &   &  & x \\
-Controle de Acesso aos conteúdos da plataforma& x & x  & x  & x \\
-Mensuração de Projeto de software por Análise de Ponto de Função  &  &   &  & x \\
-\hline
-\end{tabular}
-\end{table*}
 
 \section{A ferramenta T-AADSP}
 O T-AADSP é uma ferramenta para gerenciamento de projetos de \textit{software}. Para construção deste sistema foi necessário seguir as etapas inerentes ao projeto de desenvolvimento de sistemas (Levantamento de Requisitos, Análise, Projeto, implementação e Testes)
@@ -653,7 +565,110 @@ Os participantes testaram as funcionalidades contidas na ferramenta T-AADSP util
 \bibliographystyle{acm}
 \bibliography{sigproc}
 
-\section{Anexos}
+\begin{appendices}
+
+\chapter{Tabelas}
+
+
+\begin{table*}[h]
+\scriptsize
+\caption{Análise do produto de trabalho MR-MPS e a abordagem híbrida \textit{OpenUP} \cite{Arimoto:melhoria}} 
+\centering
+\begin{tabular}{|p{20mm}|p{10mm}|p{60mm}|p{60mm}|}
+\hline
+Gerenciamento & Seção & MR-MPS & Abordagem Híbrida \\
+\hline
+\multirow{5}{*}{Requerimentos} & 1 & Critérios de Avaliação e aceitação de Requisitos / exigências de documentos & 
+Discussões face-a-face / Sistema de Pesos para os requisitos / Modelo de Caso de Uso / \textit{Check List} de tarefas\\
+& 2 & Aprovação de Requisitos / Avaliação de Impacto & Discussões Face-a-face / \textit{Check List} de Tarefas \\
+& 3 & Sistema de Rastreamento de requisitos e de Trabalho Produtos / Matriz de rastreabilidade de requisitos e produtos de trabalho
+& -- \\
+& 4 & Resultados de revisões / Documentação das Inconsistências / Ações Corretivas & Registros no plano de interação / lista dos itens de trabalho \\
+& 5 & Status dos requisitos / Repositório dos requisitos / Histórico de solicitações e decisões & Lista de itens de trabalho \\
+\hline
+\multirow{14}{*}{Projetos} & 1 & Estrutura Analítica do Projeto (EAP) ou documento de visão & Documento de Visão \\
+& 2 & Estimativa de Tamanho &  Estimativa ágil de Tamanho ( medido tipicamente usando uma unidade neutra tal como pontos ) \\
+& 3 & Fases e Ciclos do Projeto & Fases do Ciclo de Vida do Projeto (especificada no Plano de projeto) \\
+& 4 & Estimativas esforço do projeto / As estimativas de custos do projeto & Normalmente usando as unidades de dias efetivos ou horas reais / Cálculo do custo aproximado por pessoa pelo tamanho de uma iteração \\
+& 5 & Cronograma e Orçamento do projeto & Cronograma do Projeto e Orçamento (especificada no Plano de iteração e do Plano do Projeto) \\
+& 6 & Plano de Gestão de Risco & Os riscos são identificados / Avaliação do impacto e da probabilidade de Ocorrência (especificado no Plano de Projeto ou Plano de Iteração) / Lista de Riscos \\
+& 7,8 & Plano de Gestão de Recursos & Plano do Projeto / Plano de iterações / lista dos itens de trabalho \\
+& 9 & Plano de Gestão de Dados & Plano de iteração \\
+& 10 & Plano geral do projeto & Plano do Projeto \\
+& 11,12 & Estudo de Viabilidade / Revisão e Compromisso com o Plano de Projeto & Plano do Projeto / Discussões Face-a-face \\
+& 13 & Avaliação do Progresso do Projeto / Status do Projeto & Plano de iteração / Relatórios (\textit{iteration burndown
+e project burndown})\\
+& 14 & Plano de Gestão de Comunicação & Plano de iterações / Plano do Projeto \\
+& 15 & Revisão do resultados documentados no projeto & Plano de documentação das iterações \\
+& 16,17 & Registro de Problemas e Monitoramento da Ações Corretivas / Ações Corretivas Plano & Revisão dos itens de trabalho / plano de iteração \\
+
+\hline
+\end{tabular}
+\end{table*}
+
+\begin{table*}[h]
+\scriptsize
+\caption{Análise dos resultados esperados do MR-MPS.SW no nível G e a abordagem híbrida \textit{AADSP} \cite{aadsp:hibirdo}} 
+\centering
+\begin{tabular}{|p{10mm}|p{60mm}|p{60mm}|p{25mm}|}
+\hline
+GPR & Resultado esperado pelo MR-MPS.SW & Artefato do AADSP que contempla o resultado esperado & Requisitos \\
+\hline
+1 & O escopo do trabalho para o projeto é definido & Estrutura Analítica do Projeto
+(Gerência de Projetos) & \\
+2 & As tarefas e os produtos de trabalho do projeto são dimensionados utilizando métodos apropriados & Análise de Pontos por Função (Gerência de Projetos) & \\
+3 & O modelo e as fases do ciclo de vida do projeto são definidos & Requisitos do Projeto são realizados sob ciclos de \textit{Sprint} (Gerência de requisitos) &\\
+4 &  O esforço e o custo para a execução das tarefas e dos produtos de trabalho são estimados com base em dados históricos ou referências técnicas & Requisitos do Projeto são realizados sob ciclos de \textit{Sprint} (Gerência de requisitos), Análise de Pontos por Função (Gerência de Projetos) & \\
+5 & O orçamento e o cronograma do projeto, incluindo a definição de marcos e pontos de controle, são estabelecidos e mantidos
+& Definição e Controle do Projeto (Gerência de Projetos) & \\
+6 & Os riscos do projeto são identificados e o seu impacto, probabilidade de ocorrência e prioridade de tratamento são
+determinados e documentados & Termo de Abertura do Projeto (Gerência de Projetos) & \\
+7 & Os recursos humanos para o projeto são planejados considerando o perfil e o conhecimento necessários para executá-lo & Definição de função dos colaboradores (Gerência de Recursos Humanos) & \\
+8 & Os recursos e o ambiente de trabalho necessários para executar o projeto são planejados & Definição dos recursos necessários ao projeto (Gerência de Projetos) & \\
+9 & Os dados relevantes do projeto são identificados e planejados quanto à forma de coleta, armazenamento e distribuição. Um mecanismo é estabelecido para acessá-los, incluindo, se pertinente, questões de privacidade e segurança & Controle de acesso aos conteúdos (Gerência de Projetos) & \\
+10 & Um plano geral para a execução do projeto é estabelecido com a integração de planos específicos & Cronograma de execução das atividades (Gerência de Projetos) & \\
+11 & A viabilidade de atingir as metas do projeto é explicitamente avaliada considerando restrições e recursos disponíveis. Se necessário, ajustes são realizados & Cheack List do Projeto (Gerência de Projetos) & \\
+12 & O Plano do Projeto é revisado com todos os interessados e o compromisso com ele é obtido e mantido &  Cheack List de revisão do do projeto (Gerência de Projetos)&\\
+13 & O escopo, as tarefas, as estimativas, o orçamento e o cronograma do projeto são monitorados em relação ao planejado & 
+Acompanhamento do Projeto (Gerência de Projetos), Acompanhamento do Cronograma do Projeto (Gerência de Projetos) &\\
+14 & Os recursos materiais e humanos bem como os dados relevantes do projeto são monitorados em relação ao planejado & 
+Termo de abertura do Projeto (Gerência de Projetos), Definição e controle do projeto & \\
+15 & Os riscos são monitorados em relação ao planejado & Termo de Abertura do Projeto (Gerência de Projetos) & \\
+16 & O envolvimento das partes interessadas no projeto é planejado, monitorado e mantido & Gerenciamento das atividades do Projeto (Gerência de Requisitos)  & \\
+17 & Revisões são realizadas em marcos do projeto e conforme estabelecido no planejamento & Revisões das entregas durante os ciclos da Sprint (Gerência de Requisitos) & \\
+18 & Registros de problemas identificados e o resultado da análise de questões pertinentes, incluindo dependências críticas, são
+estabelecidos e tratados com as partes interessadas & Revisões das entregas durante os ciclos da Sprint (Gerência de reutilização ) & \\
+19 & Ações para corrigir desvios em relação ao planejado e para prevenir a repetição dos problemas identificados são estabelecidas, implementadas e acompanhadas até a sua conclusão & Revisões das entregas durante os ciclos da Sprint (Gerência de Requisitos) & \\
+
+\hline
+\end{tabular}
+\end{table*}
+
+
+\begin{table*}[h]
+\scriptsize
+\caption{Análise do produto de trabalho MR-MPS e a abordagem híbrida \textit{OpenUP}} 
+\centering
+\begin{tabular}{|p{70mm}|p{20mm}|p{20mm}|p{20mm}|p{20mm}|}
+\hline
+ Característica & Bitrix24 & Jira & Wrike & T-AADSP \\
+\hline
+Versão Web & x & x  & x  & x \\
+Sistema de Autenticação & x & x  & x  & x \\
+Definição de Cronograma do Projeto & x & x  & x  & x \\
+Definição de Termo de Abetura de Projeto (TAP) &  &   &  & x \\
+Definição de Equipe executora do Projeto & x & x  & x  & x \\
+Controle de Reuniões do Projeto  & x & x  & x  & x \\
+Definição da Estrutura Analítica do Projeto (EAP) &  &   &  & x \\
+Controle dos Recursos Especiais do Projeto &  &   &  & x \\
+Controle de Acesso aos conteúdos da plataforma& x & x  & x  & x \\
+Mensuração de Projeto de software por Análise de Ponto de Função  &  &   &  & x \\
+\hline
+\end{tabular}
+\end{table*}
+
+
+\chapter{Requisitos Funcionais}
 
 \begin{figure}[h]
 \centering % para centralizarmos a figura
@@ -703,6 +718,8 @@ Os participantes testaram as funcionalidades contidas na ferramenta T-AADSP util
 \caption{Confirmação de novo usuário cadastrado no sistema}
 \end{figure}
 
+\chapter{Diagrama de Entidade e Relacionamento}
+
 \begin{figure}[h]
 \centering % para centralizarmos a figura
 \includegraphics[width=0.5\textwidth]{DER_colaborador.jpg} % leia abaixo
@@ -733,5 +750,8 @@ Os participantes testaram as funcionalidades contidas na ferramenta T-AADSP util
 \caption{Diagrama de Entidade e Relacionamento - Schema Projeto Parte 2}
 \end{figure}
 
+\chapter{Diagramas UML}
+
+\end{appendices}
 
 \end{document}
