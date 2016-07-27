@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.29)  26 JUL 2016 18:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.29)  27 JUL 2016 18:35
 entering extended mode
 **./sigproc-sp.tex
 (sigproc-sp.tex
@@ -696,117 +696,137 @@ Overfull \hbox (3.14227pt too wide) in paragraph at lines 299--299
 LaTeX Warning: Citation `openUP:hibrido' on page \thepage  undefined on input l
 ine 304.
 
-<img/tabela_prinOpen_manifesto.png, id=28, 440.39531pt x 143.03438pt>
-File: img/tabela_prinOpen_manifesto.png Graphic file (type png)
 
-<use img/tabela_prinOpen_manifesto.png>
-Package pdftex.def Info: img/tabela_prinOpen_manifesto.png used on input line 3
-19.
-(pdftex.def)             Requested size: 252.0pt x 81.84471pt.
-
-Overfull \hbox (12.0pt too wide) in paragraph at lines 319--320
- [][] 
+Underfull \hbox (badness 1888) in paragraph at lines 327--328
+[]\T1/aer/m/n/7 Software em fun-ci-o-na-mento mais que do-cu-men-ta-ção
  []
 
-<img/organizacaoTrabOpenUP.JPG, id=30, 429.10312pt x 331.2375pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/organizacaoTrabOpenUP.JPG, id=28, 429.10312pt x 331.2375pt>
 File: img/organizacaoTrabOpenUP.JPG Graphic file (type jpg)
 
 <use img/organizacaoTrabOpenUP.JPG>
-Package pdftex.def Info: img/organizacaoTrabOpenUP.JPG used on input line 329.
+Package pdftex.def Info: img/organizacaoTrabOpenUP.JPG used on input line 340.
 (pdftex.def)             Requested size: 252.0pt x 194.52876pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 329--330
+Overfull \hbox (12.0pt too wide) in paragraph at lines 340--341
  [][] 
  []
 
-[6 <./img/tabela_prinOpen_manifesto.png> <./img/organizacaoTrabOpenUP.JPG>]
-Overfull \hbox (3.14227pt too wide) in paragraph at lines 356--356
+[6 <./img/organizacaoTrabOpenUP.JPG>]
+Overfull \hbox (1.133pt too wide) in paragraph at lines 364--365
+[]\T1/aer/bx/n/9 Qualquer pa-pel: \T1/aer/m/n/9 re-pre-senta al-guém no time qu
+e pode
+ []
+
+
+Overfull \hbox (3.14227pt too wide) in paragraph at lines 367--367
 []\subsecfnt Implantação e ge-ren-ci-a-mento de pro-ces-sos com
  []
 
 
-Overfull \hbox (1.1237pt too wide) in paragraph at lines 364--365
+Overfull \hbox (1.1237pt too wide) in paragraph at lines 375--376
 \T1/aer/m/n/9 ta-ção re-sul-tará em re-sul-ta-dos adi-ci-o-nais ao mo-delo [10]
 . 
  []
 
 
-<img/AADSP_Piramidade_de_importancia_dos_artefatos.jpg, id=35, 361.35pt x 305.6
+<img/AADSP_Piramidade_de_importancia_dos_artefatos.jpg, id=32, 361.35pt x 305.6
 4188pt>
 File: img/AADSP_Piramidade_de_importancia_dos_artefatos.jpg Graphic file (type 
 jpg)
  <use img/AADSP_Piramidade_de_importancia_dos_artefatos.jpg>
 Package pdftex.def Info: img/AADSP_Piramidade_de_importancia_dos_artefatos.jpg 
-used on input line 370.
-(pdftex.def)             Requested size: 151.20154pt x 127.893pt.
+used on input line 381.
+(pdftex.def)             Requested size: 252.0pt x 213.15034pt.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 381--382
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (2.69836pt too wide) in paragraph at lines 403--403
+[]\T1/aer/bx/n/7 Gerenciamento| 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7 <./img/AADSP_Piramidade_de_importancia_dos_artefatos.jpg>]
-<img/AADSP_fluxo_de_trabalho.jpg, id=40, 612.03656pt x 401.24907pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/AADSP_fluxo_de_trabalho.jpg, id=39, 612.03656pt x 401.24907pt>
 File: img/AADSP_fluxo_de_trabalho.jpg Graphic file (type jpg)
 
 <use img/AADSP_fluxo_de_trabalho.jpg>
-Package pdftex.def Info: img/AADSP_fluxo_de_trabalho.jpg used on input line 415
+Package pdftex.def Info: img/AADSP_fluxo_de_trabalho.jpg used on input line 484
 .
-(pdftex.def)             Requested size: 151.20154pt x 99.12424pt.
- [8 <./img/AADSP_fluxo_de_trabalho.jpg>]
-Overfull \hbox (7.13536pt too wide) in paragraph at lines 474--474
+(pdftex.def)             Requested size: 252.0pt x 165.21115pt.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 484--485
+ [][] 
+ []
+
+[8 <./img/AADSP_fluxo_de_trabalho.jpg>] [9]
+Overfull \hbox (7.13536pt too wide) in paragraph at lines 544--544
 []\subsecfnt Definir per-mis-são de acesso por fun-ção do usuá-
  []
 
-[9]
-Overfull \hbox (10.19708pt too wide) in paragraph at lines 534--534
+[10]
+Overfull \hbox (10.19708pt too wide) in paragraph at lines 604--604
 []\secfnt DESENVOLVIMENTO DA FER-RA-MENTA
  []
 
-[10] (sigproc-sp.bbl
+[11] (sigproc-sp.bbl
 LaTeX Font Info:    Try loading font information for T1+aett on input line 5.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 ))
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 7796) in paragraph at lines 654--655
+[]\T1/aer/bx/n/7 Artefato no T-
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/RF_autenticacao.jpg, id=50, 678.28406pt x 469.755pt>
+<img/RF_autenticacao.jpg, id=53, 678.28406pt x 469.755pt>
 File: img/RF_autenticacao.jpg Graphic file (type jpg)
 
 <use img/RF_autenticacao.jpg>
-Package pdftex.def Info: img/RF_autenticacao.jpg used on input line 675.
+Package pdftex.def Info: img/RF_autenticacao.jpg used on input line 688.
 (pdftex.def)             Requested size: 252.0pt x 174.5234pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 675--676
+Overfull \hbox (12.0pt too wide) in paragraph at lines 688--689
  [][] 
  []
 
-<img/RF_autenticacao_dados_incorretos.jpg, id=51, 1027.58907pt x 508.90125pt>
+<img/RF_autenticacao_dados_incorretos.jpg, id=54, 1027.58907pt x 508.90125pt>
 File: img/RF_autenticacao_dados_incorretos.jpg Graphic file (type jpg)
 
 <use img/RF_autenticacao_dados_incorretos.jpg>
 Package pdftex.def Info: img/RF_autenticacao_dados_incorretos.jpg used on input
- line 681.
+ line 694.
 (pdftex.def)             Requested size: 252.0pt x 124.7945pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 681--682
+Overfull \hbox (12.0pt too wide) in paragraph at lines 694--695
  [][] 
  []
 
-<img/RF_autenticacao_senha_incorreta.jpg, id=52, 1026.83624pt x 507.39563pt>
+<img/RF_autenticacao_senha_incorreta.jpg, id=55, 1026.83624pt x 507.39563pt>
 File: img/RF_autenticacao_senha_incorreta.jpg Graphic file (type jpg)
 
 <use img/RF_autenticacao_senha_incorreta.jpg>
 Package pdftex.def Info: img/RF_autenticacao_senha_incorreta.jpg used on input 
-line 687.
+line 700.
 (pdftex.def)             Requested size: 252.0pt x 124.51819pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 687--688
+Overfull \hbox (12.0pt too wide) in paragraph at lines 700--701
  [][] 
  []
 
@@ -814,14 +834,14 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 687--688
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<img/RF_autenticacao_solicitar_nova_senha.jpg, id=53, 670.00313pt x 487.8225pt>
+<img/RF_autenticacao_solicitar_nova_senha.jpg, id=56, 670.00313pt x 487.8225pt>
 File: img/RF_autenticacao_solicitar_nova_senha.jpg Graphic file (type jpg)
 <use img/RF_autenticacao_solicitar_nova_senha.jpg>
 Package pdftex.def Info: img/RF_autenticacao_solicitar_nova_senha.jpg used on i
-nput line 693.
+nput line 706.
 (pdftex.def)             Requested size: 252.0pt x 183.47636pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 693--694
+Overfull \hbox (12.0pt too wide) in paragraph at lines 706--707
  [][] 
  []
 
@@ -831,10 +851,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: img/RF_autenticacao_solicitar_nova_senha.jpg Graphic file (type jpg)
 <use img/RF_autenticacao_solicitar_nova_senha.jpg>
 Package pdftex.def Info: img/RF_autenticacao_solicitar_nova_senha.jpg used on i
-nput line 699.
+nput line 712.
 (pdftex.def)             Requested size: 252.0pt x 183.47636pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 699--700
+Overfull \hbox (12.0pt too wide) in paragraph at lines 712--713
  [][] 
  []
 
@@ -842,155 +862,155 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 699--700
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<img/RF_autenticacao_falha_ao_enviar_senha.jpg, id=54, 1020.06094pt x 506.6428p
+<img/RF_autenticacao_falha_ao_enviar_senha.jpg, id=57, 1020.06094pt x 506.6428p
 t>
 File: img/RF_autenticacao_falha_ao_enviar_senha.jpg Graphic file (type jpg)
  <use img/RF_autenticacao_falha_ao_enviar_senha.jpg>
 Package pdftex.def Info: img/RF_autenticacao_falha_ao_enviar_senha.jpg used on 
-input line 705.
+input line 718.
 (pdftex.def)             Requested size: 252.0pt x 125.16063pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 705--706
+Overfull \hbox (12.0pt too wide) in paragraph at lines 718--719
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/RF_cadastro_de_usuario.jpg, id=55, 1027.58907pt x 443.40656pt>
+<img/RF_cadastro_de_usuario.jpg, id=58, 1027.58907pt x 443.40656pt>
 File: img/RF_cadastro_de_usuario.jpg Graphic file (type jpg)
 
 <use img/RF_cadastro_de_usuario.jpg>
-Package pdftex.def Info: img/RF_cadastro_de_usuario.jpg used on input line 711.
+Package pdftex.def Info: img/RF_cadastro_de_usuario.jpg used on input line 724.
 
 (pdftex.def)             Requested size: 252.0pt x 108.73366pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 711--712
+Overfull \hbox (12.0pt too wide) in paragraph at lines 724--725
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/RF_cadastro_de_usuario_realizado.jpg, id=56, 1026.83624pt x 422.32782pt>
+<img/RF_cadastro_de_usuario_realizado.jpg, id=59, 1026.83624pt x 422.32782pt>
 File: img/RF_cadastro_de_usuario_realizado.jpg Graphic file (type jpg)
 
 <use img/RF_cadastro_de_usuario_realizado.jpg>
 Package pdftex.def Info: img/RF_cadastro_de_usuario_realizado.jpg used on input
- line 717.
+ line 730.
 (pdftex.def)             Requested size: 252.0pt x 103.64198pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 717--718
+Overfull \hbox (12.0pt too wide) in paragraph at lines 730--731
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/DER_colaborador.jpg, id=57, 559.33969pt x 467.49657pt>
+<img/DER_colaborador.jpg, id=60, 559.33969pt x 467.49657pt>
 File: img/DER_colaborador.jpg Graphic file (type jpg)
 
 <use img/DER_colaborador.jpg>
-Package pdftex.def Info: img/DER_colaborador.jpg used on input line 725.
+Package pdftex.def Info: img/DER_colaborador.jpg used on input line 736.
 (pdftex.def)             Requested size: 252.0pt x 210.62117pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 725--726
+Overfull \hbox (12.0pt too wide) in paragraph at lines 736--737
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/DER_acesso.jpg, id=58, 487.06969pt x 408.02437pt>
+<img/DER_acesso.jpg, id=61, 487.06969pt x 408.02437pt>
 File: img/DER_acesso.jpg Graphic file (type jpg)
 
 <use img/DER_acesso.jpg>
-Package pdftex.def Info: img/DER_acesso.jpg used on input line 731.
+Package pdftex.def Info: img/DER_acesso.jpg used on input line 742.
 (pdftex.def)             Requested size: 252.0pt x 211.10303pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 731--732
+Overfull \hbox (12.0pt too wide) in paragraph at lines 742--743
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/DER_tap.jpg, id=59, 978.65625pt x 398.99063pt>
+<img/DER_tap.jpg, id=62, 978.65625pt x 398.99063pt>
 File: img/DER_tap.jpg Graphic file (type jpg)
  <use img/DER_tap.jpg>
-Package pdftex.def Info: img/DER_tap.jpg used on input line 737.
+Package pdftex.def Info: img/DER_tap.jpg used on input line 748.
 (pdftex.def)             Requested size: 252.0pt x 102.73666pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 737--738
+Overfull \hbox (12.0pt too wide) in paragraph at lines 748--749
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/DER_projeto_p1.jpg, id=60, 764.8575pt x 385.44pt>
+<img/DER_projeto_p1.jpg, id=63, 764.8575pt x 385.44pt>
 File: img/DER_projeto_p1.jpg Graphic file (type jpg)
 
 <use img/DER_projeto_p1.jpg>
-Package pdftex.def Info: img/DER_projeto_p1.jpg used on input line 743.
+Package pdftex.def Info: img/DER_projeto_p1.jpg used on input line 754.
 (pdftex.def)             Requested size: 252.0pt x 126.98975pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 743--744
+Overfull \hbox (12.0pt too wide) in paragraph at lines 754--755
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/DER_projeto_p2.jpg, id=61, 1027.58907pt x 398.23781pt>
+<img/DER_projeto_p2.jpg, id=64, 1027.58907pt x 398.23781pt>
 File: img/DER_projeto_p2.jpg Graphic file (type jpg)
 
 <use img/DER_projeto_p2.jpg>
-Package pdftex.def Info: img/DER_projeto_p2.jpg used on input line 749.
+Package pdftex.def Info: img/DER_projeto_p2.jpg used on input line 760.
 (pdftex.def)             Requested size: 252.0pt x 97.65723pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 749--750
+Overfull \hbox (12.0pt too wide) in paragraph at lines 760--761
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11 <./img/RF_autenticacao.jpg> <./img/RF_autenticacao_dados_incorretos.jpg>]
-[12 <./img/RF_autenticacao_senha_incorreta.jpg> <./img/RF_autenticacao_solicita
-r_nova_senha.jpg>] [13 <./img/RF_autenticacao_falha_ao_enviar_senha.jpg> <./img
-/RF_cadastro_de_usuario.jpg> <./img/RF_cadastro_de_usuario_realizado.jpg> <./im
-g/DER_colaborador.jpg> <./img/DER_acesso.jpg> <./img/DER_tap.jpg>] [14
-
- <./img/DER_projeto_p1.jpg> <./img/DER_projeto_p2.jpg>] [15] (sigproc-sp.aux)
+[12 <./img/RF_autenticacao.jpg> <./img/RF_autenticacao_dados_incorretos.jpg>]
+[13 <./img/RF_autenticacao_senha_incorreta.jpg> <./img/RF_autenticacao_solicita
+r_nova_senha.jpg> <./img/RF_autenticacao_falha_ao_enviar_senha.jpg> <./img/RF_c
+adastro_de_usuario.jpg> <./img/RF_cadastro_de_usuario_realizado.jpg>] [14 <./im
+g/DER_colaborador.jpg> <./img/DER_acesso.jpg> <./img/DER_tap.jpg> <./img/DER_pr
+ojeto_p1.jpg> <./img/DER_projeto_p2.jpg>] [15] (sigproc-sp.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4206 strings out of 493335
- 55108 string characters out of 3139257
- 162569 words of memory out of 3000000
- 7559 multiletter control sequences out of 15000+200000
- 67893 words of font info for 98 fonts, out of 3000000 for 9000
+ 4207 strings out of 493335
+ 54976 string characters out of 3139257
+ 143569 words of memory out of 3000000
+ 7556 multiletter control sequences out of 15000+200000
+ 71046 words of font info for 104 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,28p,1131b,306s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,10n,28p,1131b,281s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/
-utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sigproc-sp.pdf (15 pages, 1311987 bytes).
+ 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/h
+elvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on sigproc-sp.pdf (15 pages, 1308706 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
+ 129 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

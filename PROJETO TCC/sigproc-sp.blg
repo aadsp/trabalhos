@@ -12,8 +12,12 @@ I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "openUP:hibrido"
 Warning--to sort, need author, editor, or key in ieee
 Warning--to sort, need author or key in openUP:agil
+Too many commas in name 1 of "Maurício Massaru Arimoto, Edson Murakami, Valter Vieira de Camargo, Maria Istela Cagnin" for entry Arimoto:melhoria
+while executing---line 1086 of file acm.bst
 Warning--to sort, need author or key in bitrix24:ferramenta
 Warning--to sort, need author or key in jira:ferramenta
 Warning--empty author and editor in ieee
+Too many commas in name 1 of "Maurício Massaru Arimoto, Edson Murakami, Valter Vieira de Camargo, Maria Istela Cagnin" for entry Arimoto:melhoria
+while executing---line 1127 of file acm.bst
 Warning--empty year in Arimoto:melhoria
-(There were 2 error messages)
+(There were 4 error messages)
