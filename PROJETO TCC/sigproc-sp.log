@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.29)  27 JUL 2016 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.29)  31 JUL 2016 20:05
 entering extended mode
 **./sigproc-sp.tex
 (sigproc-sp.tex
@@ -655,18 +655,15 @@ Overfull \hbox (3.50691pt too wide) in paragraph at lines 81--82
 File: img/scrumCiclo.JPG Graphic file (type jpg)
 
 <use img/scrumCiclo.JPG>
-Package pdftex.def Info: img/scrumCiclo.JPG used on input line 106.
+Package pdftex.def Info: img/scrumCiclo.JPG used on input line 104.
 (pdftex.def)             Requested size: 252.0pt x 177.34918pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 106--107
+Overfull \hbox (12.0pt too wide) in paragraph at lines 104--105
  [][] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (3.14227pt too wide) in paragraph at lines 125--125
+Overfull \hbox (3.14227pt too wide) in paragraph at lines 123--123
 []\subsecfnt Implantação e ge-ren-ci-a-mento de pro-ces-sos com
  []
 
@@ -675,29 +672,35 @@ Overfull \hbox (3.14227pt too wide) in paragraph at lines 125--125
 File: img/entradaescopo.jpg Graphic file (type jpg)
 
 <use img/entradaescopo.jpg>
-Package pdftex.def Info: img/entradaescopo.jpg used on input line 161.
+Package pdftex.def Info: img/entradaescopo.jpg used on input line 158.
 (pdftex.def)             Requested size: 252.0pt x 72.87987pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 161--162
+Overfull \hbox (12.0pt too wide) in paragraph at lines 158--159
  [][] 
  []
 
 [3 <./img/entradaescopo.jpg>]
-Overfull \hbox (3.14227pt too wide) in paragraph at lines 222--222
+Overfull \hbox (3.14227pt too wide) in paragraph at lines 219--219
 []\subsecfnt Implantação e ge-ren-ci-a-mento de pro-ces-sos com
  []
 
 [4] [5]
-Overfull \hbox (3.14227pt too wide) in paragraph at lines 299--299
+Overfull \hbox (8.40166pt too wide) in paragraph at lines 291--292
+[]\T1/aer/m/n/9 Para to-dos os itens acima men-ci-o-na-dos, o MPSBR [9] descrev
+e-
+ []
+
+
+Overfull \hbox (3.14227pt too wide) in paragraph at lines 296--296
 []\subsecfnt Implantação e ge-ren-ci-a-mento de pro-ces-sos com
  []
 
 
 LaTeX Warning: Citation `openUP:hibrido' on page \thepage  undefined on input l
-ine 304.
+ine 301.
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 327--328
+Underfull \hbox (badness 1888) in paragraph at lines 324--325
 []\T1/aer/m/n/7 Software em fun-ci-o-na-mento mais que do-cu-men-ta-ção
  []
 
@@ -708,28 +711,22 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: img/organizacaoTrabOpenUP.JPG Graphic file (type jpg)
 
 <use img/organizacaoTrabOpenUP.JPG>
-Package pdftex.def Info: img/organizacaoTrabOpenUP.JPG used on input line 340.
+Package pdftex.def Info: img/organizacaoTrabOpenUP.JPG used on input line 337.
 (pdftex.def)             Requested size: 252.0pt x 194.52876pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 340--341
+Overfull \hbox (12.0pt too wide) in paragraph at lines 337--338
  [][] 
  []
 
 [6 <./img/organizacaoTrabOpenUP.JPG>]
-Overfull \hbox (1.133pt too wide) in paragraph at lines 364--365
+Overfull \hbox (1.133pt too wide) in paragraph at lines 361--362
 []\T1/aer/bx/n/9 Qualquer pa-pel: \T1/aer/m/n/9 re-pre-senta al-guém no time qu
 e pode
  []
 
 
-Overfull \hbox (3.14227pt too wide) in paragraph at lines 367--367
+Overfull \hbox (3.14227pt too wide) in paragraph at lines 364--364
 []\subsecfnt Implantação e ge-ren-ci-a-mento de pro-ces-sos com
- []
-
-
-Overfull \hbox (1.1237pt too wide) in paragraph at lines 375--376
-\T1/aer/m/n/9 ta-ção re-sul-tará em re-sul-ta-dos adi-ci-o-nais ao mo-delo [10]
-. 
  []
 
 
@@ -739,10 +736,10 @@ File: img/AADSP_Piramidade_de_importancia_dos_artefatos.jpg Graphic file (type
 jpg)
  <use img/AADSP_Piramidade_de_importancia_dos_artefatos.jpg>
 Package pdftex.def Info: img/AADSP_Piramidade_de_importancia_dos_artefatos.jpg 
-used on input line 381.
+used on input line 378.
 (pdftex.def)             Requested size: 252.0pt x 213.15034pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 381--382
+Overfull \hbox (12.0pt too wide) in paragraph at lines 378--379
  [][] 
  []
 
@@ -750,7 +747,7 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 381--382
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (2.69836pt too wide) in paragraph at lines 403--403
+Overfull \hbox (2.69836pt too wide) in paragraph at lines 400--400
 []\T1/aer/bx/n/7 Gerenciamento| 
  []
 
@@ -765,21 +762,27 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: img/AADSP_fluxo_de_trabalho.jpg Graphic file (type jpg)
 
 <use img/AADSP_fluxo_de_trabalho.jpg>
-Package pdftex.def Info: img/AADSP_fluxo_de_trabalho.jpg used on input line 484
+Package pdftex.def Info: img/AADSP_fluxo_de_trabalho.jpg used on input line 481
 .
 (pdftex.def)             Requested size: 252.0pt x 165.21115pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 484--485
+Overfull \hbox (12.0pt too wide) in paragraph at lines 481--482
  [][] 
  []
 
 [8 <./img/AADSP_fluxo_de_trabalho.jpg>] [9]
-Overfull \hbox (7.13536pt too wide) in paragraph at lines 544--544
+Overfull \hbox (7.13536pt too wide) in paragraph at lines 540--540
 []\subsecfnt Definir per-mis-são de acesso por fun-ção do usuá-
  []
 
+
+Overfull \hbox (1.45439pt too wide) in paragraph at lines 544--545
+\T1/aer/m/n/9 acesso no sis-tema, es-tas pá-gi-nas per-mi-ti-rão con-tro-lar o 
+acesso
+ []
+
 [10]
-Overfull \hbox (10.19708pt too wide) in paragraph at lines 604--604
+Overfull \hbox (10.19708pt too wide) in paragraph at lines 600--600
 []\secfnt DESENVOLVIMENTO DA FER-RA-MENTA
  []
 
@@ -788,7 +791,7 @@ LaTeX Font Info:    Try loading font information for T1+aett on input line 5.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 ))
-Underfull \hbox (badness 7796) in paragraph at lines 654--655
+Underfull \hbox (badness 7796) in paragraph at lines 650--651
 []\T1/aer/bx/n/7 Artefato no T-
  []
 
@@ -799,10 +802,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: img/RF_autenticacao.jpg Graphic file (type jpg)
 
 <use img/RF_autenticacao.jpg>
-Package pdftex.def Info: img/RF_autenticacao.jpg used on input line 688.
+Package pdftex.def Info: img/RF_autenticacao.jpg used on input line 684.
 (pdftex.def)             Requested size: 252.0pt x 174.5234pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 688--689
+Overfull \hbox (12.0pt too wide) in paragraph at lines 684--685
  [][] 
  []
 
@@ -811,10 +814,10 @@ File: img/RF_autenticacao_dados_incorretos.jpg Graphic file (type jpg)
 
 <use img/RF_autenticacao_dados_incorretos.jpg>
 Package pdftex.def Info: img/RF_autenticacao_dados_incorretos.jpg used on input
- line 694.
+ line 690.
 (pdftex.def)             Requested size: 252.0pt x 124.7945pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 694--695
+Overfull \hbox (12.0pt too wide) in paragraph at lines 690--691
  [][] 
  []
 
@@ -823,10 +826,10 @@ File: img/RF_autenticacao_senha_incorreta.jpg Graphic file (type jpg)
 
 <use img/RF_autenticacao_senha_incorreta.jpg>
 Package pdftex.def Info: img/RF_autenticacao_senha_incorreta.jpg used on input 
-line 700.
+line 696.
 (pdftex.def)             Requested size: 252.0pt x 124.51819pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 700--701
+Overfull \hbox (12.0pt too wide) in paragraph at lines 696--697
  [][] 
  []
 
@@ -838,10 +841,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: img/RF_autenticacao_solicitar_nova_senha.jpg Graphic file (type jpg)
 <use img/RF_autenticacao_solicitar_nova_senha.jpg>
 Package pdftex.def Info: img/RF_autenticacao_solicitar_nova_senha.jpg used on i
-nput line 706.
+nput line 702.
 (pdftex.def)             Requested size: 252.0pt x 183.47636pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 706--707
+Overfull \hbox (12.0pt too wide) in paragraph at lines 702--703
  [][] 
  []
 
@@ -851,10 +854,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: img/RF_autenticacao_solicitar_nova_senha.jpg Graphic file (type jpg)
 <use img/RF_autenticacao_solicitar_nova_senha.jpg>
 Package pdftex.def Info: img/RF_autenticacao_solicitar_nova_senha.jpg used on i
-nput line 712.
+nput line 708.
 (pdftex.def)             Requested size: 252.0pt x 183.47636pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 712--713
+Overfull \hbox (12.0pt too wide) in paragraph at lines 708--709
  [][] 
  []
 
@@ -867,10 +870,10 @@ t>
 File: img/RF_autenticacao_falha_ao_enviar_senha.jpg Graphic file (type jpg)
  <use img/RF_autenticacao_falha_ao_enviar_senha.jpg>
 Package pdftex.def Info: img/RF_autenticacao_falha_ao_enviar_senha.jpg used on 
-input line 718.
+input line 714.
 (pdftex.def)             Requested size: 252.0pt x 125.16063pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 718--719
+Overfull \hbox (12.0pt too wide) in paragraph at lines 714--715
  [][] 
  []
 
@@ -881,11 +884,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: img/RF_cadastro_de_usuario.jpg Graphic file (type jpg)
 
 <use img/RF_cadastro_de_usuario.jpg>
-Package pdftex.def Info: img/RF_cadastro_de_usuario.jpg used on input line 724.
+Package pdftex.def Info: img/RF_cadastro_de_usuario.jpg used on input line 720.
 
 (pdftex.def)             Requested size: 252.0pt x 108.73366pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 724--725
+Overfull \hbox (12.0pt too wide) in paragraph at lines 720--721
  [][] 
  []
 
@@ -897,10 +900,10 @@ File: img/RF_cadastro_de_usuario_realizado.jpg Graphic file (type jpg)
 
 <use img/RF_cadastro_de_usuario_realizado.jpg>
 Package pdftex.def Info: img/RF_cadastro_de_usuario_realizado.jpg used on input
- line 730.
+ line 726.
 (pdftex.def)             Requested size: 252.0pt x 103.64198pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 730--731
+Overfull \hbox (12.0pt too wide) in paragraph at lines 726--727
  [][] 
  []
 
@@ -911,10 +914,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: img/DER_colaborador.jpg Graphic file (type jpg)
 
 <use img/DER_colaborador.jpg>
-Package pdftex.def Info: img/DER_colaborador.jpg used on input line 736.
+Package pdftex.def Info: img/DER_colaborador.jpg used on input line 732.
 (pdftex.def)             Requested size: 252.0pt x 210.62117pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 736--737
+Overfull \hbox (12.0pt too wide) in paragraph at lines 732--733
  [][] 
  []
 
@@ -925,10 +928,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: img/DER_acesso.jpg Graphic file (type jpg)
 
 <use img/DER_acesso.jpg>
-Package pdftex.def Info: img/DER_acesso.jpg used on input line 742.
+Package pdftex.def Info: img/DER_acesso.jpg used on input line 738.
 (pdftex.def)             Requested size: 252.0pt x 211.10303pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 742--743
+Overfull \hbox (12.0pt too wide) in paragraph at lines 738--739
  [][] 
  []
 
@@ -938,10 +941,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <img/DER_tap.jpg, id=62, 978.65625pt x 398.99063pt>
 File: img/DER_tap.jpg Graphic file (type jpg)
  <use img/DER_tap.jpg>
-Package pdftex.def Info: img/DER_tap.jpg used on input line 748.
+Package pdftex.def Info: img/DER_tap.jpg used on input line 744.
 (pdftex.def)             Requested size: 252.0pt x 102.73666pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 748--749
+Overfull \hbox (12.0pt too wide) in paragraph at lines 744--745
  [][] 
  []
 
@@ -952,10 +955,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: img/DER_projeto_p1.jpg Graphic file (type jpg)
 
 <use img/DER_projeto_p1.jpg>
-Package pdftex.def Info: img/DER_projeto_p1.jpg used on input line 754.
+Package pdftex.def Info: img/DER_projeto_p1.jpg used on input line 750.
 (pdftex.def)             Requested size: 252.0pt x 126.98975pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 754--755
+Overfull \hbox (12.0pt too wide) in paragraph at lines 750--751
  [][] 
  []
 
@@ -966,10 +969,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: img/DER_projeto_p2.jpg Graphic file (type jpg)
 
 <use img/DER_projeto_p2.jpg>
-Package pdftex.def Info: img/DER_projeto_p2.jpg used on input line 760.
+Package pdftex.def Info: img/DER_projeto_p2.jpg used on input line 756.
 (pdftex.def)             Requested size: 252.0pt x 97.65723pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 760--761
+Overfull \hbox (12.0pt too wide) in paragraph at lines 756--757
  [][] 
  []
 
@@ -993,7 +996,7 @@ Here is how much of TeX's memory you used:
  7556 multiletter control sequences out of 15000+200000
  71046 words of font info for 104 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,28p,1131b,281s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,10n,28p,1190b,281s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Program Files/MiKTeX 2.9/font
@@ -1008,7 +1011,7 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/h
 elvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sigproc-sp.pdf (15 pages, 1308706 bytes).
+Output written on sigproc-sp.pdf (15 pages, 1309236 bytes).
 PDF statistics:
  129 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
