@@ -523,7 +523,7 @@ Os requisitos funcionais do sistema serão apresentados a seguir, estes foram se
 
 \subsection{Requisitos funcionais}
 As principais funcionalidades da ferramenta serão descritas
-nas subsecções seguintes:
+nas subsecções seguintes, vale ressaltar, que devido ao porte desta ferramenta só elencaremos alguns dos requisitos desenvolvidos:
 
 \subsubsection{Autenticação}
 Para o usuário ter acesso de login, este deve ter sido cadastrado previamente no sistema. Em caso de uma nova instalação do sistema, por definição padrão, o banco de dados virá configurado com um usuário administrador com acesso a todas as páginas do sistema. Para acessar com este usuário deverá ser informado os seguintes dados de acesso: login = adm e senha = aadsp (figura 5). Caso seja informado dados incorretos, a ferramenta informará a mensagem de alerta "Não foi possível realizar a autenticação do usuário!" (figura 6), caso somente a senha esteja incorreta o sistema irá informar "Senha incorreta!" (figura 7)
@@ -596,6 +596,27 @@ Neste requisito será possível detalhar as informações de uma determinada ata
 
 \subsubsection{Detalhamento da estrutura analítica do projeto}
 Através deste requisito será possível detalhar informações ao mesmo tempo que editar/excluir informações já inseridas.
+
+\section{Fluxo básico da ferramenta T-AADSP}
+Nesta seção serão apresentados os referidos casos de uso dos requisitos anteriormente mencionados, devido ao tamanho da ferramenta serão elencados apenas alguns dos casos de uso que fazem parte da ferramenta.
+
+\begin{figure*}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=1\textwidth]{TAP.png} % leia abaixo
+\caption{PROJETO - Termo de abertura do projeto de  \textit{software}}
+\end{figure*}
+
+\begin{figure*}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=1\textwidth]{Consulta_de_Projeto.png} % leia abaixo
+\caption{PROJETO - Projetos de  \textit{software}}
+\end{figure*}
+
+\begin{figure*}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=1\textwidth]{ArquiteturaDoProjeto.png} % leia abaixo
+\caption{Diagrama da arquitetura do \textit{software}}
+\end{figure*}
 
 \section{Desenvolvimento da ferramenta T-AADSP}
 \subsection{Tecnologias utilizadas}
@@ -729,33 +750,69 @@ estabelecidos e tratados com as partes interessadas & Revisões das entregas dur
 
 \begin{figure}[h]
 \centering % para centralizarmos a figura
-\includegraphics[width=0.5\textwidth]{DER_colaborador.jpg} % leia abaixo
+\includegraphics[width=0.5\textwidth]{RF_detalhamento_Projeto.jpg} % leia abaixo
+\caption{Detalhes de um projeto cadastrado no sistema em função do seu custo}
+\end{figure}
+
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_detalhamento_Projeto_Cronograma.jpg} % leia abaixo
+\caption{Detalhes de um projeto cadastrado no sistema em função do seu cronograma de execução}
+\end{figure}
+
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_TAPConsulta.jpg} % leia abaixo
+\caption{Consulta aos termos de abertura de projetos de software no sistema}
+\end{figure}
+
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_TAPDetalhamento.jpg} % leia abaixo
+\caption{Detalhamento de um termo de abertura de projeto de software no sistema}
+\end{figure}
+
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_TAPDetalhamento_addPatrocinador.jpg} % leia abaixo
+\caption{TAP: consulta aos patrocinadores de um projeto}
+\end{figure}
+
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_Termo_de_Abertura_de_projeto_em_PDF.jpg} % leia abaixo
+\caption{TAP: em formato PDF}
+\end{figure}
+
+\begin{figure*}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=1\textwidth]{DER_colaborador.jpg} % leia abaixo
 \caption{Diagrama de Entidade e Relacionamento - Schema Colaborador}
-\end{figure}
+\end{figure*}
 
-\begin{figure}[h]
+\begin{figure*}[h]
 \centering % para centralizarmos a figura
-\includegraphics[width=0.5\textwidth]{DER_acesso.jpg} % leia abaixo
+\includegraphics[width=1\textwidth]{DER_acesso.jpg} % leia abaixo
 \caption{Diagrama de Entidade e Relacionamento - Schema Acesso}
-\end{figure} 
+\end{figure*} 
 
-\begin{figure}[h]
+\begin{figure*}[h]
 \centering % para centralizarmos a figura
-\includegraphics[width=0.5\textwidth]{DER_tap.jpg} % leia abaixo
+\includegraphics[width=1\textwidth]{DER_tap.jpg} % leia abaixo
 \caption{Diagrama de Entidade e Relacionamento - Schema Tap}
-\end{figure}
+\end{figure*}
 
-\begin{figure}[h]
+\begin{figure*}[h]
 \centering % para centralizarmos a figura
-\includegraphics[width=0.5\textwidth]{DER_projeto_p1.jpg} % leia abaixo
+\includegraphics[width=1\textwidth]{DER_projeto_p1.jpg} % leia abaixo
 \caption{Diagrama de Entidade e Relacionamento - Schema Projeto Parte 1}
-\end{figure}
+\end{figure*}
 
-\begin{figure}[h]
+\begin{figure*}[h]
 \centering % para centralizarmos a figura
-\includegraphics[width=0.5\textwidth]{DER_projeto_p2.jpg} % leia abaixo
+\includegraphics[width=1\textwidth]{DER_projeto_p2.jpg} % leia abaixo
 \caption{Diagrama de Entidade e Relacionamento - Schema Projeto Parte 2}
-\end{figure}
+\end{figure*}
 
 
 

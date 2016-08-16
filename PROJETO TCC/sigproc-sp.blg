@@ -9,9 +9,9 @@ Repeated entry---line 81 of file sigproc.bib
  : @misc{scrum:agil
  :                 ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "openUP:hibrido"
 Warning--to sort, need author, editor, or key in ieee
 Warning--to sort, need author or key in openUP:agil
+Warning--to sort, need author or key in openUP:hibrido
 Too many commas in name 1 of "Maurício Massaru Arimoto, Edson Murakami, Valter Vieira de Camargo, Maria Istela Cagnin" for entry Arimoto:melhoria
 while executing---line 1086 of file acm.bst
 Warning--to sort, need author or key in bitrix24:ferramenta
