@@ -46,6 +46,11 @@ Jira.
   model.
 \newblock {\em VIII Simpósio Brasileiro de Qualidade de Software\/}, 249--263.
 
+\bibitem{Royce}
+{\sc Royce, W.~W.}
+\newblock Managing the development of large software systems.
+\newblock {\em proceedings of IEEE WESCON 26}, 8 (1970), 11.
+
 \bibitem{scrum:agil}
 {\sc Sabbagh, R.}
 \newblock {\em SCRUM: Gestão Ágil para Projetos de Suscesso}.

@@ -52,7 +52,7 @@ Antonio Carlos Santos Souza\ \\
 
 \maketitle
 \begin{abstract}
-As abordagens existentes para o gerenciamento de projetos de \textit{software} não são fáceis de serem implementadas nas empresas. Neste projeto, será proposta uma ferramenta baseada na metodologia para gerenciamento de projetos de \textit{software} \textit{AADSP}, metodologia esta que utiliza conceitos das abordagens ágeis, preservando as práticas consideradas como relevantes ao cenário de desenvolvimento de \textit{software} e as abordagens não ágeis, que definem diversos processos e resultados esperados pelas mais diversas fases e atividade de um projeto. 
+As abordagens existentes para o gerenciamento de projetos de \textit{software} não são fáceis de serem implementadas nas empresas. Neste projeto, será proposta uma ferramenta baseada na metodologia para gerenciamento de projetos de \textit{software} \textit{AADSP}, metodologia esta que utiliza conceitos das abordagens ágeis, preservando as práticas consideradas como relevantes ao cenário de desenvolvimento de \textit{software} e as abordagens não ágeis, que definem diversos processos e resultados esperados pelas mais diversas fases e atividades de um projeto. 
 \end{abstract}
 
 \keywords{Engenharia de \textit{Software}, Artefatos de \textit{Software}, Gerenciamento de Projetos de \textit{Software}} % NOT required for Proceedings
@@ -60,9 +60,16 @@ As abordagens existentes para o gerenciamento de projetos de \textit{software} n
 
 
 \section{Introdução}
-As empresas em seus diversos portes oferecem a seus clientes produtos e/ou serviços. A qualidade destes está diretamente ligada ao processo utilizado para conceber os mesmos. Um processo é uma sequencia de passos realizados para um determinado propósito \cite{ieee}. Um processo de \textit{software} é definido como um conjunto de atividades, métodos, práticas e transformações que pessoas empregam para desenvolver e manter \textit{software} e produtos associados \cite{weber}. O Guia Brasileiro de Melhoria de Processo de \textit{Software} - MPSBR define que qualidade é um fator crítico para o sucesso
-da indústria de \textit{software}. Para que se tenha um setor de \textit{software} competitivo, nacional e internacionalmente, é essencial que os empreendedores do setor coloquem a eficiência e a eficácia dos seus processos em foco nas empresas,
-visando à oferta de produtos de \textit{software} e serviços correlatos conforme padrões internacionais de qualidade \cite{mpsbr:nAgil}. Nesse contexto, surgem diversas metodologias que visam promover a implantação e a melhoria contínua do processo de \textit{software} nas empresas.
+No século XXI o desenvolvimento de software tem adquirido bastante força e movimentando um mercado bilionário de aplicativos e softwares dos mais diversos nichos. Para prover maior potencialização no desenvolvimento de software, a indústria tem recorrido a área da engenharia de software. Esta área vem buscando solucionar a questão de se desenvolver softwares de forma rápida, com baixo custo e alta qualidade. Nesta constante busca, a área da engenharia de software têm desenvolvido técnicas e estudos de processos em diversos cenários de desenvolvimento.
+
+O primeiro modelo de desenvolvimento de software foi denominado de clássico ou cascata, que também é conhecido por abordagem “top-down”. Este proposto por Royce em 1970 \cite{Royce}. Até meados da década de 1980, foi o único modelo com aceitação geral. Este modelo segmentava o processo de desenvolvimento de software em fases. Estas eram compostas em: requerimento, projeto, implementação, verificação e manutenção. Em cada uma das fases mencionadas eram esperados um conjunto de resultados, ao término de uma determinada fase o projeto seguia para uma conseguinte não sendo admitido retorno a uma fase anterior já executada. O grande problema do modelo é que projetos, em especial os de software, sofrem constante mudança no decorrer de sua execução, porem isto não era previsto pelo modelo o tornando difícil de ser implementado.
+
+Outros métodos baseados na abordagem clássica surgiram e são denominados de métodos tradicionais, estes são altamente prescritivos e, de forma geral, se caracterizam pelo foco em planos detalhados definidos no princípio do projeto. Acreditava-se que, pelo uso desses métodos, seria possível tratar o desenvolvimento de \textit{software} como um processo previsível, no
+que, quanto mais falhavam, mais pesados e complexos esses métodos se tornavam \cite{scrum:agil}.
+
+Para que se tenha um setor de \textit{software} competitivo, nacional e internacionalmente, é essencial que os empreendedores do setor coloquem a eficiência e a eficácia dos seus processos em foco nas empresas,
+visando à oferta de produtos de \textit{software} e serviços correlatos, conforme padrões internacionais de qualidade \cite{mpsbr:nAgil}. Nesse contexto, surgem diversas metodologias que visam promover a implantação e a melhoria contínua do processo de \textit{software} nas empresas. Neste cenário, a qualidade dos produtos tem se tornado um fator diferencial e está diretamente ligada ao processo utilizado para conceber os mesmos. Um processo é uma sequencia de passos realizados para um determinado propósito \cite{ieee}. Um processo de \textit{software} é definido como um conjunto de atividades, métodos, práticas e transformações que pessoas empregam para desenvolver e manter \textit{software} e produtos associados \cite{weber}. O Guia Brasileiro de Melhoria de Processo de \textit{Software} - MPSBR define que qualidade é um fator crítico para o sucesso
+da indústria de \textit{software}. 
 
 \section{Fundamentação teórica}
 Durante o processo de concepção do presente trabalho, foi necessária a realização de uma revisão da literatura com o objetivo de levantar a fundamentação teórica ao tema proposto. Nesta seção, serão apresentados os principais temas encontrados e utilizados no desenvolvimento deste trabalho, que será fundamentado no manifesto ágil de desenvolvimento de \textit{software} \cite{manifesto:agil} e alguns guias de melhoria de processo de \textit{software}. Desse modo, será realizada a separação dos temas analisados em três categorias:
@@ -453,22 +460,25 @@ Este trabalho será focado na gerência de projetos. Deste modo, devemos contemp
 
 \begin{table*}[h]
 \scriptsize
-\caption{Análise do produto de trabalho MR-MPS e a abordagem híbrida \textit{OpenUP}} 
+\caption{Análise comparativa entre os trabalhos relacionados} 
 \centering
-\begin{tabular}{|p{70mm}|p{20mm}|p{20mm}|p{20mm}|p{20mm}|}
+\begin{tabular}{|p{60mm}|p{15mm}|p{15mm}|p{15mm}|p{15mm}|p{15mm}|}
 \hline
- \textbf{Característica} & \textbf{Bitrix24} & \textbf{Jira} & \textbf{Wrike} & \textbf{T-AADSP} \\
+ \textbf{Característica} & \textbf{Bitrix24} & \textbf{Jira} & \textbf{Wrike} & \textbf{T-AADSP} & \textbf{Redmine} \\
 \hline
-Versão \textit{web} & x & x  & x  & x \\
-Sistema de autenticação & x & x  & x  & x \\
-Definição de cronograma do projeto & x & x  & x  & x \\
-Definição de termo de abertura de projeto (TAP) &  &   &  & x \\
-Definição de equipe executora do projeto & x & x  & x  & x \\
-Controle de reuniões do projeto  & x & x  & x  & x \\
-Definição da estrutura analítica do projeto (EAP) &  &   &  & x \\
-Controle dos recursos especiais do projeto &  &   &  & x \\
-Controle de acesso aos conteúdos da plataforma & x & x  & x  & x \\
-Mensuração de projeto de software por análise de ponto de função  &  &   &  & x \\
+Versão \textit{web} & x & x  & x  & x  & x\\
+Sistema de autenticação & x & x  & x  & x & x\\
+Definição de cronograma do projeto & x & x  & x  & x  & \\
+Definição de termo de abertura de projeto (TAP) &  &   &  & x  & \\
+Definição de equipe executora do projeto & x & x  & x  & x  &\\
+Controle de reuniões do projeto  & x & x  & x  & x  & x\\
+Definição da estrutura analítica do projeto (EAP) &  &   &  & x & \\
+Definição da estrutura analítica do projeto (WBS) &  &   &  &  & x \\
+Controle dos recursos especiais do projeto &  &   &  & x  &\\
+Controle de acesso aos conteúdos da plataforma & x & x  & x  & x & x\\
+Mensuração de projeto de software por análise de ponto de função  &  &   &  & x & \\
+Controle do projeto por meio do \textit{Smart Gantt chart helps plan} project   &  &   &  &  & x \\
+Acompanhamento da execução das etapas do projeto x & x & x & x & x & x\\
 \hline
 \end{tabular}
 \end{table*}
@@ -507,6 +517,7 @@ Nesta seção foram selecionadas três ferramentas, onde foi analisada as suas f
 \item \textbf{Bitrix24:} É uma plataforma completa de colaboração social, comunicação e ferramentas de gestão. Esta ferramenta trabalha integrada as redes sociais corporativas, disseminando postagens e comunicados. Esta ferramenta trabalha com gerenciamento de projetos / grupos de trabalho, tarefas e subtarefas, modelos de tarefa, tarefas recorrentes, gerenciamento de registros (Listas), diagrama de Gantt, gerenciamento de tempo \cite{bitrix24:ferramenta}.
 \item \textbf{Jira:}  Permite a gestão, criação e delegação de projetos e tarefas, com fluxos de processos personalizados para o acompanhamento dos projetos, controle de acesso e segurança customizado, acesso via web com suporte aos principais \textit{browsers} do mercado, notificações / alertas por \textit{email},  centenas de \textit{plug-ins} gratuitos. É uma ferramenta robusta para gestão de projetos e tarefas, bem como para acompanhamento e reporte de defeitos (\textit{bugs}) em projetos de qualquer natureza \cite{jira:ferramenta}.
 \item \textbf{Wrike:} É uma ferramenta interativa para colaboração, planejamento de projetos, otimização de carga de trabalho e acompanhamento do andamento. Ajudam a equipe a produzir mais e com maior velocidade, independente de onde se encontrem. Além disso, as notificações em tempo real apresentam todas as atualizações diárias das atividades do projeto, eliminando a necessidade de reuniões extras e \textit{e-mails}. Os painéis personalizáveis ajudam a monitorar projetos específicos, etapas importantes, trabalhos delegados, entre outros.  
+\item \textbf{Redmine:} É uma plataforma para gerenciamento de projetos. Esta ferramenta permite gerenciar projetos complexos de forma rápida através de diagramas e componentes de fácil manipulação como o diagrama \textit{Smart Gantt chart}. A ferramenta também promove maior velocidade no controle e comunicação de tarefas, além de permitir o gerenciamento de projetos simultâneos e dos repositórios de integração do projeto.
 \end{itemize}
 
 \subsection{Comparativo entre ferramentas}
@@ -639,6 +650,7 @@ A ferramenta T-AADSP foi implantada na empresa Computação Brasil, empresa que 
 Os participantes testaram as funcionalidades contidas na ferramenta T-AADSP, utilizando para isto projetos reais. Vale ressaltar, que esta empresa já utilizava a abordagem AADSP para melhoria do processo de software, sem o uso da ferramenta. Participaram também dois bolsistas que utilizaram a ferramenta para mensuração de \textit{software} em trabalhos desenvolvidos pelos mesmos na empresa em questão. Os resultados foram coletados e apresentados no apêndice A.
 
 \section{Analise de dados reais}
+Foram testados três projetos na ferramenta, todos da área da Computação. Os projetos foram cadastrados e monitoradas pela ferramenta T-AADSP.  
 
 \section{Avaliação da ferramenta}
 
@@ -671,30 +683,30 @@ Os participantes testaram as funcionalidades contidas na ferramenta T-AADSP, uti
 \textbf{GPR} & \textbf{Resultado esperado pelo MR-MPS.SW} & \textbf{Artefato do AADSP que contempla o resultado esperado} & \textbf{Artefato no T-AADSP} \\
 \hline
 1 & O escopo do trabalho para o projeto é definido & Estrutura analítica do projeto
-(Gerência de projetos) & \\
-2 & As tarefas e os produtos de trabalho do projeto são dimensionados utilizando métodos apropriados & Análise de pontos por função (Gerência de projetos) & \\
-3 & O modelo e as fases do ciclo de vida do projeto são definidos & Requisitos do projeto são realizados sob ciclos de \textit{Sprint} (Gerência de requisitos) &\\
-4 &  O esforço e o custo para a execução das tarefas e dos produtos de trabalho são estimados com base em dados históricos ou referências técnicas & Requisitos do projeto são realizados sob ciclos de \textit{Sprint} (Gerência de requisitos), Análise de pontos por função (Gerência de projetos) & \\
+(Gerência de projetos) & Gerência de projetos \\
+2 & As tarefas e os produtos de trabalho do projeto são dimensionados utilizando métodos apropriados & Análise de pontos por função (Gerência de projetos) & Gerência de projetos\\
+3 & O modelo e as fases do ciclo de vida do projeto são definidos & Requisitos do projeto são realizados sob ciclos de \textit{Sprint} (Gerência de requisitos) & Não desenvolvido\\
+4 &  O esforço e o custo para a execução das tarefas e dos produtos de trabalho são estimados com base em dados históricos ou referências técnicas & Requisitos do projeto são realizados sob ciclos de \textit{Sprint} (Gerência de requisitos), Análise de pontos por função (Gerência de projetos) & Gerência de projetos\\
 5 & O orçamento e o cronograma do projeto, incluindo a definição de marcos e pontos de controle, são estabelecidos e mantidos
-& Definição e controle do projeto (Gerência de projetos) & \\
+& Definição e controle do projeto (Gerência de projetos) & Gerência de projetos\\
 6 & Os riscos do projeto são identificados e o seu impacto, probabilidade de ocorrência e prioridade de tratamento são
-determinados e documentados & Termo de abertura do projeto (Gerência de projetos) & \\
-7 & Os recursos humanos para o projeto são planejados considerando o perfil e o conhecimento necessários para executá-lo & Definição da função dos colaboradores (Gerência de recursos humanos) & \\
-8 & Os recursos e o ambiente de trabalho necessários para executar o projeto são planejados & Definição dos recursos necessários ao projeto (Gerência de projetos) & \\
-9 & Os dados relevantes do projeto são identificados e planejados quanto à forma de coleta, armazenamento e distribuição. Um mecanismo é estabelecido para acessá-los, incluindo, se pertinente, questões de privacidade e segurança & Controle de acesso aos conteúdos (Gerência de projetos) & \\
-10 & Um plano geral para a execução do projeto é estabelecido com a integração de planos específicos & Cronograma de execução das atividades (Gerência de projetos) & \\
+determinados e documentados & Termo de abertura do projeto (Gerência de projetos) & Gerência de projetos\\
+7 & Os recursos humanos para o projeto são planejados considerando o perfil e o conhecimento necessários para executá-lo & Definição da função dos colaboradores (Gerência de recursos humanos) & Gerência de projetos\\
+8 & Os recursos e o ambiente de trabalho necessários para executar o projeto são planejados & Definição dos recursos necessários ao projeto (Gerência de projetos) & Gerência de projetos\\
+9 & Os dados relevantes do projeto são identificados e planejados quanto à forma de coleta, armazenamento e distribuição. Um mecanismo é estabelecido para acessá-los, incluindo, se pertinente, questões de privacidade e segurança & Controle de acesso aos conteúdos (Gerência de projetos) & Gerência de projetos\\
+10 & Um plano geral para a execução do projeto é estabelecido com a integração de planos específicos & Cronograma de execução das atividades (Gerência de projetos) & Gerência de projetos\\
 11 & A viabilidade de atingir as metas do projeto é explicitamente avaliada considerando restrições e recursos disponíveis. Se necessário, ajustes são realizados & \textit{Check list} do Projeto (Gerência de projetos) & \\
-12 & O Plano do projeto é revisado com todos os interessados e o compromisso com ele é obtido e mantido &  \textit{Check list} de revisão do do projeto (Gerência de Projetos)&\\
+12 & O Plano do projeto é revisado com todos os interessados e o compromisso com ele é obtido e mantido &  \textit{Check list} de revisão do do projeto (Gerência de Projetos)& Gerência de projetos\\
 13 & O escopo, as tarefas, as estimativas, o orçamento e o cronograma do projeto são monitorados em relação ao planejado & 
-Acompanhamento do Projeto (Gerência de projetos), Acompanhamento do Cronograma do Projeto (Gerência de projetos) &\\
+Acompanhamento do Projeto (Gerência de projetos), Acompanhamento do Cronograma do Projeto (Gerência de projetos) & Gerência de projetos\\
 14 & Os recursos materiais e humanos bem como os dados relevantes do projeto são monitorados em relação ao planejado & 
-Termo de abertura do projeto (Gerência de projetos), Definição e controle do projeto & \\
-15 & Os riscos são monitorados em relação ao planejado & Termo de abertura do projeto (Gerência de projetos) & \\
-16 & O envolvimento das partes interessadas no projeto é planejado, monitorado e mantido & Gerenciamento das atividades do projeto (Gerência de requisitos)  & \\
-17 & Revisões são realizadas em marcos do projeto e conforme estabelecido no planejamento & Revisões das entregas durante os ciclos da \textit{Sprint} (Gerência de requisitos) & \\
+Termo de abertura do projeto (Gerência de projetos), Definição e controle do projeto & Gerência de projetos \\
+15 & Os riscos são monitorados em relação ao planejado & Termo de abertura do projeto (Gerência de projetos) &  Gerência de projetos\\
+16 & O envolvimento das partes interessadas no projeto é planejado, monitorado e mantido & Gerenciamento das atividades do projeto (Gerência de requisitos)  & Não desenvolvido \\
+17 & Revisões são realizadas em marcos do projeto e conforme estabelecido no planejamento & Revisões das entregas durante os ciclos da \textit{Sprint} (Gerência de requisitos) & Não Desenvolvido \\
 18 & Registros de problemas identificados e o resultado da análise de questões pertinentes, incluindo dependências críticas, são
-estabelecidos e tratados com as partes interessadas & Revisões das entregas durante os ciclos da \textit{Sprint} (Gerência de reutilização ) & \\
-19 & Ações para corrigir desvios em relação ao planejado e para prevenir a repetição dos problemas identificados são estabelecidas, implementadas e acompanhadas até a sua conclusão & Revisões das entregas durante os ciclos da Sprint (Gerência de requisitos) & \\
+estabelecidos e tratados com as partes interessadas & Revisões das entregas durante os ciclos da \textit{Sprint} (Gerência de reutilização ) & Não desenvolvido \\
+19 & Ações para corrigir desvios em relação ao planejado e para prevenir a repetição dos problemas identificados são estabelecidas, implementadas e acompanhadas até a sua conclusão & Revisões das entregas durante os ciclos da Sprint (Gerência de requisitos) & Não desenvolvido \\
 
 \hline
 \end{tabular}
@@ -722,12 +734,6 @@ estabelecidos e tratados com as partes interessadas & Revisões das entregas dur
 \centering % para centralizarmos a figura
 \includegraphics[width=0.5\textwidth]{RF_autenticacao_solicitar_nova_senha.jpg} % leia abaixo
 \caption{Solicitação de nova senha via e-mail }
-\end{figure}
-
-\begin{figure}[h]
-\centering % para centralizarmos a figura
-\includegraphics[width=0.5\textwidth]{RF_autenticacao_solicitar_nova_senha.jpg} % leia abaixo
-\caption{Foi enviada uma nova senha ao email do usuário }
 \end{figure}
 
 \begin{figure}[h]
@@ -784,23 +790,82 @@ estabelecidos e tratados com as partes interessadas & Revisões das entregas dur
 \caption{TAP: em formato PDF}
 \end{figure}
 
-\begin{figure*}[h]
+
+\begin{figure}[h]
 \centering % para centralizarmos a figura
-\includegraphics[width=1\textwidth]{DER_colaborador.jpg} % leia abaixo
+\includegraphics[width=0.5\textwidth]{RF_TAPDetalhamento_stakeholder.jpg} % leia abaixo
+\caption{Consulta dos stakeholders do projeto}
+\end{figure}
+
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_Eap_do_projeto_de_software.jpg} % leia abaixo
+\caption{Estrutura analítica de um projeto e software}
+\end{figure}
+
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_documento_de_estimativa_de_escopo.jpg} % leia abaixo
+\caption{Documento de estimativa de escopo de um projeto - Cálculo dos pontos de função}
+\end{figure}
+
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_funcoes_tipos_de_dados_estimativa_de_escopo.jpg} % leia abaixo
+\caption{Cálculo dos pontos de função: cadastro de funções de tipos de dados}
+\end{figure}
+
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_quadro_de_atividades_do_projeto.jpg} % leia abaixo
+\caption{Calendário de atividades do projeto de software}
+\end{figure}
+
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_cadastr_de_atividade_para_projeto.jpg} % leia abaixo
+\caption{Cadastro de atividades do projeto}
+\end{figure}
+
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_cronograma_do_projeto_PDF.jpg} % leia abaixo
+\caption{Cronograma do projeto em formato PDF}
+\end{figure}
+
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_recursos_especiais_do_projeto.jpg} % leia abaixo
+\caption{Cadastro de recursos do projeto}
+\end{figure}
+
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_recursos_especiais_do_projeto_em_PDF.jpg} % leia abaixo
+\caption{Lista dos recursos especiais do projeto em formato PDF}
+\end{figure}
+
+
+
+% documento de estimativa de escopo %
+
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{DER_colaborador.jpg} % leia abaixo
 \caption{Diagrama de Entidade e Relacionamento - Schema Colaborador}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[h]
+\begin{figure}[h]
 \centering % para centralizarmos a figura
-\includegraphics[width=1\textwidth]{DER_acesso.jpg} % leia abaixo
+\includegraphics[width=0.5\textwidth]{DER_acesso.jpg} % leia abaixo
 \caption{Diagrama de Entidade e Relacionamento - Schema Acesso}
-\end{figure*} 
+\end{figure} 
 
-\begin{figure*}[h]
+\begin{figure}[h]
 \centering % para centralizarmos a figura
-\includegraphics[width=1\textwidth]{DER_tap.jpg} % leia abaixo
+\includegraphics[width=0.5\textwidth]{DER_tap.jpg} % leia abaixo
 \caption{Diagrama de Entidade e Relacionamento - Schema Tap}
-\end{figure*}
+\end{figure}
 
 \begin{figure*}[h]
 \centering % para centralizarmos a figura
@@ -813,7 +878,6 @@ estabelecidos e tratados com as partes interessadas & Revisões das entregas dur
 \includegraphics[width=1\textwidth]{DER_projeto_p2.jpg} % leia abaixo
 \caption{Diagrama de Entidade e Relacionamento - Schema Projeto Parte 2}
 \end{figure*}
-
 
 
 \end{appendices}
