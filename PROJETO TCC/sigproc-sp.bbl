@@ -33,6 +33,11 @@ Jira.
 \newblock \url{http://www.manifestoagil.com.br/}, 2001.
 \newblock Acessado em: 06 de julho de 2016.
 
+\bibitem{agil:Cockburn}
+{\sc Cockburn, A.}
+\newblock {\em Agile sofware development: the cooperative game}.
+\newblock MA, 2007.
+
 \bibitem{pmbok:nAgil}
 {\sc Institute, P.~M.}
 \newblock {\em Um Guia do conhecimento em gerencimento de Projetos - Guia PMBOK
@@ -61,11 +66,6 @@ Jira.
 \newblock {\em MPS.BR - Melhoria de Processo do Software Brasileiro: Guia Geral
   MPS de Software}.
 \newblock Sociedade SOFTEX, 2012.
-
-\bibitem{aadsp:hibirdo}
-{\sc Souza, A.~C.}
-\newblock {\em Adaptive Approach for Deployment of Software Process - AADSP}.
-\newblock LABRASOFT, 2016.
 
 \bibitem{Castro:melhoria}
 {\sc Vitor~de Souza~Castro, Sandro~Ronaldo, B.~O.}

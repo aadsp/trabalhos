@@ -1,14 +1,19 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: sigproc-sp.aux
 The style file: acm.bst
 Database file #1: sigproc.bib
-Repeated entry---line 84 of file sigproc.bib
+Repeated entry---line 63 of file sigproc.bib
+ : @book{mpsbr:nAgil
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 91 of file sigproc.bib
  : @misc{xp:agil
  :              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 91 of file sigproc.bib
+Repeated entry---line 98 of file sigproc.bib
  : @misc{scrum:agil
  :                 ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "aadsp:hibirdo"
 Warning--to sort, need author, editor, or key in ieee
 Warning--to sort, need author or key in openUP:agil
 Warning--to sort, need author or key in openUP:hibrido
@@ -20,4 +25,4 @@ Warning--empty author and editor in ieee
 Too many commas in name 1 of "Maurício Massaru Arimoto, Edson Murakami, Valter Vieira de Camargo, Maria Istela Cagnin" for entry Arimoto:melhoria
 while executing---line 1127 of file acm.bst
 Warning--empty year in Arimoto:melhoria
-(There were 4 error messages)
+(There were 5 error messages)

@@ -593,6 +593,18 @@ Todo projeto poderá possuir três modelos de EAP (Pacote, Entrega e Fase). Deve
 \subsubsection{Cadastro dos documentos de estimativa de escopo do projeto}
 Para estimar o tamanho do projeto, deverá ser realizado o cálculo dos pontos de função. Para este cálculo, poderá ser consultado um valor base, como também, as quatorze características gerais dos projetos de software objetivando, os ajuste do pontos de função. Após a inserção dos dados das funções dos tipos de dados e transações, deverá ser informado as características gerais do sistema encontradas. Por fim, o sistema informará automaticamente o valor total dos pontos de funções calculados e o valor ajustado.
 
+\begin{figure*}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=1\textwidth]{TAP.png} % leia abaixo
+\caption{Diagrama de caso de uso do do termo de abertura do projeto de \textit{software}}
+\end{figure*}
+
+\begin{figure*}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=1\textwidth]{Consulta_de_Projeto.png} % leia abaixo
+\caption{Diagrama de caso de uso do gerenciamento de projetos de \textit{software}}
+\end{figure*}
+
 \subsubsection{Cadastro do cronograma de execução do projeto}
 O usuário poderá definir data para realização de atividades do projeto. Estas datas serão catalogadas em um cronograma de execução de atividades.
 
@@ -611,23 +623,6 @@ Através deste requisito será possível detalhar informações ao mesmo tempo q
 \section{Fluxo básico da ferramenta T-AADSP}
 Nesta seção serão apresentados os referidos casos de uso dos requisitos anteriormente mencionados, devido ao tamanho da ferramenta serão elencados apenas alguns dos casos de uso que fazem parte da ferramenta.
 
-\begin{figure*}[h]
-\centering % para centralizarmos a figura
-\includegraphics[width=1\textwidth]{TAP.png} % leia abaixo
-\caption{PROJETO - Termo de abertura do projeto de  \textit{software}}
-\end{figure*}
-
-\begin{figure*}[h]
-\centering % para centralizarmos a figura
-\includegraphics[width=1\textwidth]{Consulta_de_Projeto.png} % leia abaixo
-\caption{PROJETO - Projetos de  \textit{software}}
-\end{figure*}
-
-\begin{figure*}[h]
-\centering % para centralizarmos a figura
-\includegraphics[width=1\textwidth]{ArquiteturaDoProjeto.png} % leia abaixo
-\caption{Diagrama da arquitetura do \textit{software}}
-\end{figure*}
 
 \section{Desenvolvimento da ferramenta T-AADSP}
 \subsection{Tecnologias utilizadas}
@@ -647,16 +642,16 @@ Este projeto foi todo desenvolvido utilizando as seguintes tecnologias:
 \section{Projeto em estudo}
 A ferramenta T-AADSP foi implantada na empresa Computação Brasil, empresa que atua no segmento do desenvolvimento de \textit{softwares} corporativos desde 2008. Participaram desta etapa do projeto três pessoas, todos da área da computação. O período de utilização da ferramenta foi de 01/06/2016 à 20/07/2016. 
 
-Os participantes testaram as funcionalidades contidas na ferramenta T-AADSP, utilizando para isto projetos reais. Vale ressaltar, que esta empresa já utilizava a abordagem AADSP para melhoria do processo de software, sem o uso da ferramenta. Participaram também dois bolsistas que utilizaram a ferramenta para mensuração de \textit{software} em trabalhos desenvolvidos pelos mesmos na empresa em questão. 
+Os participantes testaram as funcionalidades contidas na ferramenta T-AADSP, utilizando para isto projetos reais. Vale ressaltar, que esta empresa já utilizava a práticas ágeis para melhoria do processo de software, sem o uso da ferramenta. Participaram também dois bolsistas que utilizaram a ferramenta para mensuração de software em trabalhos desenvolvidos pelos mesmos na empresa em questão. Os resultados foram coletados e apresentados no apêndice A. 
 
 \section{Analise de dados reais}
-Foram testados três projetos na ferramenta, todos da área da Computação. Os projetos foram cadastrados e monitoradas pela ferramenta T-AADSP.  
-
-\section{Avaliação da ferramenta}
 
 
 \section{Conclusão}
+O presente trabalho apresentou a ferramenta T-AADSP, para gerenciamento de projetos de \textit{Software}. O proposito foi de desenvolver uma ferramenta capaz de melhorar / implantar o processo de desenvolvimento de software forma flexível, e desse modo, gerando apenas a documentação necessária ao projeto.  Segundo Cockburn, a documentação pode ser muito útil para o desenvolvimento
+do projeto, mas deve-se produzir somente a documentação necessária e suficiente para a realização do trabalho \cite{agil:Cockburn}
 
+Como trabalhos futuros, podem ser desenvolvidas as demais gerências: Requisitos, Recursos Humanos, Reutilização e Testes existentes na abordagem AADSP. Além disso, existe a possibilidade de desenvolver outros modelos de estimativa de software como a exemplo Pontos por Caso de Uso. O desenvolvimento das funcionalidade e módulos mencionados ajudariam a ferramenta a contemplar as demais fases inerentes a um projeto de software. Outras melhorias também poderiam ser realizadas como o aumento da granularidade do controle de perfis de acesso do sistema, aumento da escalabilidade da ferramenta e segurança dos dados.
 
 %\end{document}  % This is where a 'short' article might terminate
 
@@ -665,6 +660,87 @@ Foram testados três projetos na ferramenta, todos da área da Computação. Os 
 \bibliography{sigproc}
 
 \begin{appendices}
+
+\begin{figure*}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=1\textwidth]{ArquiteturaDoProjeto.jpg} % leia abaixo
+\caption{Visão estrutural da ferramenta T-AADSP}
+\end{figure*}
+
+
+\section{Questionário}
+
+\subsection{Você já conhecia abordagens ágeis de desenvolvimento de software?}
+\begin{itemize}
+\item Sim.
+\item Não.
+\end{itemize}
+
+\subsection{Você já conhecia abordagens Tradicionais de desenvolvimento de software?}
+\begin{itemize}
+\item Sim
+\item Não
+\end{itemize}
+
+\subsection{Você já conhecia a abordagem AADSP para desenvolvimento de software?}
+\begin{itemize}
+\item Sim
+\item Não
+\end{itemize}
+
+\subsection{A ferramenta T-AADSP é um software com interface intuitiva, isto é, os ícones (botões) e links são autoexplicativos?}
+\begin{itemize}
+\item Não concordo totalmente
+\item Não concordo parcialmente
+\item Indiferente
+\item Concordo parcialmente
+\item Concordo totalmente
+\end{itemize}
+
+\subsection{A ferramenta T-AADSP possuí fácil navegação entre os menus?}
+\begin{itemize}
+\item Não concordo totalmente
+\item Não concordo parcialmente
+\item Indiferente
+\item Concordo parcialmente
+\item Concordo totalmente
+\end{itemize}
+
+\subsection{A ferramenta T-AADSP gera facilidade no desenvolvimento dos artefatos documentais do projeto de software?}
+\begin{itemize}
+\item Não concordo totalmente
+\item Não concordo parcialmente
+\item Indiferente
+\item Concordo parcialmente
+\item Concordo totalmente
+\end{itemize}
+
+\subsection{A ferramenta T-AADSP permite a criação independente dos artefatos documentais de acordo com a necessidade do projeto?}
+\begin{itemize}
+\item Não concordo totalmente
+\item Não concordo parcialmente
+\item Indiferente
+\item Concordo parcialmente
+\item Concordo totalmente
+\end{itemize}
+
+\subsection{A ferramenta T-AADSP é de fácil usabilidade?}
+\begin{itemize}
+\item Não concordo totalmente
+\item Não concordo parcialmente
+\item Indiferente
+\item Concordo parcialmente
+\item Concordo totalmente
+\end{itemize}
+
+\subsection{Você considera a ferramenta T-AADSP eficiente na sua proposta de implantação adaptativa de processo de software?}
+\begin{itemize}
+\item Não concordo totalmente
+\item Não concordo parcialmente
+\item Indiferente
+\item Concordo parcialmente
+\item Concordo totalmente
+\end{itemize}
 
 \chapter{Tabelas}
 
@@ -764,6 +840,12 @@ estabelecidos e tratados com as partes interessadas & Revisões das entregas dur
 \centering % para centralizarmos a figura
 \includegraphics[width=0.5\textwidth]{RF_detalhamento_Projeto_Cronograma.jpg} % leia abaixo
 \caption{Detalhes de um projeto cadastrado no sistema em função do seu cronograma de execução}
+\end{figure}
+
+\begin{figure}[h]
+\centering % para centralizarmos a figura
+\includegraphics[width=0.5\textwidth]{RF_fases_do_projeto.jpg} % leia abaixo
+\caption{Fases em execução do Projeto de \textit{Software}}
 \end{figure}
 
 \begin{figure}[h]
