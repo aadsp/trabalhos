@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.29)  2 OCT 2016 17:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.29)  2 OCT 2016 23:29
 entering extended mode
 **./sigproc-sp.tex
 (sigproc-sp.tex
@@ -684,7 +684,7 @@ Overfull \hbox (3.14227pt too wide) in paragraph at lines 226--226
 
 [4] [5]
 Overfull \hbox (13.01859pt too wide) in paragraph at lines 298--299
-[]\T1/aer/m/n/9 Para to-dos os itens acima men-ci-o-na-dos, o MPSBR [12] descre
+[]\T1/aer/m/n/9 Para to-dos os itens acima men-ci-o-na-dos, o MPSBR [13] descre
 ve-
  []
 
@@ -727,22 +727,6 @@ Overfull \hbox (3.14227pt too wide) in paragraph at lines 371--371
  []
 
 
-LaTeX Warning: Citation `aadsp:hibirdo' on page \thepage  undefined on input li
-ne 372.
-
-
-LaTeX Warning: Citation `aadsp:hibirdo' on page \thepage  undefined on input li
-ne 378.
-
-
-LaTeX Warning: Citation `aadsp:hibirdo' on page \thepage  undefined on input li
-ne 379.
-
-
-LaTeX Warning: Citation `aadsp:hibirdo' on page \thepage  undefined on input li
-ne 380.
-
-
 <img/AADSP_Piramidade_de_importancia_dos_artefatos.jpg, id=32, 361.35pt x 305.6
 4188pt>
 File: img/AADSP_Piramidade_de_importancia_dos_artefatos.jpg Graphic file (type 
@@ -757,27 +741,7 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 385--386
  []
 
 
-LaTeX Warning: Citation `aadsp:hibirdo' on page \thepage  undefined on input li
-ne 386.
-
-
-LaTeX Warning: Citation `aadsp:hibirdo' on page \thepage  undefined on input li
-ne 386.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Citation `aadsp:hibirdo' on page \thepage  undefined on input li
-ne 390.
-
-
-LaTeX Warning: Citation `aadsp:hibirdo' on page \thepage  undefined on input li
-ne 393.
-
-
-LaTeX Warning: Citation `aadsp:hibirdo' on page \thepage  undefined on input li
-ne 396.
 
 [7 <./img/organizacaoTrabOpenUP.JPG>]
 Overfull \hbox (2.69836pt too wide) in paragraph at lines 407--407
@@ -795,10 +759,6 @@ Underfull \hbox (badness 3623) in paragraph at lines 476--476
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Citation `aadsp:hibirdo' on page \thepage  undefined on input li
-ne 487.
-
 <img/AADSP_fluxo_de_trabalho.jpg, id=39, 612.03656pt x 401.24907pt>
 File: img/AADSP_fluxo_de_trabalho.jpg Graphic file (type jpg)
 
@@ -810,14 +770,6 @@ Package pdftex.def Info: img/AADSP_fluxo_de_trabalho.jpg used on input line 491
 Overfull \hbox (12.0pt too wide) in paragraph at lines 491--492
  [][] 
  []
-
-
-LaTeX Warning: Citation `aadsp:hibirdo' on page \thepage  undefined on input li
-ne 492.
-
-
-LaTeX Warning: Citation `aadsp:hibirdo' on page \thepage  undefined on input li
-ne 492.
 
 [8 <./img/AADSP_Piramidade_de_importancia_dos_artefatos.jpg> <./img/AADSP_fluxo
 _de_trabalho.jpg>]
@@ -909,7 +861,7 @@ File: img/AV_9.jpg Graphic file (type jpg)
 Package pdftex.def Info: img/AV_9.jpg used on input line 701.
 (pdftex.def)             Requested size: 151.20154pt x 145.46698pt.
  [13 <./img/AV_1.jpg> <./img/AV_2.jpg> <./img/AV_3.jpg>] (sigproc-sp.bbl
-LaTeX Font Info:    Try loading font information for T1+aett on input line 5.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 6.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
@@ -951,11 +903,6 @@ Overfull \hbox (13.13814pt too wide) in paragraph at lines 790--790
  []
 
 [15]
-
-LaTeX Warning: Citation `aadsp:hibirdo' on page \thepage  undefined on input li
-ne 809.
-
-
 Underfull \hbox (badness 7796) in paragraph at lines 813--814
 []\T1/aer/bx/n/7 Artefato no T-
  []
@@ -1392,34 +1339,31 @@ img/RF_cadastr_de_atividade_para_projeto.jpg>] [22 <./img/RF_cronograma_do_proj
 eto_PDF.jpg> <./img/RF_recursos_especiais_do_projeto.jpg> <./img/RF_recursos_es
 peciais_do_projeto_em_PDF.jpg> <./img/DER_colaborador.jpg> <./img/DER_acesso.jp
 g> <./img/DER_tap.jpg>] [23 <./img/DER_projeto_p1.jpg> <./img/DER_projeto_p2.jp
-g>] (sigproc-sp.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+g>] (sigproc-sp.aux) ) 
 Here is how much of TeX's memory you used:
  4350 strings out of 493335
  59382 string characters out of 3139257
- 148577 words of memory out of 3000000
+ 148581 words of memory out of 3000000
  7670 multiletter control sequences out of 15000+200000
  71046 words of font info for 104 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,10n,28p,1190b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/h
-elvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sigproc-sp.pdf (23 pages, 3168797 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.
+enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti
+7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8
+a.pfb>
+Output written on sigproc-sp.pdf (23 pages, 3171166 bytes).
 PDF statistics:
  185 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
