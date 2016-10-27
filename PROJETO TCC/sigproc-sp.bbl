@@ -2,8 +2,8 @@
 
 \bibitem{aadsp:hibrido}
 Adaptive approach for deployment of software process - aadsp.
-\newblock
-  \url{https://googleweblight.com/?lite_url=https://pt.m.wikipedia.org/wiki/OpenUP&ei=vtfdUOTQ&lc=pt-BR&s=1&m=900&host=www.google.com.br&ts=1468192574&sig=AKOVD67qfDK3eJhci7aHbbCjuCXxa7l9-A}.
+\newblock \url{https:
+  http://www.labrasoft.ifba.edu.br/wp-content/uploads/2016/10/Guia-AADSP.pdf}.
 \newblock Acessado em: 10 de julho de 2016.
 
 \bibitem{bitrix24:ferramenta}
@@ -41,13 +41,13 @@ Jira.
 
 \bibitem{agil:Cockburn}
 {\sc Cockburn, A.}
-\newblock {\em Agile sofware development: the cooperative game}.
+\newblock {\em Agile software development: the cooperative game}.
 \newblock MA, 2007.
 
 \bibitem{pmbok:nAgil}
 {\sc Institute, P.~M.}
-\newblock {\em Um Guia do conhecimento em gerencimento de Projetos - Guia PMBOK
-  5º ed.}
+\newblock {\em Um Guia do conhecimento em gerenciamento de Projetos - Guia
+  PMBOK 5º ed.}
 \newblock Project Management Institute, Inc, Newtown Square, Pennsylvania
   19073-3299 USA, 2013.
 
@@ -64,7 +64,7 @@ Jira.
 
 \bibitem{scrum:agil}
 {\sc Sabbagh, R.}
-\newblock {\em SCRUM: Gestão Ágil para Projetos de Suscesso}.
+\newblock {\em SCRUM: Gestão Ágil para Projetos de Sucesso}.
 \newblock Casa do Código, 2013.
 
 \bibitem{mpsbr:nAgil}
